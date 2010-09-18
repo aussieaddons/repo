@@ -58,10 +58,10 @@
   </addon>
   <!-- Repository Plugin -->
   <addon id="repository.googlecode.xbmc-catchuptv-au"
-  name="googlecode.xbmc-catchuptv-au Add-ons" version="0.1.0"
+  name="xbmc-catchuptv-au Add-ons" version="0.1.1"
   provider-name="adammw111">
     <extension point="xbmc.addon.repository"
-    name="googlecode.xbmc-catchuptv-au Add-on Repository">
+    name="xbmc-catchuptv-au Add-on Repository">
       <info compressed="false">
       https://repo.xbmc-catchuptv-au.googlecode.com/hg/addons.xml</info>
       <checksum>
@@ -70,12 +70,11 @@
       https://repo.xbmc-catchuptv-au.googlecode.com/hg/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-      <summary>Install Add-ons from
-      googlecode.xbmc-catchuptv-au</summary>
+      <summary>Install Add-ons from xbmc-catchuptv-au</summary>
       <description>Download and install add-ons from
-      googlecode.xbmc-catchuptv-au addon repository.[CR][CR]By
-      using this Repository you will be able to download and use
-      the latest version of the Catch-up TV Plugins.</description>
+      xbmc-catchuptv-au addon repository.[CR][CR]By using this
+      Repository you will be able to download and use the latest
+      version of the Catch-up TV Plugins.</description>
       <disclaimer>Adammw111 did not make all the add-ons on this
       repository and is not responsible for their
       content</disclaimer>
