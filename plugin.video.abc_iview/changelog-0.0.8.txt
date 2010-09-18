@@ -1,0 +1,19 @@
+[B]Version 0.0.8[/B]
+- Updated to iView API 362
+- Updated handshake URL
+- Fixed non-ascii char problem when passing program details
+
+
+[B]Version 0.0.7[/B]
+- Initial version of Addon
+- Better URL handling
+- Information dialogs
+- Auth token is generate at play time
+
+Credits
+================
+Created by Andy Botting (andybz)
+iView parsing code is thanks to Jeremy Visser.
+Portions of plugin code thanks to BBC iPlayer plugin.
+
+simplejson - simple json->dictionary decoder - http://code.google.com/p/simplejson/
