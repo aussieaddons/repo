@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addons>
+  <!-- Australian Catchup TV Plugins -->
+  <addon id="plugin.video.catchuptv.au.sbs" name="SBS CatchUp TV"
+  version="0.1.0" provider-name="adammw111">
+    <requires>
+      <import addon="xbmc.python" version="1.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <minversion>31542</minversion>
+      <summary>SBS CatchUp TV Video Player</summary>
+      <description>Watch latest episodes, sneak peeks, exclusive
+      internet extras and other videos from SBS
+      Online.</description>
+      <disclaimer>You must be within Australia to use watch these
+      videos.[CR]"SBS", SBS Logos and other works are copyright of
+      their respective owners.</disclaimer>
+    </extension>
+  </addon>
+  <addon id="plugin.video.catchuptv.au.ten"
+  name="Channel Ten CatchUp TV" version="0.1.0"
+  provider-name="adammw111">
+    <requires>
+      <import addon="xbmc.python" version="1.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <minversion>31542</minversion>
+      <summary>Channel Ten CatchUp TV Video Player</summary>
+      <description>Watch latest episodes, sneak peeks, exclusive
+      internet extras and other videos from Network Ten
+      Online.</description>
+      <disclaimer>You must be within Australia to use watch these
+      videos.[CR]"Network Ten", Ten Logos and other works are
+      copyright of their respective owners.</disclaimer>
+    </extension>
+  </addon>
+  <!-- Australian Live TV Plugins -->
+  <addon id="plugin.video.live.au.abc_news24" name="ABC News 24"
+  version="0.1.0" provider-name="adammw111">
+    <requires>
+      <import addon="xbmc.python" version="1.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <minversion>31542</minversion>
+    </extension>
+  </addon>
+  <!-- Repository Plugin -->
+  <addon id="repository.googlecode.xbmc-catchuptv-au"
+  name="googlecode.xbmc-catchuptv-au Add-ons" version="0.1.0"
+  provider-name="adammw111">
+    <extension point="xbmc.addon.repository"
+    name="googlecode.xbmc-catchuptv-au Add-on Repository">
+      <info compressed="false">
+      https://repo.xbmc-catchuptv-au.googlecode.com/hg/addons.xml</info>
+      <checksum>
+      https://repo.xbmc-catchuptv-au.googlecode.com/hg/addons.xml.md5</checksum>
+      <datadir zip="true">
+      https://repo.xbmc-catchuptv-au.googlecode.com/hg/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary>Install Add-ons from
+      googlecode.xbmc-catchuptv-au</summary>
+      <description>Download and install add-ons from
+      googlecode.xbmc-catchuptv-au addon repository.[CR][CR]By
+      using this Repository you will be able to download and use
+      the latest version of the Catch-up TV Plugins.</description>
+      <disclaimer>Adammw111 did not make all the add-ons on this
+      repository and is not responsible for their
+      content</disclaimer>
+      <platform>all</platform>
+    </extension>
+  </addon>
+</addons>
