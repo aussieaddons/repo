@@ -1,0 +1,7 @@
+[B]Version 0.1.1[/B]
+
+- Changed display name from "googlecode.xbmc-catchuptv-au" to "xbmc-catchuptv-au"
+
+[B]Version 0.1.0[/B]
+
+- Initial commit to xbmc-catchuptv-au-repo
