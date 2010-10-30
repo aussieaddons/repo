@@ -2,7 +2,7 @@
 <addons>
   <!-- Australian Catchup TV Plugins -->
   <addon id="plugin.video.catchuptv.au.sbs" name="SBS CatchUp TV"
-  version="0.1.0" provider-name="adammw111">
+  version="0.1.1" provider-name="adammw111">
     <requires>
       <import addon="xbmc.python" version="1.0" />
     </requires>
