@@ -1,0 +1,7 @@
+[B]Version 0.1.1[/B]
+
+- Applied UTF-8 Fix by TrisForster198 to prevent weird characters crashing the addon
+
+[B]Version 0.1.0[/B]
+
+- Initial commit to xbmc-catchuptv-au-repo
