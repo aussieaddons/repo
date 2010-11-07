@@ -43,7 +43,7 @@
     </extension>
   </addon>
   <addon id="plugin.video.abc_iview" name="ABC iView"
-  version="0.0.8" provider-name="Andy Botting">
+  version="0.0.9" provider-name="Andy Botting">
     <requires>
       <import addon="xbmc.python" version="1.0" />
     </requires>
@@ -52,12 +52,16 @@
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata" library="default.py">
-      <summary>ABC iView script by Andy Botting</summary>
+      <summary>ABC iView script by Andy Botting (SVN r75)</summary>
       <description>iView offers full-length programs as seen on ABC
       TV, and iView originals ranging from arts to anime. Programs
       are added every day; most programs are available for 14 days.
       You must be located in Australia to access
       content.</description>
+      <disclaimer>This is an unoffical SVN Build of
+      xbmc-boxee-iview. [CR]Please see
+      http://code.google.com/p/xbmc-boxee-iview for
+      details</disclaimer>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
