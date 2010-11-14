@@ -1,0 +1,13 @@
+[B]Version 0.0.2[/B]
+- Minor updates to fix parsing
+
+
+[B]Version 0.0.1[/B]
+- Initial version of Addon
+
+Credits
+================
+Created by Andy Botting (andybz)
+Regex code thanks for mce and his plus7napper program
+
+simplejson - simple json->dictionary decoder - http://code.google.com/p/simplejson/
