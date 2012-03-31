@@ -83,6 +83,37 @@
       <platform>all</platform>
     </extension>
   </addon>
+  <!-- AFL Plugins -->
+  <addon id="plugin.video.afl-video" name="AFL Video" version="0.3" provider-name="Andy Botting">
+    <requires>
+      <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">AFL Video</summary>
+      <description>Watch the latest AFL replays and post match press reports.</description>
+      <disclaimer>This plugin is not affiliated with the AFL or Bigpond Video in any way.</disclaimer>
+      <provides>video</provides>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="plugin.audio.afl-radio" name="AFL Radio" version="0.1" provider-name="Andy Botting">
+    <requires>
+      <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata" library="default.py">
+      <summary>AFL Radio by Andy Botting</summary>
+      <description>Listen to the best radio coverage from the AFL's official radio broadcasters right here.</description>
+      <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
+      <provides>audio</provides>
+      <platform>all</platform>
+    </extension>
+  </addon>
   <!-- Australian Live TV Plugins -->
   <addon id="plugin.video.live.au.abc_news24" name="ABC News 24"
   version="0.1.0" provider-name="adammw111">
