@@ -1,0 +1,13 @@
+[B]Version 0.3[/B]
+- Downgrade PyAMF to 0.4 for stability
+- Add team logos
+
+[B]Version 0.2[/B]
+- Implement quality setting
+
+[B]Version 0.1[/B]
+- Initial version of Addon
+
+Credits
+================
+Created by Andy Botting (andybz)
