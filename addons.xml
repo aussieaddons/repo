@@ -13,12 +13,8 @@
       <platform>all</platform>
       <minversion>31542</minversion>
       <summary>SBS CatchUp TV Video Player</summary>
-      <description>Watch latest episodes, sneak peeks, exclusive
-      internet extras and other videos from SBS
-      Online.</description>
-      <disclaimer>You must be within Australia to use watch these
-      videos.[CR]"SBS", SBS Logos and other works are copyright of
-      their respective owners.</disclaimer>
+      <description>Watch latest episodes, sneak peeks, exclusive internet extras and other videos from SBS Online.</description>
+      <disclaimer>You must be within Australia to use watch these videos.[CR]"SBS", SBS Logos and other works are copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
   <addon id="plugin.video.catchuptv.au.ten"
@@ -34,11 +30,8 @@
       <platform>all</platform>
       <minversion>31542</minversion>
       <summary>Channel Ten CatchUp TV Video Player</summary>
-      <description>Watch latest episodes, sneak peeks, exclusive
-      internet extras and other videos from Network Ten
-      Online.</description>
-      <disclaimer>You must be within Australia to use watch these
-      videos.[CR]"Network Ten", Ten Logos and other works are
+      <description>Watch latest episodes, sneak peeks, exclusive internet extras and other videos from Network Ten Online.</description>
+      <disclaimer>You must be within Australia to use watch these videos.[CR]"Network Ten", Ten Logos and other works are
       copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
@@ -52,8 +45,7 @@
     </extension>
     <extension point="xbmc.addon.metadata" library="default.py">
       <summary>ABC iView script by Andy Botting</summary>
-      <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days.
-      You must be located in Australia to access content.</description>
+      <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days.[CR]You must be located in Australia to access content.</description>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
@@ -67,7 +59,7 @@
     </extension>
     <extension point="xbmc.addon.metadata" library="default.py">
       <summary>Plus7 script by Andy Botting</summary>
-      <description>PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners – just hit the play button and you can watch high quality, full screen videos straightaway without       having to wait for downloads.</description>
+      <description>PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners – just hit the play button and you can watch high quality, full screen videos straightaway without having to wait for downloads.</description>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
@@ -133,13 +125,8 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary>Install Add-ons from xbmc-catchuptv-au</summary>
-      <description>Download and install add-ons from
-      xbmc-catchuptv-au addon repository.[CR][CR]By using this
-      Repository you will be able to download and use the latest
-      version of the Catch-up TV Plugins.</description>
-      <disclaimer>Adammw111 did not make all the add-ons on this
-      repository and is not responsible for their
-      content</disclaimer>
+      <description>Download and install add-ons from xbmc-catchuptv-au addon repository.[CR][CR]By using this Repository you will be able to download and use the latest version of the Catch-up TV Plugins.</description>
+      <disclaimer>CatchupTV-AU are not affiliated with these media sources in any way.</disclaimer>
       <platform>all</platform>
     </extension>
   </addon>
