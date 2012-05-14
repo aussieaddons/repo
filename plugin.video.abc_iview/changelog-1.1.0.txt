@@ -1,0 +1,29 @@
+[B]Version 1.1.0[/B]
+- Use iView API 384
+- Now using JSON series list for faster show listings
+
+[B]Version 1.0.2[/B]
+- Accept compressed payload from ABC to fix problem downloading index
+
+[B]Version 1.0.1[/B]
+- Updated to iView API 374
+- Updated handshake URL
+- Fixed import errors
+
+[B]Version 0.0.8[/B]
+- Updated to iView API 362
+- Updated handshake URL
+- Fixed non-ascii char problem when passing program details
+
+
+[B]Version 0.0.7[/B]
+- Initial version of Addon
+- Better URL handling
+- Information dialogs
+- Auth token is generate at play time
+
+Credits
+================
+Created by Andy Botting (andybz)
+iView parsing code is thanks to Jeremy Visser.
+Portions of plugin code thanks to BBC iPlayer plugin.
