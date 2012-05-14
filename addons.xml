@@ -36,9 +36,11 @@
     </extension>
   </addon>
   <!-- External Plugins -->
-  <addon id="plugin.video.abc_iview" name="ABC iView" version="1.0.1" provider-name="Andy Botting">
+  <addon id="plugin.video.abc_iview" name="ABC iView" version="1.1.0" provider-name="Andy Botting">
     <requires>
       <import addon="xbmc.python" version="1.0" />
+      <import addon="script.module.simplejson"/>
+      <import addon="script.module.beautifulsoup"/>
     </requires>
     <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
       <provides>video</provides>
