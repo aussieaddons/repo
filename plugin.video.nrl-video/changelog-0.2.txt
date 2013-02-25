@@ -1,0 +1,14 @@
+[B]Version 0.2[/B]
+- Extract javascript URL from base_url
+- Correct names of team images
+
+[B]Version 0.1[/B]
+- Initial version of the NRL XBMC addon
+- Fork plugin.video.afl-video by Andy Botting
+- Change references to AFL to NRL
+- Update Video channels for NRL
+- Update Team list for the NRL
+
+[B]Credits[/B]
+Created by Jeffrey Williams (jeffxor)
+Created from code fork of Andy Botting (andybz) 'plugin.video.afl-video'
