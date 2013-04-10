@@ -1,0 +1,22 @@
+[B]Version 1.1[/B]
+- Fix for Plus7 API change
+
+[B]Version 1.0[/B]
+- Better exception handling and messages
+- Much faster to list shows
+- Thumbnails for program list
+
+[B]Version 0.0.3[/B]
+- Updates to fix parsing
+- Thumbnail support
+
+[B]Version 0.0.2[/B]
+- Minor updates to fix parsing
+
+[B]Version 0.0.1[/B]
+- Initial version of Addon
+
+Credits
+================
+Created by Andy Botting (andybz)
+Thanks for initial regex code to mcs for his plus7napper program
