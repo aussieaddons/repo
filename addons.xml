@@ -13,12 +13,8 @@
       <platform>all</platform>
       <minversion>31542</minversion>
       <summary>SBS CatchUp TV Video Player</summary>
-      <description>Watch latest episodes, sneak peeks, exclusive
-      internet extras and other videos from SBS
-      Online.</description>
-      <disclaimer>You must be within Australia to use watch these
-      videos.[CR]"SBS", SBS Logos and other works are copyright of
-      their respective owners.</disclaimer>
+      <description>Watch latest episodes, sneak peeks, exclusive internet extras and other videos from SBS Online.</description>
+      <disclaimer>You must be within Australia to use watch these videos.[CR]"SBS", SBS Logos and other works are copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
   <addon id="plugin.video.catchuptv.au.ten"
@@ -34,51 +30,86 @@
       <platform>all</platform>
       <minversion>31542</minversion>
       <summary>Channel Ten CatchUp TV Video Player</summary>
-      <description>Watch latest episodes, sneak peeks, exclusive
-      internet extras and other videos from Network Ten
-      Online.</description>
-      <disclaimer>You must be within Australia to use watch these
-      videos.[CR]"Network Ten", Ten Logos and other works are
+      <description>Watch latest episodes, sneak peeks, exclusive internet extras and other videos from Network Ten Online.</description>
+      <disclaimer>You must be within Australia to use watch these videos.[CR]"Network Ten", Ten Logos and other works are
       copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
   <!-- External Plugins -->
-  <addon id="plugin.video.abc_iview" name="ABC iView"
-  version="1.0.1" provider-name="Andy Botting">
+  <addon id="plugin.video.abc_iview" name="ABC iView" version="1.2.0" provider-name="Andy Botting">
     <requires>
       <import addon="xbmc.python" version="1.0" />
+      <import addon="script.module.simplejson"/>
+      <import addon="script.module.beautifulsoup"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" provides="video"
-    library="default.py">
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata" library="default.py">
       <summary>ABC iView script by Andy Botting</summary>
-      <description>iView offers full-length programs as seen on ABC
-      TV, and iView originals ranging from arts to anime. Programs
-      are added every day; most programs are available for 14 days.
-      You must be located in Australia to access
-      content.</description>
+      <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days.[CR]You must be located in Australia to access content.</description>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.video.plus7" name="Plus7" version="1.0"
-  provider-name="Andy Botting">
+  <addon id="plugin.video.plus7" name="Plus7" version="1.1" provider-name="Andy Botting">
     <requires>
       <import addon="xbmc.python" version="1.0" />
     </requires>
-    <extension point="xbmc.python.pluginsource" provides="video"
-    library="default.py">
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata" library="default.py">
       <summary>Plus7 script by Andy Botting</summary>
-      <description>PLUS7 offers video streaming of full length
-      episodes as seen on Seven, 7TWO and other content partners
-       – just hit the play button and you can
-      watch high quality, full screen videos straightaway without
-      having to wait for downloads.</description>
+      <description>PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners – just hit the play button and you can watch high quality, full screen videos straightaway without having to wait for downloads.</description>
+      <provides>video</provides>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <!-- AFL Plugins -->
+  <addon id="plugin.video.afl-video" name="AFL Video" version="0.6" provider-name="Andy Botting">
+    <requires>
+      <import addon="xbmc.python" version="1.0"/>
+      <import addon="script.module.simplejson"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">AFL Video</summary>
+      <description>Watch the latest AFL replays and post match press reports.</description>
+      <disclaimer>This plugin is not affiliated with the AFL or Bigpond Video in any way.</disclaimer>
+      <provides>video</provides>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="plugin.audio.afl-radio" name="AFL Radio" version="0.2" provider-name="Andy Botting">
+    <requires>
+      <import addon="xbmc.python" version="1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata" library="default.py">
+      <summary>AFL Radio by Andy Botting</summary>
+      <description>Listen to the best radio coverage from the AFL's official radio broadcasters right here.</description>
+      <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
+      <provides>audio</provides>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="plugin.video.nrl-video" name="NRL Video" version="0.2" provider-name="Jeffrey Williams">
+    <requires>
+      <import addon="xbmc.python" version="1.0"/>
+      <import addon="script.module.simplejson"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">NRL Video</summary>
+      <description>Watch the latest NRL replays, highlight packages and NRL team content.</description>
+      <disclaimer>This plugin is not affiliated with the NRL or Bigpond Video in any way.</disclaimer>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
@@ -112,13 +143,8 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary>Install Add-ons from xbmc-catchuptv-au</summary>
-      <description>Download and install add-ons from
-      xbmc-catchuptv-au addon repository.[CR][CR]By using this
-      Repository you will be able to download and use the latest
-      version of the Catch-up TV Plugins.</description>
-      <disclaimer>Adammw111 did not make all the add-ons on this
-      repository and is not responsible for their
-      content</disclaimer>
+      <description>Download and install add-ons from xbmc-catchuptv-au addon repository.[CR][CR]By using this Repository you will be able to download and use the latest version of the Catch-up TV Plugins.</description>
+      <disclaimer>CatchupTV-AU are not affiliated with these media sources in any way.</disclaimer>
       <platform>all</platform>
     </extension>
   </addon>
