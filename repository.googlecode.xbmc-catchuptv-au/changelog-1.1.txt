@@ -1,4 +1,4 @@
-Version 1.0
+Version 1.1
 - Moved hosting to GitHub
 
 Version 0.1.1
