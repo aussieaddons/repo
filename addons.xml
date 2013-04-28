@@ -131,9 +131,9 @@
   <!-- Repository Plugin -->
   <addon id="repository.googlecode.xbmc-catchuptv-au" name="XBMC CatchupTV AU Add-ons" version="1.1" provider-name="XBMC CatchupTV AU">
     <extension point="xbmc.addon.repository" name="XBMC CatchupTV AU Add-on Repository">
-      <info compressed="false">http://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml</info>
-      <checksum>http://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml.md5</checksum>
-      <datadir zip="true">http://github.com/xbmc-catchuptv-au/repo/raw/master/</datadir>
+      <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml</info>
+      <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary>Install CatchupTV AU Add-ons</summary>
