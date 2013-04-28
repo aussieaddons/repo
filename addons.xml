@@ -129,22 +129,15 @@
     </extension>
   </addon>
   <!-- Repository Plugin -->
-  <addon id="repository.googlecode.xbmc-catchuptv-au"
-  name="xbmc-catchuptv-au Add-ons" version="0.1.1"
-  provider-name="adammw111">
-    <extension point="xbmc.addon.repository"
-    name="xbmc-catchuptv-au Add-on Repository">
-      <info compressed="false">
-      https://repo.xbmc-catchuptv-au.googlecode.com/hg/addons.xml</info>
-      <checksum>
-      https://repo.xbmc-catchuptv-au.googlecode.com/hg/addons.xml.md5</checksum>
-      <datadir zip="true">
-      https://repo.xbmc-catchuptv-au.googlecode.com/hg/</datadir>
+  <addon id="repository.googlecode.xbmc-catchuptv-au" name="XBMC CatchupTV AU Add-ons" version="1.0" provider-name="XBMC CatchupTV AU">
+    <extension point="xbmc.addon.repository" name="XBMC CatchupTV AU Add-on Repository">
+      <info compressed="false">http://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml</info>
+      <checksum>http://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml.md5</checksum>
+      <datadir zip="true">http://github.com/xbmc-catchuptv-au/repo/raw/master/repo/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-      <summary>Install Add-ons from xbmc-catchuptv-au</summary>
-      <description>Download and install add-ons from xbmc-catchuptv-au addon repository.[CR][CR]By using this Repository you will be able to download and use the latest version of the Catch-up TV Plugins.</description>
-      <disclaimer>CatchupTV-AU are not affiliated with these media sources in any way.</disclaimer>
+      <summary>Install CatchupTV AU Add-ons</summary>
+      <description>Download and install add-ons from the CatchupTV AU repository.[CR][CR]By using this repository you will be able to download and use the latest version of the Catch-UP TV plugins and other Australian based content.</description>
       <platform>all</platform>
     </extension>
   </addon>

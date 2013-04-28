@@ -1,0 +1,8 @@
+Version 1.0
+- Moved hosting to GitHub
+
+Version 0.1.1
+- Changed display name from "googlecode.xbmc-catchuptv-au" to "xbmc-catchuptv-au"
+
+Version 0.1.0
+- Initial commit to xbmc-catchuptv-au-repo
