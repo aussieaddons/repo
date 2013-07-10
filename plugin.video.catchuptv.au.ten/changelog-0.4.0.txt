@@ -1,0 +1,21 @@
+[B]Version v0.4.0[/B]
+- check for addStreamInfo for pre-Frodo XBMC compatibility
+- extract episode number from custom field
+- fix get_item_count parameter
+- increase default page size
+- add more metadata fields
+- fix date formatting
+- fix episode number parsing
+- escape html entities in title and description
+- extract more metadata
+- add sorting functionality
+- fix swf verification url
+- fix and improve metadata
+- enable swf verification
+- update version
+- update addon and lib for brightcove-based cdn api
+- simplify advertisement logic
+- Update changelog.txt
+- part stacking, metadata improvements
+- fix token bug
+
