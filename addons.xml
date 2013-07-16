@@ -120,9 +120,9 @@
   </addon>
   <!-- Australian Live TV Plugins -->
   <addon id="plugin.video.live.au.abc_news24" name="ABC News 24"
-  version="0.1.0" provider-name="adammw111">
+  version="0.1.1" provider-name="adammw111">
     <requires>
-      <import addon="xbmc.python" version="1.0" />
+      <import addon="xbmc.python" version="1.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
       <provides>video</provides>
@@ -130,6 +130,8 @@
     <extension point="xbmc.addon.metadata">
       <platform>all</platform>
       <minversion>31542</minversion>
+      <summary>ABC News 24 Live Stream Plugin for XBMC</summary>
+      <disclaimer>You must be within Australia to stream News 24.[CR]The ABC and ABC News24 Logos and other works are copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
   <!-- Repository Plugin -->
