@@ -1,3 +1,9 @@
+[B]Version 2.0[/B]
+- Discover secret key, revive addon
+
+[B]Version 1.1[/B]
+- Fix for Plus7 API change
+
 [B]Version 1.0[/B]
 - Better exception handling and messages
 - Much faster to list shows
@@ -7,17 +13,8 @@
 - Updates to fix parsing
 - Thumbnail support
 
-
 [B]Version 0.0.2[/B]
 - Minor updates to fix parsing
 
-
 [B]Version 0.0.1[/B]
 - Initial version of Addon
-
-Credits
-================
-Created by Andy Botting (andybz)
-Regex code thanks for mce and his plus7napper program
-
-simplejson - simple json->dictionary decoder - http://code.google.com/p/simplejson/
