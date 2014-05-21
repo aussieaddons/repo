@@ -1,0 +1,2 @@
+[B]Version v0.5.0[/B]
+- Complete rewrite using xbmcswift2 framework, updated to TENplay branding

@@ -18,14 +18,14 @@
     </extension>
   </addon>
   <addon id="plugin.video.catchuptv.au.ten"
-  name="Network Ten CatchUp TV" version="0.4.0"
+  name="TENplay" version="0.5.0"
   provider-name="adammw111">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.simplejson"/>
       <import addon="script.module.beautifulsoup"/>
       <!--<import addon="script.module.brightcove"/>-->
-      <import addon="script.common.plugin.cache"/>
+      <import addon="script.module.xbmcswift2" version="2.4.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video</provides>
@@ -33,10 +33,9 @@
     <extension point="xbmc.addon.metadata">
       <platform>all</platform>
       <minversion>31542</minversion>
-      <summary>Network Ten CatchUp TV Video Player</summary>
-      <description>Watch latest episodes, sneak peeks, exclusive internet extras and other videos from Network Ten Online.</description>
-      <disclaimer>You must be within Australia to use watch these videos.[CR]"Network Ten", Ten Logos and other works are
-      copyright of their respective owners.</disclaimer>
+      <summary>TENplay</summary>
+      <description>Watch latest episodes, sneak peeks, exclusive internet extras and other videos from Network Ten.</description>
+      <disclaimer>You must be within Australia to use watch these videos.[CR]The TENplay, TEN, ONE and ELEVEN logo and trade marks are registered trademarks of Network Ten Pty Limited.</disclaimer>
     </extension>
   </addon>
   <!-- External Plugins -->
