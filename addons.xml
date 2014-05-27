@@ -39,7 +39,7 @@
     </extension>
   </addon>
   <!-- External Plugins -->
-  <addon id="plugin.video.abc_iview" name="ABC iView" version="1.4.1" provider-name="Andy Botting">
+  <addon id="plugin.video.abc_iview" name="ABC iView" version="1.5.0" provider-name="Andy Botting">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -47,7 +47,7 @@
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata" library="default.py">
-      <summary>ABC iView script by Andy Botting</summary>
+      <summary>ABC iView addon by Andy Botting</summary>
       <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days.[CR]You must be located in Australia to access content.[CR]NOTE: This add-on will count towards your usage quote.</description>
       <provides>video</provides>
       <platform>all</platform>
@@ -61,7 +61,7 @@
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata" library="default.py">
-      <summary>Plus7 script by Andy Botting</summary>
+      <summary>Plus7 addon by Andy Botting</summary>
       <description>PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners – just hit the play button and you can watch high quality, full screen videos straightaway without having to wait for downloads.</description>
       <provides>video</provides>
       <platform>all</platform>
