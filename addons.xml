@@ -18,7 +18,7 @@
     </extension>
   </addon>
   <addon id="plugin.video.catchuptv.au.ten"
-  name="TENplay" version="0.5.0"
+  name="TENplay" version="0.5.1"
   provider-name="adammw111">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
