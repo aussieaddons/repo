@@ -128,6 +128,23 @@
       <disclaimer>You must be within Australia to stream News 24.[CR]The ABC and ABC News24 Logos and other works are copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
+  <!-- Dependent Modules -->
+  <addon id="script.module.catchuptv.brightcove" name="Brightcove" provider-name="XBMC CatchUp TV AU" version="0.2.0">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension library="brightcove" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <summary>Brightcove API Wrapper Module</summary>
+      <description>Brightcove API Wrapper Module</description>
+      <disclaimer/>
+      <license>GNU GPL</license>
+      <website>https://github.com/xbmc-catchuptv-au/script.module.catchuptv.brightcove</website>
+      <source>https://github.com/xbmc-catchuptv-au/script.module.catchuptv.brightcove.git</source>
+    </extension>
+  </addon>
+
   <!-- Repository Plugin -->
   <addon id="repository.googlecode.xbmc-catchuptv-au" name="XBMC CatchupTV AU Add-ons" provider-name="XBMC CatchupTV AU" version="1.3">
     <extension name="XBMC CatchupTV AU Add-on Repository" point="xbmc.addon.repository">
