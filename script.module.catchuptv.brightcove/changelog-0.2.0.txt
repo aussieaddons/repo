@@ -1,0 +1,10 @@
+0.2.0
+* Allow sequences in parameter specifications
+* Inital fork from jbeluch/python-brightcove
+
+0.1.1
+* Fix broken API methods.
+* Add unit tests.
+
+0.1
+* Intial release
