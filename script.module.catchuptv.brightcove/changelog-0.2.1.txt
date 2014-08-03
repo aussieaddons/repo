@@ -1,0 +1,43 @@
+[B]Version 0.2.1[/B]
+- Move brightcove module to lib directory
+
+[B]Version v0.2.0[/B]
+- Allow sequences in parameter specifications with urlencode
+- Bump version
+- Update package name
+- Fix datetime bug and update tests
+- Add test data.
+- Updated README.
+- Update README.
+- Add documentation and code cleanup.
+- Add units tests for api.py.
+- Remove legacy code in Connection._request
+- Fix issues with incorrect API method names.
+- Bumped version of python for XBMC eden.
+- Intial commit for XBMC dharma.
+
+[B]Version v0.1e[/B]
+- Bumped version of python for XBMC eden.
+
+[B]Version v0.1d[/B]
+- Bump version in addon.xml and update changelog.
+- Add test data.
+- Updated README.
+- Update README.
+- Add documentation and code cleanup.
+- Add units tests for api.py.
+- Remove legacy code in Connection._request
+- Fix issues with incorrect API method names.
+- Bumped version of python for XBMC eden.
+
+[B]Version v0.1.1e[/B]
+- Bump version in addon.xml and update changelog.
+- Bump version in addon.xml and update changelog.
+- Bumped version of python for XBMC eden.
+
+[B]Version v0.1.1d[/B]
+- [xam-release-script] creating release for version 1.1.1
+- Bump version in addon.xml and update changelog.
+- Bump version in addon.xml and update changelog.
+- Bumped version of python for XBMC eden.
+
