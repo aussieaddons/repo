@@ -151,7 +151,7 @@
     </extension>
   </addon>
   <!-- Dependent Modules -->
-  <addon id="script.module.catchuptv.brightcove" name="Brightcove" provider-name="XBMC CatchUp TV AU" version="0.2.0">
+  <addon id="script.module.catchuptv.brightcove" name="Brightcove" provider-name="XBMC CatchUp TV AU" version="0.2.1">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
     </requires>
