@@ -60,7 +60,7 @@
     </extension>
   </addon>
   <!-- External Plugins -->
-  <addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Andy Botting" version="1.5.0">
+  <addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Andy Botting" version="1.6.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
     </requires>
