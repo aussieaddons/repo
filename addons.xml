@@ -63,6 +63,8 @@
   <addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Andy Botting" version="1.6.5">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.common.plugin.cache"/>
+      <import addon="script.module.beautifulsoup"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
