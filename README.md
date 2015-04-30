@@ -29,7 +29,7 @@ For anything else, you can contact me by email <andy@andybotting.com> or Twitter
 
 Good luck and happy viewing.
 
-[download]: https://github.com/xbmc-catchuptv-au/repo/raw/master/repository.googlecode.xbmc-catchuptv-au/repository.googlecode.xbmc-catchuptv-au-1.3.zi
+[download]: https://github.com/xbmc-catchuptv-au/repo/raw/master/repository.googlecode.xbmc-catchuptv-au/repository.googlecode.xbmc-catchuptv-au-1.3.zip
 [installzip]: http://kodi.wiki/view/HOW-TO:Install_add-ons_from_zip_files
 [addonmanager]: http://kodi.wiki/view/Add-on_manager
 [issues]: https://github.com/xbmc-catchuptv-au/repo/issues
