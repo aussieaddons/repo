@@ -1,0 +1,6 @@
+[B]Version 0.0.3[/B]
+- Move repo url from googlecode to github
+- Fix failure to show all available shows
+- Update README.md
+- Update README.md
+

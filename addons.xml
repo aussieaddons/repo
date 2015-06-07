@@ -15,7 +15,7 @@
       <disclaimer>You must be within Australia to use watch these videos.[CR]&quot;SBS&quot;, SBS Logos and other works are copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
-  <addon id="plugin.video.catchuptv.au.nine" name="Ninemsn Jump-In" provider-name="adammw111" version="0.0.2">
+  <addon id="plugin.video.catchuptv.au.nine" name="Ninemsn Jump-In" provider-name="adammw111" version="0.0.3">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.simplejson"/>
