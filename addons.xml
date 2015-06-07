@@ -183,6 +183,22 @@
       <source>https://github.com/xbmc-catchuptv-au/script.module.requests.git</source>
     </extension>
   </addon>
+  <addon id="script.module.rollbar" name="Rollbar Issue Reporter" provider-name="xbmc-catchuptv-au" version="0.9.11">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.requests"/>
+    </requires>
+    <extension library="." point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <summary>Rollbar Issue Reporter</summary>
+      <description>Rollbar Issue Reporter</description>
+      <disclaimer/>
+      <license>MIT License</license>
+      <website>https://github.com/xbmc-catchuptv-au/script.module.rollbar</website>
+      <source>https://github.com/xbmc-catchuptv-au/script.module.rollbar.git</source>
+    </extension>
+  </addon>
   <!-- Repository Plugin -->
   <addon id="repository.googlecode.xbmc-catchuptv-au" name="XBMC CatchupTV AU Add-ons" provider-name="XBMC CatchupTV AU" version="1.3">
     <extension name="XBMC CatchupTV AU Add-on Repository" point="xbmc.addon.repository">
