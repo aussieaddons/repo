@@ -1,0 +1,130 @@
+[B]Version 1.6.8[/B]
+- Remove expire date from lastplayed field
+- Fix incorrect date variable
+- Add expiry date to end of description and fix duration
+- Fix datetime parsing
+- Parse episode correctly for title containing either Ep or Episode
+- Merge pull request #1130 from rgc99/Series_and_expire
+- Correct series  parsing. Get expire date and send to kodi in lastplayed.
+- Don't allow bug report for IncompleteRead errors from API
+
+[B]Version v1.6.7[/B]
+- Version 1.6.7
+- Improve log and error handling
+
+[B]Version v1.6.6[/B]
+- Version 1.6.6
+- Enable 1-hour caching of iView feed
+- Remove bundled Beautiful Soup
+
+[B]Version v1.6.5[/B]
+- Version 1.6.5
+- Add basic URL fetch retry mechanism
+- Fix indentation error
+- Replace XBMC with XBMC/Kodi in logging and error reports
+- Fix error reporting for Windows
+- Improve error handling and reporting
+
+[B]Version v1.6.4[/B]
+- Version 1.6.4
+- Merge pull request #165 from sdt/sdt/github-catchup-repo
+- Merge pull request #164 from sdt/sdt/series-attrs
+- Catchup repo & zip links on github not google code
+- Restore description & thumbnail to series list
+
+[B]Version v1.6.3[/B]
+- Parse episode title and add aired date
+
+[B]Version v1.6.2[/B]
+- Version 1.6.2
+- Only allow issue reporting on latest version
+- Fix ElementTree issue with Python 2.6
+
+[B]Version v1.6.1[/B]
+- Version 1.6.1
+- Make feed parsing faster and fix series thumbnail issue
+
+[B]Version v1.6.0[/B]
+- Version 1.6.0
+- Fix program feed after ABC broke it
+- Add ISP lookup to error reports
+- Don't allow the same error report twice
+- Fix strptime fix
+- Better fix for strptime import threading python issue
+- Work around Python strptime threading issue
+- Add automatic issue reporting
+- Update license headers
+- Update README
+
+[B]Version v1.5.0[/B]
+- Version 1.5.0
+- Add XBMC version/platform debugging information
+- Update README and addon description
+- Comment out some noisy debugging
+- Fix label used to hide the News 24 live stream
+- Remove gzip request for URLs, because it fails sometimes
+- Remove simplejson as XBMC now supports real json
+- Merge pull request #32 from adammw/adammw/progressive-http
+- Add optional progressive HTTP(S) transport
+- Refactor rtmp url parsing into separate method
+- Improve error when service unavailable
+- Switch from tabs to spaces for Python code
+- We need version="2.1.0" for python API
+- Don't ask for xbmc.python v1.0
+
+[B]Version v1.4.1[/B]
+- Version 1.4.1
+- Merge pull request #23 from davidbanham/master
+- Fixed so that it works with news24
+- More robust method of checking for error
+- Work around News24 addition to all arrays
+
+[B]Version v1.4.0[/B]
+- Version 1.4.0
+- Don't die if duration is missing from metadata
+- Add ABC1-4 categories back to index
+- Move pre-commit and build-zip to seperate project
+- Update pre-commit script for better automation
+- Fix handling of some programs with missing metadata
+- Add git-hook and update ZIP building scripts to more automatic
+- Updated README
+- Move plugin directory so we can pull a ZIP file directly from github
+- Rework addStreamInfo to be compatible with XBMC <12
+- Added new iView icon thanks to @ltmon
+
+[B]Version v1.3.1[/B]
+- Nice dialog message text wrapping
+- Better handshake error handling
+- Better fix for streaming server issue
+
+[B]Version v1.3[/B]
+- Add thanks to AdamMW
+- Print filename when building zip
+- Use PS3 auth to avoid AkamaiHD
+- Clean up dir lists and pass exceptions to the user better
+- Add streamInfo output and fix duration for new XBMC
+- Remove try/except here to pass error to the UI
+- Add more proxy services to README
+- Fix readme
+- Merge pull request #6 from projectgus/master
+- Oops, switch comment spaces to tabs to match rest of routine
+- Fix url encoding if components are unicode without ascii-representable characters
+- Support for building XBMC Eden plugin, mainly for xbmc4xbox
+- Update README
+- Update README
+- Accidently mixed - and _ in dir name. Hack build script
+- Update README for librtmp fix on ATV
+- Fix path for building zip file
+
+[B]Version v1.2.0[/B]
+- Update version to 1.2.0 and update readme
+- Merge pull request #3 from sdt/sdt/categorised-menus
+- Add thumbnail & description to series info
+- Use api?keyword=XXX rather than api?seriesIndex
+- Better sorting for series lists
+- Remove unused get_meta from parse_series_items
+- Remove unused code path
+- Extend categories list
+- Split single series menu into category submenus
+- Add GPLv3 license file and headers
+
