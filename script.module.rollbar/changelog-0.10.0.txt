@@ -1,0 +1,5 @@
+[B]Version 0.10.0[/B]
+- Update pyrollbar to v0.10.0
+
+[B]Version 0.9.11[/B]
+- Import pyrollbar into XBMC module

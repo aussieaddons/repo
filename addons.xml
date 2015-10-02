@@ -184,7 +184,7 @@
       <source>https://github.com/xbmc-catchuptv-au/script.module.requests.git</source>
     </extension>
   </addon>
-  <addon id="script.module.rollbar" name="Rollbar Issue Reporter" provider-name="xbmc-catchuptv-au" version="0.9.11">
+  <addon id="script.module.rollbar" name="Rollbar Issue Reporter" provider-name="xbmc-catchuptv-au" version="0.10.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.requests"/>
