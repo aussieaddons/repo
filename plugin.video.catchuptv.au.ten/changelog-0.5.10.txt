@@ -1,0 +1,70 @@
+[B]Version 0.5.10[/B]
+- Handle videos with missing description
+
+[B]Version v0.5.9[/B]
+- Update API token
+
+[B]Version v0.5.8[/B]
+- Handle errors loading fan art bootstrap file gracefully
+
+[B]Version v0.5.7[/B]
+- Replace GitHub with Rollbar exception tracking
+
+[B]Version v0.5.6[/B]
+- Add Live Streaming of Glasgow 2014 Commonwealth Games
+
+[B]Version v0.5.5[/B]
+- Refactor media fallback into networktenvideo lib
+- Add fallback to FLVFullLength to try to support live streams
+- Add version check before reporting issue
+
+[B]Version v0.5.4[/B]
+- Fix fanart and update listing for previous/next
+- Guard against None fanart
+
+[B]Version v0.5.3[/B]
+- Add extra metadata to addon descriptor
+- Add resources/lib to start of path instead of end
+
+[B]Version v0.5.2[/B]
+- Ignore SystemExit and KeyboardInterrupt bug reports
+
+[B]Version v0.5.1[/B]
+- Rename show_error_dialog method to handle_error
+- Restructure addon and move utils into addon folder
+- Rename addon to prevent conflicts
+- Automatic issue reporting on exceptions
+- Log import lookup path
+- Fix up imports
+
+[B]Version v0.5.0[/B]
+- Implement featured videos listing
+- Prevent shows without queries appearing
+- Handle more custom fields
+- Add default page parameter handling
+- add paging, news art, sorting
+- bump version and update
+- Use xbmcswift2 framework
+- version 0.4.0
+
+[B]Version v0.4.0[/B]
+- check for addStreamInfo for pre-Frodo XBMC compatibility
+- extract episode number from custom field
+- fix get_item_count parameter
+- increase default page size
+- add more metadata fields
+- fix date formatting
+- fix episode number parsing
+- escape html entities in title and description
+- extract more metadata
+- add sorting functionality
+- fix swf verification url
+- fix and improve metadata
+- enable swf verification
+- update version
+- update addon and lib for brightcove-based cdn api
+- simplify advertisement logic
+- Update changelog.txt
+- part stacking, metadata improvements
+- fix token bug
+
