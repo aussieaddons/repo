@@ -1,0 +1,6 @@
+[B]Version 1.0.1[/B]
+- Cache all the URLs fetched
+- Sort programs alphabetically
+- Don't filter out some programs
+- Update Github issue API
+
