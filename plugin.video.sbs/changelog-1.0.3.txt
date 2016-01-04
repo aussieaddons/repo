@@ -1,0 +1,18 @@
+[B]Version 1.0.3[/B]
+- Update HTTP Basic auth password
+- Fix Github API url for issue reporting
+- Reduce debug logging
+- Only retry 3 times, not 10
+
+[B]Version v1.0.2[/B]
+- Version 1.0.2
+- Better edge case program handling and program information
+- Fix 'Coming Soon' category (Thanks Peter Beckwith!)
+
+[B]Version v1.0.1[/B]
+- Version 1.0.1
+- Cache all the URLs fetched
+- Sort programs alphabetically
+- Don't filter out some programs
+- Update Github issue API
+
