@@ -1,6 +1,6 @@
 <?xml version="1.0" ?><addons>
   <!-- Australian Catchup TV Plugins -->
-  <addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Andy Botting" version="1.0.3">
+  <addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Andy Botting" version="1.0.5">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.common.plugin.cache"/>
