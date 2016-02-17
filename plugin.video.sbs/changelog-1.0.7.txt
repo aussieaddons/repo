@@ -1,0 +1,30 @@
+[B]Version 1.0.7[/B]
+- Fix for handling duration with decimal point
+
+[B]Version v1.0.6[/B]
+- Support fetching new streaming tokens
+
+[B]Version v1.0.5[/B]
+- Update basic auth string
+
+[B]Version v1.0.4[/B]
+- Better program sorting (Thanks Peter Beckwith!)
+- Handle bad season/episode number information
+- Fix strptime lock issue
+
+[B]Version v1.0.3[/B]
+- Update HTTP Basic auth password
+- Fix Github API url for issue reporting
+- Reduce debug logging
+- Only retry 3 times, not 10
+
+[B]Version v1.0.2[/B]
+- Better edge case program handling and program information
+- Fix 'Coming Soon' category (Thanks Peter Beckwith!)
+
+[B]Version v1.0.1[/B]
+- Cache all the URLs fetched
+- Sort programs alphabetically
+- Don't filter out some programs
+- Update Github issue API
+
