@@ -124,22 +124,6 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.video.nrl-video" name="NRL Video" provider-name="Jeffrey Williams" version="0.2">
-    <requires>
-      <import addon="xbmc.python" version="2.1.0"/>
-      <import addon="script.module.simplejson"/>
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-      <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en">NRL Video</summary>
-      <description>Watch the latest NRL replays, highlight packages and NRL team content.</description>
-      <disclaimer>This plugin is not affiliated with the NRL or Bigpond Video in any way.</disclaimer>
-      <provides>video</provides>
-      <platform>all</platform>
-    </extension>
-  </addon>
   <!-- Australian Live TV Plugins -->
   <addon id="plugin.video.live.au.abc_news24" name="ABC News 24" provider-name="adammw111" version="0.1.1">
     <requires>
