@@ -78,7 +78,7 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.video.plus7" name="Plus7" provider-name="Andy Botting" version="2.8">
+  <addon id="plugin.video.plus7" name="Plus7" provider-name="Andy Botting" version="3.0.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
     </requires>
