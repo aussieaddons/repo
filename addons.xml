@@ -93,7 +93,7 @@
     </extension>
   </addon>
   <!-- AFL Plugins -->
-  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.6.1">
+  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.6.2">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.beautifulsoup"/>
@@ -103,8 +103,8 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en">AFL Video by Andy Botting</summary>
-      <description>Updated for 2016! Watch the latest AFL replays. Club video/Match reports are unavailable for now.</description>
-      <disclaimer>This addon is not affiliated with the AFL in any way.</disclaimer>
+      <description>Updated for 2016! Watch the latest AFL replays. Club video are unavailable for now. Match replays only available in Australia.</description>
+      <disclaimer>This add-on is not affiliated with the AFL in any way.</disclaimer>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
