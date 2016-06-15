@@ -139,6 +139,21 @@
       <disclaimer>You must be within Australia to stream News 24.[CR]The ABC and ABC News24 Logos and other works are copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
+	<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Glenn Guy" version="1.0.0">
+		<requires>
+		  <import addon="xbmc.python" version="2.1.0"/>
+		  <import addon="script.module.simplejson"/>
+		</requires>
+		<extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+		  <provides>video</provides>
+		</extension>
+		<extension library="default.py" point="xbmc.addon.metadata">
+		  <summary>NRL Live add-on</summary>
+		  <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
+		  <provides>video</provides>
+		  <platform>all</platform>
+		</extension>
+	</addon>
   <!-- Dependent Modules -->
   <addon id="script.module.catchuptv.brightcove" name="Brightcove" provider-name="XBMC CatchUp TV AU" version="0.2.1">
     <requires>
