@@ -1,0 +1,62 @@
+[B]Version 3.0.1[/B]
+- Don't allow SystemExit and other user errors for issue reporting
+
+[B]Version v3.0.0[/B]
+- Fix handling of missing metadata
+- Filter out TV Snax programs
+- Fix typo for exception handling in issue log reporter
+- Change method of playing videos
+
+[B]Version v2.8[/B]
+- Handle unicode chars in logging
+
+[B]Version v2.7[/B]
+- Better fault handling and log reports
+
+[B]Version v2.6[/B]
+- Better handling of missing data and fix for XBMC v12 program list
+
+[B]Version v2.5[/B]
+- another half ass fix
+
+[B]Version v2.4[/B]
+- Don't exclude programs 19 mins long
+- fix missing duration... sort of
+- Fix subtitles for XBMC v13
+- Properly rework subtitle support. Enable in settings
+- Added subtitles support to XBMC/Kodi
+- Add new icon
+
+[B]Version v2.3[/B]
+- Add issue reporting and clean up imports
+
+[B]Version v2.2[/B]
+- Use setting for deciding streaming method
+- Fix order of platform, to detect Android properly
+
+[B]Version v2.1[/B]
+- Update README
+- Hide series and programs that don't work (mostly Extras)
+- Implement fallback for platforms that don't support HTTPS HLS
+
+[B]Version v2.0[/B]
+- Discover secret key, revive Plus7
+- Updates to fix streaming again
+
+[B]Version v1.1[/B]
+- Renamed plugin back to plugin.video.plus7
+- Add more README
+- Add README
+- Much better Series/Episode/Title handling
+- Use basic program data for must faster listings
+- Add program thumbnails to list
+- Removed settings - not used anyway
+- Show Plus7 stream error in XBMC dialog
+- Add better error message for video stream error
+- Make parsing much more stable and better error messages and dialogs
+- Add new build script
+- Better parsing handling
+- Add gitignore
+- Remove old files, fix index problem
+- Moved some files around
+
