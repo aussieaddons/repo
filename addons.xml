@@ -16,12 +16,10 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.video.catchuptv.au.nine" name="Ninemsn Jump-In" provider-name="adammw111" version="0.1.0">
+  <addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="adammw111" version="0.1.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
-      <import addon="script.module.simplejson"/>
-      <import addon="script.module.beautifulsoup"/>
-      <import addon="script.module.catchuptv.brightcove"/>
+      <import addon="script.module.requests"/>
       <import addon="script.module.xbmcswift2" version="2.4.0"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource">
@@ -30,8 +28,8 @@
     <extension point="xbmc.addon.metadata">
       <platform>all</platform>
       <minversion>31542</minversion>
-      <summary>Watch videos from Ninemsn's Jump In</summary>
-      <description>Watch videos from Ninemsn's Jump In</description>
+      <summary>Watch videos from 9Now</summary>
+      <description>Watch videos from 9Now</description>
       <disclaimer>You must be within Australia to use watch these videos.</disclaimer>
       <email>adman.com@gmail.com</email>
       <source>https://github.com/xbmc-catchuptv-au/plugin.video.catchuptv.au.nine.git</source>
