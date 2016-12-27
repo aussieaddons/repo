@@ -1,0 +1,11 @@
+[B]Version 0.1.0[/B]
+- Bypass SSL Verification on platforms which lack SNI support
+- Complete rewrite to work with 9Now
+- Update README.md
+
+[B]Version v0.0.3[/B]
+- Move repo url from googlecode to github
+- Fix failure to show all available shows
+- Update README.md
+- Update README.md
+

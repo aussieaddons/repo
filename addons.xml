@@ -16,7 +16,7 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.video.catchuptv.au.nine" name="Ninemsn Jump-In" provider-name="adammw111" version="0.0.3">
+  <addon id="plugin.video.catchuptv.au.nine" name="Ninemsn Jump-In" provider-name="adammw111" version="0.1.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.simplejson"/>
