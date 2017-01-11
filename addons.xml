@@ -91,7 +91,7 @@
     </extension>
   </addon>
   <!-- AFL Plugins -->
-  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.6.3">
+  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.6.4">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.beautifulsoup"/>
