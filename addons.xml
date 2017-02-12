@@ -91,67 +91,39 @@
     </extension>
   </addon>
   <!-- AFL Plugins -->
-  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.6.4">
+  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.7.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
-      <import addon="script.module.beautifulsoup"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.beautifulsoup4"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en">AFL Video by Andy Botting</summary>
-      <description>Updated for 2016! Watch the latest AFL replays. Club video are unavailable for now. Match replays only available in Australia.</description>
+      <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
       <disclaimer>This add-on is not affiliated with the AFL in any way.</disclaimer>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.audio.afl-radio" name="AFL Radio" provider-name="Andy Botting" version="0.4">
-    <requires>
-      <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-      <provides>audio</provides>
-    </extension>
-    <extension library="default.py" point="xbmc.addon.metadata">
-      <summary>AFL Radio by Andy Botting</summary>
-      <description>Listen to the best radio coverage from the AFL's official radio broadcasters right here.</description>
-      <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
-      <provides>audio</provides>
-      <platform>all</platform>
-    </extension>
-  </addon>
   <!-- Australian Live TV Plugins -->
-  <addon id="plugin.video.live.au.abc_news24" name="ABC News 24" provider-name="adammw111" version="0.1.1">
+  <addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Glenn Guy" version="1.0.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.simplejson"/>
     </requires>
-    <extension library="addon.py" point="xbmc.python.pluginsource">
+    <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
     </extension>
-    <extension point="xbmc.addon.metadata">
+    <extension library="default.py" point="xbmc.addon.metadata">
+      <summary>NRL Live add-on</summary>
+      <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
+      <provides>video</provides>
       <platform>all</platform>
-      <minversion>31542</minversion>
-      <summary>ABC News 24 Live Stream Plugin for XBMC</summary>
-      <disclaimer>You must be within Australia to stream News 24.[CR]The ABC and ABC News24 Logos and other works are copyright of their respective owners.</disclaimer>
     </extension>
   </addon>
-	<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Glenn Guy" version="1.0.0">
-		<requires>
-		  <import addon="xbmc.python" version="2.1.0"/>
-		  <import addon="script.module.simplejson"/>
-		</requires>
-		<extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-		  <provides>video</provides>
-		</extension>
-		<extension library="default.py" point="xbmc.addon.metadata">
-		  <summary>NRL Live add-on</summary>
-		  <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
-		  <provides>video</provides>
-		  <platform>all</platform>
-		</extension>
-	</addon>
   <!-- Dependent Modules -->
   <addon id="script.module.catchuptv.brightcove" name="Brightcove" provider-name="XBMC CatchUp TV AU" version="0.2.1">
     <requires>
