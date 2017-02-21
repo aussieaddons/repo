@@ -1,0 +1,9 @@
+[B]Version 1.1.0[/B]
+- update addon.xml
+- Overhaul of code
+- Use bs4 for html parsing
+- Update for 2017
+- Fix 2016 season
+- Update README.md
+- update ooyalahelper
+
