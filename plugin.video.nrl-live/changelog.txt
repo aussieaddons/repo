@@ -1,4 +1,8 @@
-[B]Version 1.1.0[/B]
+[B]Version 1.1.1[/B]
+- Fix error in utils, ascii encode game time
+- Update README.md
+
+[B]Version v1.1.0[/B]
 - update addon.xml
 - Overhaul of code
 - Use bs4 for html parsing
