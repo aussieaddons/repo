@@ -91,7 +91,7 @@
     </extension>
   </addon>
   <!-- AFL Plugins -->
-  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.7.3">
+  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.7.4">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.requests"/>
@@ -102,7 +102,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en">AFL Video by Andy Botting</summary>
-      <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
+      <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid Live Pass.</description>
       <disclaimer>This add-on is not affiliated with the AFL in any way.</disclaimer>
       <provides>video</provides>
       <platform>all</platform>
