@@ -23,9 +23,9 @@ Issues
 For any issues or bug reports, please file them on the [issues page] [issues].
 Please include log output, if possible. Follow the [log upload guide] [logupload] and include the URL it gives you in your bug report.
 
-Contact Me
-----------
-For anything else, you can contact me by email <andy@andybotting.com> or Twitter: @andybotting
+Contact
+-------
+For help and support, feel free to register on our [Slack channel] [slack].
 
 Good luck and happy viewing.
 
@@ -34,6 +34,7 @@ Good luck and happy viewing.
 [addonmanager]: http://kodi.wiki/view/Add-on_manager
 [logupload]: http://kodi.wiki/view/Log_file/Easy
 [issues]: https://github.com/xbmc-catchuptv-au/repo/issues
+[slack]: http://slack-invite.aussieaddons.com/
 
 
 
