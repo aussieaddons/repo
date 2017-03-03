@@ -1,4 +1,7 @@
-[B]Version 1.1.2[/B]
+[B]Version 1.1.3[/B]
+- Disable ordered headers
+
+[B]Version v1.1.2[/B]
 - Set default streaming method
 - Small tidy-up, better formatting of live matches
 - Fix parsing of live matches
