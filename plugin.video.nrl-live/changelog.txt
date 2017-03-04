@@ -1,4 +1,10 @@
-[B]Version 1.1.3[/B]
+[B]Version 1.1.4[/B]
+- Ooyala cleanup, cache user token
+- Reinstate forced TLSv1
+- Properly handle dummy list items
+- Correct times for DST, fix for old quality settings
+
+[B]Version v1.1.3[/B]
 - Disable ordered headers
 
 [B]Version v1.1.2[/B]
