@@ -114,6 +114,7 @@
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.requests"/>
       <import addon="script.module.beautifulsoup4"/>
+      <import addon="script.common.plugin.cache"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
@@ -121,6 +122,23 @@
     <extension library="default.py" point="xbmc.addon.metadata">
       <summary>NRL Live add-on</summary>
       <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
+      <provides>video</provides>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="plugin.video.netball-live" name="Netball Live" provider-name="Glenn Guy" version="1.0.0">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.beautifulsoup4"/>
+      <import addon="script.common.plugin.cache"/>
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+      <provides>video</provides>
+    </extension>
+    <extension library="default.py" point="xbmc.addon.metadata">
+      <summary>Netball Live add-on</summary>
+      <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
       <provides>video</provides>
       <platform>all</platform>
     </extension>
