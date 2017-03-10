@@ -1,4 +1,8 @@
-[B]Version 1.1.4[/B]
+[B]Version 1.1.5[/B]
+- Replace HDS with HLS streams, use cache add-on
+- Enhanced exception handling and logging
+
+[B]Version v1.1.4[/B]
 - Ooyala cleanup, cache user token
 - Reinstate forced TLSv1
 - Properly handle dummy list items
