@@ -1,4 +1,8 @@
-[B]Version 1.1.5[/B]
+[B]Version 1.1.6[/B]
+- Fix incorrectly named variable
+- Update README.md
+
+[B]Version v1.1.5[/B]
 - Replace HDS with HLS streams, use cache add-on
 - Enhanced exception handling and logging
 
