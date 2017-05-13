@@ -1,4 +1,9 @@
-[B]Version 1.1.6[/B]
+[B]Version 1.1.7[/B]
+- Use new requests functions/cleanup/fix DST error
+- additional exception handling and logging
+- flake8 compliance
+
+[B]Version v1.1.6[/B]
 - Fix incorrectly named variable
 - Update README.md
 
