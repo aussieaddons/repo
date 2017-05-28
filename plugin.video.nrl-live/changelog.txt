@@ -1,4 +1,7 @@
-[B]Version 1.1.7[/B]
+[B]Version 1.1.8[/B]
+- Fix several errors
+
+[B]Version v1.1.7[/B]
 - Use new requests functions/cleanup/fix DST error
 - additional exception handling and logging
 - flake8 compliance
