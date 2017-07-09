@@ -65,6 +65,7 @@
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.common.plugin.cache"/>
       <import addon="script.module.beautifulsoup"/>
+	  <import addon="script.module.requests"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
@@ -96,6 +97,7 @@
       <import addon="xbmc.python" version="2.1.0"/>
       <import addon="script.module.requests"/>
       <import addon="script.module.beautifulsoup4"/>
+	  <import addon="script.common.plugin.cache"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
@@ -188,6 +190,21 @@
       <license>MIT License</license>
       <website>https://github.com/xbmc-catchuptv-au/script.module.rollbar</website>
       <source>https://github.com/xbmc-catchuptv-au/script.module.rollbar.git</source>
+    </extension>
+  </addon>
+  <addon id="script.module.issuereporter" name="Aussie Addons Issue Reporter" provider-name="Aussie Addons" version="1.0.1">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary>Github issue reporting for Aussie Addons</summary>
+      <description>Github issue reporting for Aussie Addons</description>
+      <source>https://github.com/xbmc-catchuptv-au/script.module.issuereporter</source>
+      <platform>all</platform>
     </extension>
   </addon>
   <!-- Repository Plugin -->
