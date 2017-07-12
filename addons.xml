@@ -207,7 +207,7 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="script.module.customsession" name="Aussie Addons Custom Session" provider-name="Aussie Addons" version="1.0.0">
+  <addon id="script.module.customsession" name="Aussie Addons Custom Session" provider-name="Aussie Addons" version="1.0.1">
     <requires>
       <import addon="xbmc.python" version="2.1.0" />
     </requires>
