@@ -222,6 +222,22 @@
       <platform>all</platform>
     </extension>
   </addon>
+  <addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Addons" version="1.0.1">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension library="lib" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <summary>Module to assist in aquiring components to enable DRM playback</summary>
+      <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
+      <source>https://github.com/glennguy/script.module.drmhelper</source>
+      <platform>all</platform>
+    </extension>
+  </addon>
   <!-- Repository Plugin -->
   <addon id="repository.googlecode.xbmc-catchuptv-au" name="XBMC CatchupTV AU Add-ons" provider-name="XBMC CatchupTV AU" version="1.3">
     <extension name="XBMC CatchupTV AU Add-on Repository" point="xbmc.addon.repository">
