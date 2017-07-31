@@ -222,7 +222,7 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Addons" version="1.0.1">
+  <addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Addons" version="1.0.2">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
     </requires>
