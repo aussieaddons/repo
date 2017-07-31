@@ -1,7 +1,13 @@
-[B]Version 1.0.1[/B]
+[B]Version v1.0.2[/B]
+- Update broken inputstream.adaptive zip links
+- update icon
+
+[B]Version v1.0.1[/B]
 - Feature to get i.a from direct link and install.
 - Catch error when trying to install modules without i.a
 - Add error message for Kodi < 17.0
 - Add config
 - Improvement in checking for inputstream.adaptive
 
+[B]Version v1.0.0[/B]
+- Initial version
