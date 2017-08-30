@@ -1,4 +1,7 @@
-[B]Version 1.0.3[/B]
+[B]Version 1.0.4[/B]
+- Don't die on Kodi 18 version check
+
+[B]Version v1.0.3[/B]
 - Formatting and docstrings
 - Several changes/features
 - Escape paths, fix buildversion errors
