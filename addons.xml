@@ -1,8 +1,9 @@
 <?xml version="1.0" ?><addons>
-  <!-- Australian Catchup TV Plugins -->
-  <addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Andy Botting" version="1.1.0">
+  <addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.1">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.aussieaddonscommon"/>
+      <import addon="script.module.requests"/>
       <import addon="script.common.plugin.cache"/>
       <import addon="script.module.beautifulsoup"/>
     </requires>
@@ -10,10 +11,17 @@
       <provides>video</provides>
     </extension>
     <extension library="default.py" point="xbmc.addon.metadata">
-      <summary>SBS On Demand add-on by Andy Botting</summary>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <summary>SBS On Demand by Aussie Add-ons</summary>
       <description>SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.</description>
+      <website>http://aussieaddons.com/addons/sbs/</website>
+      <source>https://github.com/xbmc-catchuptv-au/plugin.video.sbs</source>
       <provides>video</provides>
       <platform>all</platform>
+      <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     </extension>
   </addon>
   <addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="adammw111" version="0.1.0">
@@ -59,58 +67,78 @@
       <website>https://github.com/xbmc-catchuptv-au/plugin.video.catchuptv.au.ten</website>
     </extension>
   </addon>
-  <!-- External Plugins -->
-  <addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Andy Botting" version="1.8.0">
+  <addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="1.8.2">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.aussieaddonscommon"/>
       <import addon="script.common.plugin.cache"/>
       <import addon="script.module.beautifulsoup"/>
       <import addon="script.module.requests"/>
+      <import addon="script.module.drmhelper"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
     </extension>
     <extension library="default.py" point="xbmc.addon.metadata">
-      <summary>ABC iView addon by Andy Botting</summary>
-      <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days.[CR]You must be located in Australia to access content.[CR]NOTE: This add-on will count towards your usage quote.</description>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <summary>ABC iView by Aussie Add-ons</summary>
+      <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days. You must be located in Australia to access content. NOTE: This will count towards your Internet usage quota.</description>
+      <website>http://aussieaddons.com/addons/abc_iview</website>
+      <source>https://github.com/xbmc-catchuptv-au/plugin.video.abc_iview</source>
       <provides>video</provides>
       <platform>all</platform>
+      <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     </extension>
   </addon>
-  <addon id="plugin.video.plus7" name="Plus7" provider-name="Andy Botting" version="3.1.1">
+  <addon id="plugin.video.plus7" name="Plus7" provider-name="Aussie Add-ons" version="3.2.0">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-      <provides>video</provides>
-    </extension>
-    <extension library="default.py" point="xbmc.addon.metadata">
-      <summary>Plus7 addon by Andy Botting</summary>
-      <description>PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners – just hit the play button and you can watch high quality, full screen videos straightaway without having to wait for downloads.</description>
-      <provides>video</provides>
-      <platform>all</platform>
-    </extension>
-  </addon>
-  <!-- AFL Plugins -->
-  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Andy Botting" version="1.8.2">
-    <requires>
-      <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.aussieaddonscommon"/>
+      <import addon="script.module.issuereporter"/>
       <import addon="script.module.requests"/>
+      <import addon="script.module.drmhelper" optional="true"/>
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+      <provides>video</provides>
+    </extension>
+    <extension library="default.py" point="xbmc.addon.metadata">
+      <summary>Plus7 by Aussie Add-ons</summary>
+      <description>PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners - just hit the play button and you can watch high quality, full screen videos straightaway without having to wait for downloads.</description>
+      <website>http://aussieaddons.com/addons/plus7/</website>
+      <source>https://github.com/xbmc-catchuptv-au/plugin.video.plus7</source>
+      <provides>video</provides>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="1.8.3">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.aussieaddonscommon"/>
       <import addon="script.module.beautifulsoup4"/>
+      <import addon="script.module.requests"/>
       <import addon="script.common.plugin.cache"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-      <provides>video</provides>
+     <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-      <summary lang="en">AFL Video by Andy Botting</summary>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+      <summary>AFL Video by Aussie Add-ons</summary>
       <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
-      <disclaimer>This add-on is not affiliated with the AFL in any way.</disclaimer>
+      <website>http://aussieaddons.com/addons/afl/</website>
+      <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
+      <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
       <provides>video</provides>
       <platform>all</platform>
+      <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     </extension>
   </addon>
-  <!-- Australian Live TV Plugins -->
   <addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Glenn Guy" version="1.1.8">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
@@ -222,7 +250,7 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Addons" version="1.0.2">
+  <addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Addons" version="1.0.3">
     <requires>
       <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -234,8 +262,25 @@
       </assets>
       <summary>Module to assist in aquiring components to enable DRM playback</summary>
       <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
-      <source>https://github.com/glennguy/script.module.drmhelper</source>
+      <source>https://github.com/xbmc-catchuptv-au/script.module.drmhelper</source>
       <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.1.0">
+    <requires>
+      <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.requests"/>
+    </requires>
+    <extension library="lib" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+      <summary>Common functions for Aussie Add-ons</summary>
+      <description>Common functions for Aussie Add-ons</description>
+      <source>https://github.com/xbmc-catchuptv-au/script.module.aussieaddonscommon</source>
+      <platform>all</platform>
+      <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
     </extension>
   </addon>
   <!-- Repository Plugin -->
