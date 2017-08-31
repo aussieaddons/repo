@@ -1,3 +1,6 @@
+[B]Version 1.0.6[/B]
+- Fix android x86
+
 [B]Version 1.0.5[/B]
 - Remove Kodi commit tag checking
 - Fix Android import error
