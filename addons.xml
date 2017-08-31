@@ -75,6 +75,7 @@
       <import addon="script.module.beautifulsoup"/>
       <import addon="script.module.requests"/>
       <import addon="script.module.drmhelper"/>
+      <import addon="script.module.pycaption"/>
     </requires>
     <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
       <provides>video</provides>
