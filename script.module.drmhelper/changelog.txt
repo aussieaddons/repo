@@ -1,5 +1,6 @@
-[B]Version 1.0.4[/B]
-- Don't die on Kodi 18 version check
+[B]Version 1.0.5[/B]
+- Remove Kodi commit tag checking
+- Fix Android import error
 
 [B]Version v1.0.3[/B]
 - Formatting and docstrings
