@@ -168,7 +168,10 @@ def write_changelog_file(addon_location, changelog):
 
 
 def get_version(repo):
-    return repo.git.describe().lstrip('v')
+    if production:
+        return repo.tags[-1].name.lstrip('v')
+    else:
+        return repo.git.describe().lstrip('v')
 
 
 def update_news(metadata_path, changelog):
@@ -453,6 +456,8 @@ def main():
                              'local folder or to a zip archive or a URL for '
                              'a Git repository with the format '
                              'REPOSITORY_URL#BRANCH:PATH')
+    parser.add_argument('--production', '-p', action='store_true',
+                        help='Deploy to production repo')
     args = parser.parse_args()
 
     data_path = os.path.expanduser(args.datadir)
@@ -468,6 +473,9 @@ def main():
     checksum_path = (
         os.path.expanduser(args.checksum) if args.checksum is not None
         else os.path.join(data_path, 'addons.xml.md5'))
+
+    global production
+    production = args.production
 
     create_repository(args.addon, data_path, info_path, checksum_path,
                       args.compressed)
