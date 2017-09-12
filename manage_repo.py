@@ -176,18 +176,16 @@ def update_news(metadata_path, changelog):
     root = tree.getroot()
 
     metadata = root.find('extension[@point="xbmc.addon.metadata"]')
-    news = metadata.find('news')
-    if not news:
-        news = xml.etree.ElementTree.SubElement(metadata, 'news')
+    
+    news_tags = metadata.findall('news')
+    for element in news_tags:
+        metadata.remove(element)
+    
+    news = xml.etree.ElementTree.SubElement(metadata, 'news')
     news.text = '\n'.join(changelog)
 
-    with io.BytesIO() as info_file:
+    with open(metadata_path, 'wb') as info_file:
         tree.write(info_file, encoding='UTF-8', xml_declaration=True)
-        info_contents = info_file.getvalue()
-
-    info_file = open(metadata_path, 'wb')
-    with info_file:
-        info_file.write(info_contents)
 
 
 def update_version(metadata_path, version):
