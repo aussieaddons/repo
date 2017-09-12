@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.beautifulsoup4" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>SBS On Demand by Aussie Add-ons</summary>
+    <description>SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.</description>
+    <website>http://aussieaddons.com/addons/sbs/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.sbs</source>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.1.3[/B]
+- Fix missing quote in travis yaml (#1267)
+- Adapt error handling to new utils module (#1263)
+
+[B]Version v1.1.2[/B]
+- Fixes unbound local errors
+- Revise subtitle metadata logic
+- Handle no subtitles available, remove subtitle setting
+- Fix subtitles
+- Add user reporting, code updates
+- Metadata and common module update fixes
+- Fix missing requirement
+- Code cleanups, use common modules and update metadata
+- Update README.markdown
+
+[B]Version v1.1.0[/B]
+- Properly fix SSL issues with Python 2.7.9+
+
+[B]Version v1.0.9[/B]
+- Ignore SSL errors on Python 2.7.9+
+- Add handling for absence of subtitle metadata
+- Added files via upload
+- Update comm.py
+- Enable subtitles in settings
+- Add support for subtitles
+- Change method of playing videos 
+
+[B]Version v1.0.8[/B]
+- Fix XBMC v12 thumbnail handling error
+
+[B]Version v1.0.7[/B]
+- Fix for handling duration with decimal point
+
+[B]Version v1.0.6[/B]
+- Support fetching new streaming tokens
+
+[B]Version v1.0.5[/B]
+- Update basic auth string
+
+[B]Version v1.0.4[/B]
+- Better program sorting (Thanks Peter Beckwith!)
+- Handle bad season/episode number information
+- Fix strptime lock issue
+
+[B]Version v1.0.3[/B]
+- Update HTTP Basic auth password
+- Fix Github API url for issue reporting
+- Reduce debug logging
+- Only retry 3 times, not 10
+
+[B]Version v1.0.2[/B]
+- Better edge case program handling and program information
+- Fix 'Coming Soon' category (Thanks Peter Beckwith!)
+
+[B]Version v1.0.1[/B]
+- Cache all the URLs fetched
+- Sort programs alphabetically
+- Don't filter out some programs
+- Update Github issue API
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon>
