@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Glenn Guy" version="1.2.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>NRL Live add-on</summary>
+    <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.2.0[/B]
+- update travis token
+- Major overhaul
+- Small fix
+- Better handling for no eligible services
+
+[B]Version v1.1.8[/B]
+- Fix several errors
+
+[B]Version v1.1.7[/B]
+- Use new requests functions/cleanup/fix DST error
+- additional exception handling and logging
+- flake8 compliance
+
+[B]Version v1.1.6[/B]
+- Fix incorrectly named variable
+- Update README.md
+
+[B]Version v1.1.5[/B]
+- Replace HDS with HLS streams, use cache add-on
+- Enhanced exception handling and logging
+
+[B]Version v1.1.4[/B]
+- Ooyala cleanup, cache user token
+- Reinstate forced TLSv1
+- Properly handle dummy list items
+- Correct times for DST, fix for old quality settings
+
+[B]Version v1.1.3[/B]
+- Disable ordered headers
+
+[B]Version v1.1.2[/B]
+- Set default streaming method
+- Small tidy-up, better formatting of live matches
+- Fix parsing of live matches
+
+[B]Version v1.1.1[/B]
+- Fix error in utils, ascii encode game time
+- Update README.md
+
+[B]Version v1.1.0[/B]
+- update addon.xml
+- Overhaul of code
+- Use bs4 for html parsing
+- Update for 2017
+- Fix 2016 season
+- Update README.md
+- update ooyalahelper
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon>
