@@ -1,14 +1,15 @@
 # Aussie Add-ons repository for Kodi
 
-http://aussieaddons.com/
+http://aussieaddons.com/installation
 
 We're maintaining a repository of Kodi add-ons for Australian content, including all free-to-air Catch-up TV services and others including AFL, NRL and Netball and BigPond Movies.
 
 
 ## Installation
-
 Follow the Aussie Add-ons repository [installation guide](http://aussieaddons.com/installation/) to set
 up the Aussie Add-ons repository.
+
+Do **NOT** download the zip file from this GitHub repository or you will receive the error `Installing the Add-on from the zip file located at xxx failed due to an invalid structure.`
 
 Once the repository is installed, you can install the any of our add-ons through the Kodi Add-on manager by accessing the menus:
 
