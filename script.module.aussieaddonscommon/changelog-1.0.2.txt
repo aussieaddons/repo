@@ -1,0 +1,25 @@
+[B]Version v1.0.2[/B]
+- Rework .travis.yml
+
+[B]Version v1.0.1[/B]
+- Deal with import _strptime python bug, update travis.yml
+- Show detected country to user on error
+- Use ipinfo for connection details and only allow AU reports
+- Fix for showing error dialog for non-reportable errors
+- Fix traceback handling in error reports
+- Fix error message handling
+- Fix token handling
+- Another attempt at token
+- Hopefully last time
+- .. and again
+- Update reporting token again after it went missing
+- Filter out any non-str values in exc value args
+- Update github token again
+- Rework version number handling and other fixes
+- Refactoring
+- Update exception handling
+- Include issue reporter and utils enhancements
+- Fix requirements and flake8 updates
+
+[B]Version v1.0.0[/B]
+- Initial version
