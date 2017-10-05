@@ -453,7 +453,48 @@
 [B]Version v2.5[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.2.1">
+</addon><addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.0.2">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>Common functions for Aussie Add-ons</summary>
+    <description>Common functions for Aussie Add-ons</description>
+    <source>https://github.com/xbmc-catchuptv-au/script.module.aussieaddonscommon</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.0.2[/B]
+- Rework .travis.yml
+
+[B]Version v1.0.1[/B]
+- Deal with import _strptime python bug, update travis.yml
+- Show detected country to user on error
+- Use ipinfo for connection details and only allow AU reports
+- Fix for showing error dialog for non-reportable errors
+- Fix traceback handling in error reports
+- Fix error message handling
+- Fix token handling
+- Another attempt at token
+- Hopefully last time
+- .. and again
+- Update reporting token again after it went missing
+- Filter out any non-str values in exc value args
+- Update github token again
+- Rework version number handling and other fixes
+- Refactoring
+- Update exception handling
+- Include issue reporter and utils enhancements
+- Fix requirements and flake8 updates
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.2.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.common.plugin.cache" />
@@ -469,7 +510,10 @@
     <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.2.1[/B]
+  <news>[B]Version v1.2.2[/B]
+- Handle current year round number after season end
+
+[B]Version v1.2.1[/B]
 - quick fix for mktime overflow error
 - Update provider name in addon.xml
 
@@ -521,47 +565,6 @@
 - Fix 2016 season
 - Update README.md
 - update ooyalahelper
-
-[B]Version v1.0.0[/B]
-- Initial version
-</news></extension>
-</addon><addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.0.2">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-    <summary>Common functions for Aussie Add-ons</summary>
-    <description>Common functions for Aussie Add-ons</description>
-    <source>https://github.com/xbmc-catchuptv-au/script.module.aussieaddonscommon</source>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.0.2[/B]
-- Rework .travis.yml
-
-[B]Version v1.0.1[/B]
-- Deal with import _strptime python bug, update travis.yml
-- Show detected country to user on error
-- Use ipinfo for connection details and only allow AU reports
-- Fix for showing error dialog for non-reportable errors
-- Fix traceback handling in error reports
-- Fix error message handling
-- Fix token handling
-- Another attempt at token
-- Hopefully last time
-- .. and again
-- Update reporting token again after it went missing
-- Filter out any non-str values in exc value args
-- Update github token again
-- Rework version number handling and other fixes
-- Refactoring
-- Update exception handling
-- Include issue reporter and utils enhancements
-- Fix requirements and flake8 updates
 
 [B]Version v1.0.0[/B]
 - Initial version
