@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.0.7">
+<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.0.8">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -15,7 +15,10 @@
     <source>https://github.com/glennguy/script.module.drmhelper</source>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.0.7[/B]
+  <news>[B]Version v1.0.8[/B]
+- Add logging, no support for Android Kodi 17
+
+[B]Version v1.0.7[/B]
 - Update travis.yml
 - Fix for IndexError exceptions
 
