@@ -425,72 +425,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.0.8">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>Module to assist in aquiring components to enable DRM playback</summary>
-    <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
-    <website />
-    <source>https://github.com/glennguy/script.module.drmhelper</source>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.0.8[/B]
-- Add logging, no support for Android Kodi 17
-
-[B]Version v1.0.7[/B]
-- Update travis.yml
-- Fix for IndexError exceptions
-
-[B]Version v1.0.6[/B]
-- Fix android x86
-- Remove Kodi commit tag checking
-- Fix Android import error
-
-[B]Version v1.0.3[/B]
-- Formatting and docstrings
-- Several changes/features
-- Escape paths, fix buildversion errors
-- Fix Android error, begin Leia support
-- missing version attribute
-- Support Android, other tweaks/fixes
-- Windows - fix implementation and detect 32bit or 64bit
-- Fix error in addon.xml
-
-[B]Version v1.0.2[/B]
-- Update broken inputstream.adaptive zip links
-- update icon
-
-[B]Version v1.0.1[/B]
-- Feature to get i.a from direct link and install.
-- Catch error when trying to install modules without i.a
-- Add error message for Kodi &lt; 17.0
-- Add config
-- Improvement in checking for inputstream.adaptive
-
-[B]Version v1.0.0[/B]
-- Initial version
-</news></extension>
-  <news>[B]Version v1.0.1-2-g6822d91[/B]
-- Update broken inputstream.adaptive zip links
-- update icon
-
-[B]Version v1.0.1[/B]
-- Feature to get i.a from direct link and install.
-- Catch error when trying to install modules without i.a
-- Add error message for Kodi &lt; 17.0
-- Add config
-- Improvement in checking for inputstream.adaptive
-
-[B]Version v1.0.0[/B]
-- Initial version
-</news>
 </addon><addon id="plugin.video.plus7" name="Plus7" provider-name="Aussie Add-ons" version="3.3.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -578,4 +512,74 @@
 [B]Version v2.5[/B]
 - Initial version
 </news></extension>
+</addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.0.9">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>Module to assist in aquiring components to enable DRM playback</summary>
+    <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
+    <website />
+    <source>https://github.com/glennguy/script.module.drmhelper</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.0.9[/B]
+- logging clarity
+- make dir for slinked ssd_wv
+
+[B]Version v1.0.8[/B]
+- Add logging, no support for Android Kodi 17
+
+[B]Version v1.0.7[/B]
+- Update travis.yml
+- Fix for IndexError exceptions
+
+[B]Version v1.0.6[/B]
+- Fix android x86
+- Remove Kodi commit tag checking
+- Fix Android import error
+
+[B]Version v1.0.3[/B]
+- Formatting and docstrings
+- Several changes/features
+- Escape paths, fix buildversion errors
+- Fix Android error, begin Leia support
+- missing version attribute
+- Support Android, other tweaks/fixes
+- Windows - fix implementation and detect 32bit or 64bit
+- Fix error in addon.xml
+
+[B]Version v1.0.2[/B]
+- Update broken inputstream.adaptive zip links
+- update icon
+
+[B]Version v1.0.1[/B]
+- Feature to get i.a from direct link and install.
+- Catch error when trying to install modules without i.a
+- Add error message for Kodi &lt; 17.0
+- Add config
+- Improvement in checking for inputstream.adaptive
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+  <news>[B]Version v1.0.1-2-g6822d91[/B]
+- Update broken inputstream.adaptive zip links
+- update icon
+
+[B]Version v1.0.1[/B]
+- Feature to get i.a from direct link and install.
+- Catch error when trying to install modules without i.a
+- Add error message for Kodi &lt; 17.0
+- Add config
+- Improvement in checking for inputstream.adaptive
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news>
 </addon></addons>
