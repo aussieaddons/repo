@@ -1,28 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.video.catchuptv.au.ten" name="TENplay" provider-name="adammw111" version="0.5.13">
-    <requires>
-      <import addon="xbmc.python" version="2.1.0" />
-      <import addon="script.module.simplejson" />
-      <import addon="script.module.beautifulsoup" />
-      <import addon="script.module.rollbar" />
-      
-      <import addon="script.module.xbmcswift2" version="2.4.0" />
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-      <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <platform>all</platform>
-      <minversion>31542</minversion>
-      <summary>TENplay</summary>
-      <description>Watch latest episodes, sneak peeks, exclusive internet extras and other videos from Network Ten.</description>
-      <disclaimer>You must be within Australia to use watch these videos.[CR]The TENplay, TEN, ONE and ELEVEN logo and trade marks are registered trademarks of Network Ten Pty Limited.</disclaimer>
-      <email>adman.com@gmail.com</email>
-      <source>https://github.com/xbmc-catchuptv-au/plugin.video.catchuptv.au.ten.git</source>
-      <website>https://github.com/xbmc-catchuptv-au/plugin.video.catchuptv.au.ten</website>
-    </extension>
-  </addon>
   <addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="1.8.4">
     <requires>
       <import addon="xbmc.python" version="2.1.0" />
@@ -596,6 +573,129 @@
 - Update README.md
 
 [B]Version v0.0.2[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.catchuptv.au.ten" name="tenplay" provider-name="Aussie Add-ons" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.issuereporter" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>tenplay add-on</summary>
+    <description>Catch up on all videos offered by the tenplay service</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.0.0[/B]
+- Update travisci token
+- fix for missing clip title
+- remove unicode tags, update logic
+- tidyup, update readme, add manual issue reports
+- Update .travis.yml
+- Use aussieaddonscommon, Travis-CI
+- Get version from addon instead of config
+- Update to version v0.6.0
+- add travis.yml
+- Update README.markdown
+- Use new version
+- Fix for LibreELEC SSL errors
+- Fix invalid TV Show query
+- Use HLS for DRM/DASH content
+- Update default video size reported
+- Remove AMF media for HTTP delivery
+- Handle videos with missing description
+
+[B]Version v0.5.9[/B]
+- Update API token
+
+[B]Version v0.5.8[/B]
+- Handle errors loading fan art bootstrap file gracefully
+
+[B]Version v0.5.7[/B]
+- Replace GitHub with Rollbar exception tracking
+
+[B]Version v0.5.6[/B]
+- Add Live Streaming of Glasgow 2014 Commonwealth Games
+
+[B]Version v0.5.5[/B]
+- Refactor media fallback into networktenvideo lib
+- Add fallback to FLVFullLength to try to support live streams
+- Add version check before reporting issue
+
+[B]Version v0.5.4[/B]
+- Fix fanart and update listing for previous/next
+- Guard against None fanart
+
+[B]Version v0.5.3[/B]
+- Add extra metadata to addon descriptor
+- Add resources/lib to start of path instead of end
+
+[B]Version v0.5.2[/B]
+- Fix invalid TV Show query
+- Use HLS for DRM/DASH content
+- Update default video size reported
+- Remove AMF media for HTTP delivery
+- Handle videos with missing description
+- Update API token
+- Handle errors loading fan art bootstrap file gracefully
+- Replace GitHub with Rollbar exception tracking
+- Add Live Streaming of Glasgow 2014 Commonwealth Games
+- Refactor media fallback into networktenvideo lib
+- Add fallback to FLVFullLength to try to support live streams
+- Add version check before reporting issue
+- Fix fanart and update listing for previous/next
+- Guard against None fanart
+- Add extra metadata to addon descriptor
+- Add resources/lib to start of path instead of end
+
+[B]Version v0.5.13[/B]
+- Fix invalid TV Show query
+
+[B]Version v0.5.12[/B]
+- Use HLS for DRM/DASH content
+- Update default video size reported
+
+[B]Version v0.5.11[/B]
+- Remove AMF media for HTTP delivery
+
+[B]Version v0.5.10[/B]
+- Handle videos with missing description
+- Update API token
+- Handle errors loading fan art bootstrap file gracefully
+- Replace GitHub with Rollbar exception tracking
+- Add Live Streaming of Glasgow 2014 Commonwealth Games
+- Refactor media fallback into networktenvideo lib
+- Add fallback to FLVFullLength to try to support live streams
+- Add version check before reporting issue
+- Fix fanart and update listing for previous/next
+- Guard against None fanart
+- Add extra metadata to addon descriptor
+- Add resources/lib to start of path instead of end
+- Ignore SystemExit and KeyboardInterrupt bug reports
+
+[B]Version v0.5.1[/B]
+- Rename show_error_dialog method to handle_error
+- Restructure addon and move utils into addon folder
+- Rename addon to prevent conflicts
+- Automatic issue reporting on exceptions
+- Log import lookup path
+- Fix up imports
+
+[B]Version v0.5.0[/B]
+- v0.5.0
+- Implement featured videos listing
+- Prevent shows without queries appearing
+- Handle more custom fields
+- Add default page parameter handling
+- add paging, news art, sorting
+- bump version and update
+- Use xbmcswift2 framework
+
+[B]Version v0.4.0[/B]
 - Initial version
 </news></extension>
 </addon></addons>
