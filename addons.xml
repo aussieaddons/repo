@@ -1,25 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <addons>
-  <addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="adammw111" version="0.1.0">
-    <requires>
-      <import addon="xbmc.python" version="2.1.0" />
-      <import addon="script.module.requests" />
-      <import addon="script.module.xbmcswift2" version="2.4.0" />
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource">
-      <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <platform>all</platform>
-      <minversion>31542</minversion>
-      <summary>Watch videos from 9Now</summary>
-      <description>Watch videos from 9Now</description>
-      <disclaimer>You must be within Australia to use watch these videos.</disclaimer>
-      <email>adman.com@gmail.com</email>
-      <source>https://github.com/xbmc-catchuptv-au/plugin.video.catchuptv.au.nine.git</source>
-      <website>https://github.com/xbmc-catchuptv-au/plugin.video.catchuptv.au.nine</website>
-    </extension>
-  </addon>
   <addon id="plugin.video.catchuptv.au.ten" name="TENplay" provider-name="adammw111" version="0.5.13">
     <requires>
       <import addon="xbmc.python" version="2.1.0" />
@@ -582,4 +562,40 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news>
+</addon><addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="Aussie Add-ons" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.pycaption" />
+    <import addon="script.module.aussieaddonscommon" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>9now add-on</summary>
+    <description>Watch live TV and catch up on all videos offered by the 9now service</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.0.0[/B]
+- Update travisci token
+- Fix live streams
+- Add subtitles support
+- Various fixes, add live video quality setting
+- Rewrite add-on
+
+[B]Version v0.1.0[/B]
+- Bypass SSL Verification on platforms which lack SNI support
+- Complete rewrite to work with 9Now
+- Update README.md
+
+[B]Version v0.0.3[/B]
+- Move repo url from googlecode to github
+- Fix failure to show all available shows
+- Update README.md
+
+[B]Version v0.0.2[/B]
+- Initial version
+</news></extension>
 </addon></addons>
