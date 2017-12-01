@@ -1,20 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.1.1-1-gaed78c0">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-    <summary>Common functions for Aussie Add-ons</summary>
-    <description>Common functions for Aussie Add-ons</description>
-    <source>https://github.com/xbmc-catchuptv-au/script.module.aussieaddonscommon</source>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.1.2[/B]
+[B]Version v1.1.2[/B]
 - Fix TypeError: can only concatenate list (not "unicode") to list
 
 [B]Version v1.1.1[/B]
@@ -45,5 +29,3 @@
 
 [B]Version v1.0.0[/B]
 - Initial version
-</news></extension>
-</addon>
