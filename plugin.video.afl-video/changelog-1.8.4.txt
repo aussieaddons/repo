@@ -1,0 +1,69 @@
+[B]Version v1.8.4[/B]
+- Remove unneeded functions and modules (#2587)
+- Update to new travis.yml
+- TypeError: object of type 'listreverseiterator' has no len()
+- Merge remote-tracking branch 'refs/remotes/xbmc-catchuptv-au/remove-old-replays'
+- Remove old replays and use API for seasons
+- Begin work on restructuring addon
+- Disable upcoming matches listings for now
+
+[B]Version v1.8.3[/B]
+- Clean up settings, method name fixes
+- Update travis CI key for repo move
+- Add higher res icons
+- Use aussie addons common module, flake8 fixes
+
+[B]Version v1.8.2[/B]
+- Small error handling improvements (#2535)
+
+[B]Version v1.8.1[/B]
+- Use new requests functions and code cleanups
+- Fix AttributeError: StorageServer instance has no attribute 'delete' #2267
+- Update travisci config
+- Add travisci deploy config
+
+[B]Version v1.8.0[/B]
+- Add Auto-generated Highlights back
+- Added team video channels back
+- Move JLT Series matches to the bottom
+- Use VIC as the fallback state for live streams
+- Don't require subscription for on-demand videos
+
+[B]Version v1.7.9[/B]
+- Remove debugging
+- Fix for Ooyala video ID discovery on live matches
+
+[B]Version v1.7.8[/B]
+- Cleanups and better exception handling
+- Cache token, add other live pass videos, more logging. (#1542)
+
+[B]Version v1.7.7[/B]
+- Fix some live matches not playing, handle ssl errors (#1081)
+- Update README.md
+
+[B]Version v1.7.6[/B]
+- Code cleanups and error if trying live streaming on Python < 2.7
+- update comm.py
+- Fix broken paid subscriptions
+
+[B]Version v1.7.5[/B]
+- Remove forced TLSv1 from Ooyala
+
+[B]Version v1.7.4[/B]
+- ooyalahelper now using requests instead of urllib2
+- Improve login process (#822)
+
+[B]Version v1.7.3[/B]
+- Support for paid subscriptions from afl.com.au
+
+[B]Version v1.7.2[/B]
+- Fix SSL erros
+
+[B]Version v1.7.1[/B]
+- Remove current round from 2016
+- NAB Challenge now JLT. Renamed and added new rounds
+- Fix for 'zero length field name in format' on Python < 2.7
+- Update README.md
+
+[B]Version v1.7.0[/B]
+- Initial version
