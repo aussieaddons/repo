@@ -1,0 +1,25 @@
+[B]Version v1.0.1[/B]
+- Fix for unicode errors
+- Fix wrong addon being called in settings
+- Fix live channel playlist parsing
+- Rework m3u8 parsing, missing airdate
+
+[B]Version v1.0.0[/B]
+- Update travisci token
+- Fix live streams
+- Add subtitles support
+- Various fixes, add live video quality setting
+- Rewrite add-on
+
+[B]Version v0.1.0[/B]
+- Bypass SSL Verification on platforms which lack SNI support
+- Complete rewrite to work with 9Now
+- Update README.md
+
+[B]Version v0.0.3[/B]
+- Move repo url from googlecode to github
+- Fix failure to show all available shows
+- Update README.md
+
+[B]Version v0.0.2[/B]
+- Initial version
