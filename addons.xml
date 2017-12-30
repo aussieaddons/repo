@@ -312,93 +312,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.plus7" name="Plus7" provider-name="Aussie Add-ons" version="3.3.2">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.issuereporter" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.pycaption" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>Plus7 by Aussie Add-ons</summary>
-    <description>PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners - just hit the play button and you can watch high quality, full screen videos straightaway without having to wait for downloads.</description>
-    <website>http://aussieaddons.com/addons/plus7/</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.plus7</source>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v3.3.2[/B]
-- Fix 'nonetype object has no attribute 'split'' errors
-
-[B]Version v3.3.1[/B]
-- Update .travis.yml
-
-[B]Version v3.3.0[/B]
-- Update .travis.yml
-- Remove mention of Australia in error message
-- Use current mobile API (#1909)
-- Several updates (#1908)
-- Use external pycaptions, enable captions by default
-
-[B]Version v3.2.0[/B]
-- Prevent reports for program fetch errors (esp outside Australia)
-- Update provider name in addon.xml
-- Updates for common module, flake8 fixes, issue reporting updates
-- Update Travis CI token
-- Update metadata
-- Use aussie add-ons common module
-- Update README
-- Update utils for flake8 compatibility, remove version file
-- Add new higher resolution icon
-- Add Travis CI config
-- Use external drmhelper and issuereporter, flake8, live fix
-- Update README.markdown
-- Fix subtitles not working
-- Use MP4 streams for non DRM protected content
-- Update README.markdown
-- Fix undefined variable
-- Remove unneeded log
-- Set default postcode
-- Android api unreliable with urllib2.
-- Place live tv above genres
-- Add sorting by genre, add live streams
-- Allow for missing cdm folder
-- small fixes
-- Add support to download Widevine modules
-- Add DASH DRM support
-
-[B]Version v3.1.1[/B]
-- Disable compatibility mode streaming method completely
-
-[B]Version v3.1.0[/B]
-- Switch to native streaming by default
-- Fix addon logging
-- Don't allow SystemExit and other user errors for issue reporting
-- Fix NoneType errors for empty episode listings
-- Fix compatibility streaming mode under Windows
-
-[B]Version v3.0.0[/B]
-- Fix handling of missing metadata
-- Filter out TV Snax programs
-- Fix typo for exception handling in issue log reporter
-- Change method of playing videos 
-
-[B]Version v2.8[/B]
-- Handle unicode chars in logging
-
-[B]Version v2.7[/B]
-- Better fault handling and log reports
-
-[B]Version v2.6[/B]
-- Better handling of missing data and fix for XBMC v12 program list
-
-[B]Version v2.5[/B]
-- Initial version
-</news></extension>
 </addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.0.9">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -773,6 +686,95 @@
 - Update README.md
 
 [B]Version v0.0.2[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.plus7" name="7plus" provider-name="Aussie Add-ons" version="3.3.2-5-g0061125">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.issuereporter" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.pycaption" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="login" />
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>7plus by Aussie Add-ons</summary>
+    <description>Watch full episodes of your favourite TV shows as seen on Seven, 7mate, 7TWO, 7flix and racing.com, live and free.</description>
+    <website>http://aussieaddons.com/addons/plus7/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.plus7</source>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v4.0.1[/B]
+- Fix travis CI config
+
+[B]Version v4.0.0[/B]
+- Add new thumbnail request handler, update metadata and travis CI config
+- workaround for ip addresses with no postcode
+- Update addons.xml
+- Initial work for converting to 7plus
+
+[B]Version v3.3.2[/B]
+- Fix 'nonetype object has no attribute 'split'' errors
+
+[B]Version v3.3.1[/B]
+- Update .travis.yml
+
+[B]Version v3.3.0[/B]
+- Update .travis.yml
+- Remove mention of Australia in error message
+- Use current mobile API (#1909)
+- Several updates (#1908)
+- Use external pycaptions, enable captions by default
+
+[B]Version v3.2.0[/B]
+- Prevent reports for program fetch errors (esp outside Australia)
+- Update provider name in addon.xml
+- Updates for common module, flake8 fixes, issue reporting updates
+- Update Travis CI token
+- Update metadata
+- Use aussie add-ons common module
+- Update README
+- Update utils for flake8 compatibility, remove version file
+- Add new higher resolution icon
+- Add Travis CI config
+- Use external drmhelper and issuereporter, flake8, live fix
+- Update README.markdown
+- Fix subtitles not working
+- Use MP4 streams for non DRM protected content
+- Update README.markdown
+- Fix undefined variable
+- Remove unneeded log
+- Set default postcode
+- Android api unreliable with urllib2.
+- Place live tv above genres
+- Add sorting by genre, add live streams
+- Allow for missing cdm folder
+- small fixes
+- Add support to download Widevine modules
+- Add DASH DRM support
+
+[B]Version v3.1.1[/B]
+- Disable compatibility mode streaming method completely
+
+[B]Version v3.1.0[/B]
+- Switch to native streaming by default
+- Fix addon logging
+- Don't allow SystemExit and other user errors for issue reporting
+- Fix NoneType errors for empty episode listings
+- Fix compatibility streaming mode under Windows
+
+[B]Version v3.0.0[/B]
+- Fix handling of missing metadata
+- Filter out TV Snax programs
+- Fix typo for exception handling in issue log reporter
+- Change method of playing videos 
+
+[B]Version v2.8[/B]
 - Initial version
 </news></extension>
 </addon></addons>
