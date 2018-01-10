@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.aussieaddons" name="Aussie Add-ons" provider-name="Aussie Add-ons" version="1.0.0">
+  <extension point="xbmc.addon.repository" name="Aussie Add-ons Repository">
+    <info compressed="false">http://aussieaddons.com/repository/addons.xml</info>
+    <checksum>http://aussieaddons.com/repository/addons.xml.md5</checksum>
+    <datadir zip="true">http://aussieaddons.com/repository/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install Aussie Add-ons</summary>
+    <description>Download and install add-ons from the Aussie Add-ons repository. See http://aussieaddons.com for more information.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
