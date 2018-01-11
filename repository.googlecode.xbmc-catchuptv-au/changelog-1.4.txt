@@ -1,0 +1,14 @@
+Version 1.4
+- Migration to Aussie Add-ons
+
+Version 1.3
+- Fixed URLs
+
+Version 1.2
+- Moved hosting to GitHub
+
+Version 0.1.1
+- Changed display name from "googlecode.xbmc-catchuptv-au" to "xbmc-catchuptv-au"
+
+Version 0.1.0
+- Initial commit to xbmc-catchuptv-au-repo
