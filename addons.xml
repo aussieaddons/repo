@@ -12,24 +12,6 @@
       <platform>all</platform>
     </extension>
   </addon>
-  <addon id="plugin.video.netball-live" name="Netball Live" provider-name="Glenn Guy" version="1.1.0">
-    <requires>
-      <import addon="xbmc.python" version="2.1.0" />
-      <import addon="script.module.requests" />
-      <import addon="script.module.beautifulsoup4" />
-      <import addon="script.common.plugin.cache" />
-    </requires>
-    <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-      <provides>video</provides>
-    </extension>
-    <extension library="default.py" point="xbmc.addon.metadata">
-      <summary>Netball Live add-on</summary>
-      <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
-      <provides>video</provides>
-      <platform>all</platform>
-    </extension>
-  </addon>
-  
   <addon id="script.module.catchuptv.brightcove" name="Brightcove" provider-name="XBMC CatchUp TV AU" version="0.2.1">
     <requires>
       <import addon="xbmc.python" version="2.1.0" />
@@ -865,6 +847,30 @@
 - Use minutes for older XBMC/Kodi versions
 
 [B]Version v1.6.8[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Glenn Guy" version="1.1.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>Netball Live add-on</summary>
+    <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.1.1[/B]
+- Add travis.yml
+- update version no.
+- Minor overhaul, using aussieaddonscommon
+
+[B]Version v1.1.0[/B]
 - Initial version
 </news></extension>
 </addon></addons>

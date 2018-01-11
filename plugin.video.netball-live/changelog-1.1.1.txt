@@ -1,0 +1,7 @@
+[B]Version v1.1.1[/B]
+- Add travis.yml
+- update version no.
+- Minor overhaul, using aussieaddonscommon
+
+[B]Version v1.1.0[/B]
+- Initial version
