@@ -106,18 +106,15 @@
       <license>Apache 2.0</license>
     </extension>
   </addon>
-  <addon id="repository.googlecode.xbmc-catchuptv-au" name="XBMC CatchupTV AU (migration to Aussie Add-ons)" provider-name="Aussie Add-ons" version="1.4">
-    <requires>
-      <import addon="repository.aussieaddons" />
-    </requires>
-    <extension name="XBMC CatchupTV AU Add-on Repository" point="xbmc.addon.repository">
+  <addon id="repository.googlecode.xbmc-catchuptv-au" name="Aussie Add-ons (formerly XBMC CatchupTV AU)" provider-name="Aussie Add-ons" version="1.5">
+    <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
       <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml</info>
       <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/addons.xml.md5</checksum>
       <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-      <summary>Migration to Aussie Add-ons</summary>
-      <description>This repository is now deprecated and you should have the Aussie Add-ons repository installed. You can safely remove this repository.</description>
+      <summary>Install Aussie Add-ons (formerly XBMC CatchupTV AU)</summary>
+      <description>Download and install add-ons from the Aussie Add-ons repository. See http://aussieaddons.com for more information.</description>
       <platform>all</platform>
     </extension>
   </addon>
