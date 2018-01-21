@@ -327,53 +327,6 @@
 [B]Version v0.4.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.1.1-1-gaed78c0">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-    <summary>Common functions for Aussie Add-ons</summary>
-    <description>Common functions for Aussie Add-ons</description>
-    <source>https://github.com/xbmc-catchuptv-au/script.module.aussieaddonscommon</source>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.1.2[/B]
-- Fix TypeError: can only concatenate list (not "unicode") to list
-
-[B]Version v1.1.1[/B]
-- Don't fail build on tag release
-
-[B]Version v1.0.2[/B]
-- Rework .travis.yml
-
-[B]Version v1.0.1[/B]
-- Deal with import _strptime python bug, update travis.yml
-- Show detected country to user on error
-- Use ipinfo for connection details and only allow AU reports
-- Fix for showing error dialog for non-reportable errors
-- Fix traceback handling in error reports
-- Fix error message handling
-- Fix token handling
-- Another attempt at token
-- Hopefully last time
-- .. and again
-- Update reporting token again after it went missing
-- Filter out any non-str values in exc value args
-- Update github token again
-- Rework version number handling and other fixes
-- Refactoring
-- Update exception handling
-- Include issue reporter and utils enhancements
-- Fix requirements and flake8 updates
-
-[B]Version v1.0.0[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="1.8.4">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -877,4 +830,59 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news>
+</addon><addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.1.3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>Common functions for Aussie Add-ons</summary>
+    <description>Common functions for Aussie Add-ons</description>
+    <source>https://github.com/aussieaddons/script.module.aussieaddonscommon</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.1.3[/B]
+- Update GitHub references from xbmc-catchuptv-au to aussieaddons
+- Add blacklisting for org (#6)
+- Small tidy up
+- Allow if hostname is blank when checking agains blacklist
+- flake8
+- Disallow reporting from known VPN/proxy addresses.
+
+[B]Version v1.1.2[/B]
+- Fix TypeError: can only concatenate list (not "unicode") to list
+
+[B]Version v1.1.1[/B]
+- Don't fail build on tag release
+
+[B]Version v1.0.2[/B]
+- Rework .travis.yml
+
+[B]Version v1.0.1[/B]
+- Deal with import _strptime python bug, update travis.yml
+- Show detected country to user on error
+- Use ipinfo for connection details and only allow AU reports
+- Fix for showing error dialog for non-reportable errors
+- Fix traceback handling in error reports
+- Fix error message handling
+- Fix token handling
+- Another attempt at token
+- Hopefully last time
+- .. and again
+- Update reporting token again after it went missing
+- Filter out any non-str values in exc value args
+- Update github token again
+- Rework version number handling and other fixes
+- Refactoring
+- Update exception handling
+- Include issue reporter and utils enhancements
+- Fix requirements and flake8 updates
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
 </addon></addons>
