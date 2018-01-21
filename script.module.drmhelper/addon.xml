@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.0.9">
+<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.1.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -15,7 +15,11 @@
     <source>https://github.com/glennguy/script.module.drmhelper</source>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.0.9[/B]
+  <news>[B]Version v1.1.0[/B]
+- Update Krypton binaries
+- Allow playback for non-DRM on DRM unsupported platforms
+
+[B]Version v1.0.9[/B]
 - logging clarity
 - make dir for slinked ssd_wv
 
