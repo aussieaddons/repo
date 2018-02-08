@@ -885,7 +885,7 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.olympicson7" name="OlympicsOn7" provider-name="Aussie Add-ons" version="1.0.1">
+</addon><addon id="plugin.video.olympicson7" name="OlympicsOn7" provider-name="Aussie Add-ons" version="1.0.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.common.plugin.cache" />
@@ -906,7 +906,10 @@
     <source>https://github.com/aussieaddons/plugin.video.olympicson7</source>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.0.1[/B]
+  <news>[B]Version v1.0.2[/B]
+- Use title for live channels rather than channel name
+
+[B]Version v1.0.1[/B]
 - revert to old repo name for now in travis config
 - trigger initial build
 - Update .travis.yml
