@@ -657,99 +657,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="1.8.5">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>AFL Video by Aussie Add-ons</summary>
-    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
-    <website>http://aussieaddons.com/addons/afl/</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
-    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.8.5[/B]
-- Handle outdated favourites links (#2594)
-- Add AFLW content, fix UnboundLocalError issue  (#2593)
-- Improve m3u8 parsing, fixes live matches
-
-[B]Version v1.8.4[/B]
-- Remove unneeded functions and modules (#2587)
-- Update to new travis.yml
-- TypeError: object of type 'listreverseiterator' has no len()
-- Merge remote-tracking branch 'refs/remotes/xbmc-catchuptv-au/remove-old-replays'
-- Remove old replays and use API for seasons
-- Begin work on restructuring addon
-- Disable upcoming matches listings for now
-
-[B]Version v1.8.3[/B]
-- Clean up settings, method name fixes
-- Update travis CI key for repo move
-- Add higher res icons
-- Use aussie addons common module, flake8 fixes
-
-[B]Version v1.8.2[/B]
-- Small error handling improvements (#2535)
-
-[B]Version v1.8.1[/B]
-- Use new requests functions and code cleanups
-- Fix AttributeError: StorageServer instance has no attribute 'delete' #2267
-- Update travisci config
-- Add travisci deploy config
-
-[B]Version v1.8.0[/B]
-- Add Auto-generated Highlights back
-- Added team video channels back
-- Move JLT Series matches to the bottom
-- Use VIC as the fallback state for live streams
-- Don't require subscription for on-demand videos
-
-[B]Version v1.7.9[/B]
-- Remove debugging
-- Fix for Ooyala video ID discovery on live matches
-
-[B]Version v1.7.8[/B]
-- Cleanups and better exception handling
-- Cache token, add other live pass videos, more logging. (#1542)
-
-[B]Version v1.7.7[/B]
-- Fix some live matches not playing, handle ssl errors (#1081)
-- Update README.md
-
-[B]Version v1.7.6[/B]
-- Code cleanups and error if trying live streaming on Python &lt; 2.7
-- update comm.py
-- Fix broken paid subscriptions
-
-[B]Version v1.7.5[/B]
-- Remove forced TLSv1 from Ooyala
-
-[B]Version v1.7.4[/B]
-- ooyalahelper now using requests instead of urllib2
-- Improve login process (#822)
-
-[B]Version v1.7.3[/B]
-- Support for paid subscriptions from afl.com.au
-
-[B]Version v1.7.2[/B]
-- Fix SSL erros
-
-[B]Version v1.7.1[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.cricketaustralia" name="Cricket Australia" provider-name="Aussie Add-ons" version="0.0.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -943,6 +850,103 @@
 - Update README.md
 
 [B]Version v1.1.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="1.8.6">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>AFL Video by Aussie Add-ons</summary>
+    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
+    <website>http://aussieaddons.com/addons/afl/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
+    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.8.6[/B]
+- Fix upcoming matches, Live Pass instructions (#2598)
+- Implement manual token/in-app subscription (#2597)
+
+[B]Version v1.8.5[/B]
+- Handle outdated favourites links (#2594)
+- Add AFLW content, fix UnboundLocalError issue  (#2593)
+- Improve m3u8 parsing, fixes live matches
+
+[B]Version v1.8.4[/B]
+- Remove unneeded functions and modules (#2587)
+- Update to new travis.yml
+- TypeError: object of type 'listreverseiterator' has no len()
+- Merge remote-tracking branch 'refs/remotes/xbmc-catchuptv-au/remove-old-replays'
+- Remove old replays and use API for seasons
+- Begin work on restructuring addon
+- Disable upcoming matches listings for now
+
+[B]Version v1.8.3[/B]
+- Clean up settings, method name fixes
+- Update travis CI key for repo move
+- Add higher res icons
+- Use aussie addons common module, flake8 fixes
+
+[B]Version v1.8.2[/B]
+- Small error handling improvements (#2535)
+
+[B]Version v1.8.1[/B]
+- Use new requests functions and code cleanups
+- Fix AttributeError: StorageServer instance has no attribute 'delete' #2267
+- Update travisci config
+- Add travisci deploy config
+
+[B]Version v1.8.0[/B]
+- Add Auto-generated Highlights back
+- Added team video channels back
+- Move JLT Series matches to the bottom
+- Use VIC as the fallback state for live streams
+- Don't require subscription for on-demand videos
+
+[B]Version v1.7.9[/B]
+- Remove debugging
+- Fix for Ooyala video ID discovery on live matches
+
+[B]Version v1.7.8[/B]
+- Cleanups and better exception handling
+- Cache token, add other live pass videos, more logging. (#1542)
+
+[B]Version v1.7.7[/B]
+- Fix some live matches not playing, handle ssl errors (#1081)
+- Update README.md
+
+[B]Version v1.7.6[/B]
+- Code cleanups and error if trying live streaming on Python &lt; 2.7
+- update comm.py
+- Fix broken paid subscriptions
+
+[B]Version v1.7.5[/B]
+- Remove forced TLSv1 from Ooyala
+
+[B]Version v1.7.4[/B]
+- ooyalahelper now using requests instead of urllib2
+- Improve login process (#822)
+
+[B]Version v1.7.3[/B]
+- Support for paid subscriptions from afl.com.au
+
+[B]Version v1.7.2[/B]
+- Fix SSL erros
+
+[B]Version v1.7.1[/B]
 - Initial version
 </news></extension>
 </addon></addons>
