@@ -865,7 +865,7 @@
 [B]Version v1.7.1[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.2.7">
+</addon><addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.3.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.common.plugin.cache" />
@@ -881,7 +881,10 @@
     <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.2.7[/B]
+  <news>[B]Version v1.3.0[/B]
+- Finishing updating 2018 Free Live Pass auth, cleanup.
+
+[B]Version v1.2.7[/B]
 - add auth process for videos, start work on new sign in for telstra
 
 [B]Version v1.2.6[/B]
