@@ -450,51 +450,6 @@
 [B]Version v1.1.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="Aussie Add-ons" version="1.0.2">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.pycaption" />
-    <import addon="script.module.aussieaddonscommon" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>9now add-on</summary>
-    <description>Watch live TV and catch up on all videos offered by the 9now service</description>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.0.2[/B]
-- Fix some nonetype errors
-
-[B]Version v1.0.1[/B]
-- Fix for unicode errors
-- Fix wrong addon being called in settings
-- Fix live channel playlist parsing
-- Rework m3u8 parsing, missing airdate
-
-[B]Version v1.0.0[/B]
-- Update travisci token
-- Fix live streams
-- Add subtitles support
-- Various fixes, add live video quality setting
-- Rewrite add-on
-
-[B]Version v0.1.0[/B]
-- Bypass SSL Verification on platforms which lack SNI support
-- Complete rewrite to work with 9Now
-- Update README.md
-
-[B]Version v0.0.3[/B]
-- Move repo url from googlecode to github
-- Fix failure to show all available shows
-- Update README.md
-
-[B]Version v0.0.2[/B]
-- Initial version
-</news></extension>
 </addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.1.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -967,6 +922,55 @@
 - Update README.md
 
 [B]Version v1.1.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="Aussie Add-ons" version="1.0.3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.pycaption" />
+    <import addon="script.module.aussieaddonscommon" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>9now add-on</summary>
+    <description>Watch live TV and catch up on all videos offered by the 9now service</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.0.3[/B]
+- Catch brightcove geoblocking errors (untested)
+- Update logo, catch and log JSON errors
+
+[B]Version v1.0.2[/B]
+- Fix some nonetype errors
+
+[B]Version v1.0.1[/B]
+- Fix for unicode errors
+- Fix wrong addon being called in settings
+- Fix live channel playlist parsing
+- Rework m3u8 parsing, missing airdate
+
+[B]Version v1.0.0[/B]
+- Update travisci token
+- Fix live streams
+- Add subtitles support
+- Various fixes, add live video quality setting
+- Rewrite add-on
+
+[B]Version v0.1.0[/B]
+- Bypass SSL Verification on platforms which lack SNI support
+- Complete rewrite to work with 9Now
+- Update README.md
+
+[B]Version v0.0.3[/B]
+- Move repo url from googlecode to github
+- Fix failure to show all available shows
+- Update README.md
+
+[B]Version v0.0.2[/B]
 - Initial version
 </news></extension>
 </addon></addons>
