@@ -976,4 +976,28 @@
 [B]Version v1.1.0[/B]
 - Initial version
 </news></extension>
+</addon><addon id="plugin.video.7commgames" name="7CommGames" provider-name="Aussie Add-ons" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.issuereporter" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.pycaption" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="login" />
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>7CommGames by Aussie Add-ons</summary>
+    <description>Live streams and all the replays from the 2018 Gold Coast Commonwealth Games</description>
+    <website>http://aussieaddons.com/addons/7commgames/</website>
+    <source>https://github.com/aussieaddons/plugin.video.7commgames</source>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
 </addon></addons>
