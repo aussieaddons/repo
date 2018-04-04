@@ -500,39 +500,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news>
-</addon><addon id="plugin.video.olympicson7" name="OlympicsOn7" provider-name="Aussie Add-ons" version="1.0.2">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.common.plugin.cache" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.issuereporter" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.pycaption" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service" start="login" />
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>OlympicsOn7 by Aussie Add-ons</summary>
-    <description>Live streams and all the replays from PyeongChang 2018 Olympics</description>
-    <website>http://aussieaddons.com/addons/olympicson7/</website>
-    <source>https://github.com/aussieaddons/plugin.video.olympicson7</source>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.0.2[/B]
-- Use title for live channels rather than channel name
-
-[B]Version v1.0.1[/B]
-- revert to old repo name for now in travis config
-- trigger initial build
-- Update .travis.yml
-- Update travis secure token
-
-[B]Version v1.0.0[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.cricketaustralia" name="Cricket Australia" provider-name="Aussie Add-ons" version="0.0.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -999,6 +966,42 @@
   <news>[B]Version v1.0.1[/B]
 - Fix error where sd and hd hls urls were swapped
 - remove issue reporter dependency
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.olympicson7" name="OlympicsOn7" provider-name="Aussie Add-ons" version="1.0.3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.issuereporter" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.pycaption" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service" start="login" />
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>OlympicsOn7 by Aussie Add-ons</summary>
+    <description>Live streams and all the replays from PyeongChang 2018 Olympics</description>
+    <website>http://aussieaddons.com/addons/olympicson7/</website>
+    <source>https://github.com/aussieaddons/plugin.video.olympicson7</source>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.0.3[/B]
+- Fix error where SD and HD HLS urls were swapped
+
+[B]Version v1.0.2[/B]
+- Use title for live channels rather than channel name
+
+[B]Version v1.0.1[/B]
+- revert to old repo name for now in travis config
+- trigger initial build
+- Update .travis.yml
+- Update travis secure token
 
 [B]Version v1.0.0[/B]
 - Initial version
