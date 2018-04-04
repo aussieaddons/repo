@@ -976,12 +976,11 @@
 [B]Version v1.1.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.7commgames" name="7CommGames" provider-name="Aussie Add-ons" version="1.0.0">
+</addon><addon id="plugin.video.7commgames" name="7CommGames" provider-name="Aussie Add-ons" version="1.0.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.common.plugin.cache" />
     <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.issuereporter" />
     <import addon="script.module.requests" />
     <import addon="script.module.drmhelper" />
     <import addon="script.module.pycaption" />
@@ -997,7 +996,11 @@
     <source>https://github.com/aussieaddons/plugin.video.7commgames</source>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.0.0[/B]
+  <news>[B]Version v1.0.1[/B]
+- Fix error where sd and hd hls urls were swapped
+- remove issue reporter dependency
+
+[B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
 </addon></addons>
