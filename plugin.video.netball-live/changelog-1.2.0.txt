@@ -1,0 +1,14 @@
+[B]Version v1.2.0[/B]
+- Fix other videos
+- Fix live matches
+
+[B]Version v1.1.2[/B]
+- Fix automatically removing login ticket if expired
+
+[B]Version v1.1.1[/B]
+- Add travis.yml
+- update version no.
+- Minor overhaul, using aussieaddonscommon
+
+[B]Version v1.1.0[/B]
+- Initial version
