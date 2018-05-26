@@ -706,7 +706,7 @@
 [B]Version v1.7.1[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.2.0">
+</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.2.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -722,7 +722,10 @@
     <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.2.0[/B]
+  <news>[B]Version v1.2.1[/B]
+- Fix livepass login
+
+[B]Version v1.2.0[/B]
 - Fix other videos
 - Fix live matches
 
