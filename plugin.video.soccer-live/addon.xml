@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.0.0">
+<addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.0.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -15,7 +15,10 @@
     <description>Soccer Live is an unofficial add-on for Australian soccer content</description>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v0.9.9[/B]
+  <news>[B]Version v1.0.1[/B]
+- Fix storing ticket incorrectly...
+
+[B]Version v0.9.9[/B]
 - Initial version
 </news></extension>
 </addon>
