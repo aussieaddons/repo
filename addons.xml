@@ -782,4 +782,19 @@
 [B]Version v0.9.9[/B]
 - Initial version
 </news></extension>
+</addon><addon id="script.module.warrant" name="Warrant" provider-name="Aussie Add-ons" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.dateutil" version="2.4.2" />
+    <import addon="script.module.six" version="1.9.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <summary lang="en">Warrant for Python</summary>
+    <description lang="en">Packed for Kodi from https://github.com/capless/warrant</description>
+    <platform>all</platform>
+  <news>[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
 </addon></addons>
