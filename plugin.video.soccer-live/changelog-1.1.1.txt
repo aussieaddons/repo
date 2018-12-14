@@ -1,0 +1,15 @@
+[B]Version v1.1.1[/B]
+- Update auth for new api location
+
+[B]Version v1.1.0[/B]
+- Fix syntax mistake for showing prematch games
+- Finish mobile activation
+- Show live matches 10 minutes before scheduled start
+- Grey settings for mobile auth, reorder settings
+- Add support for paid subscriptions, prepare mobile authorisation
+
+[B]Version v1.0.1[/B]
+- Fix storing ticket incorrectly...
+
+[B]Version v0.9.9[/B]
+- Initial version
