@@ -1,30 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="1.9.1">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>AFL Video by Aussie Add-ons</summary>
-    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
-    <website>http://aussieaddons.com/addons/afl/</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
-    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.9.1[/B]
+[B]Version v1.9.1[/B]
 - Fix live streams for beginning of 2019 season (#2613)
 
 [B]Version v1.9.0[/B]
@@ -95,7 +69,7 @@
 - Update README.md
 
 [B]Version v1.7.6[/B]
-- Code cleanups and error if trying live streaming on Python &lt; 2.7
+- Code cleanups and error if trying live streaming on Python < 2.7
 - update comm.py
 - Fix broken paid subscriptions
 
@@ -104,5 +78,3 @@
 
 [B]Version v1.7.4[/B]
 - Initial version
-</news></extension>
-</addon>
