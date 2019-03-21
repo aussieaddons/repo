@@ -725,7 +725,7 @@
 [B]Version v1.1.5[/B]
 - Initial version
 </news></extension>
-</addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.2.5">
+</addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="1.2.6">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -741,7 +741,10 @@
     <source>https://github.com/aussieaddons/script.module.drmhelper</source>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.2.5[/B]
+  <news>[B]Version v1.2.6[/B]
+- Small hack for afl-video
+
+[B]Version v1.2.5[/B]
 - Update widevinecdm links
 
 [B]Version v1.2.4[/B]
