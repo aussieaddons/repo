@@ -1,21 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.0">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.common.plugin.cache" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>NRL Live add-on</summary>
-    <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.5.0[/B]
+[B]Version v1.5.0[/B]
 - Update to 2020 auth and related tests
 - Add tests
 - Fix travis config
@@ -111,5 +94,3 @@
 
 [B]Version v1.1.7[/B]
 - Initial version
-</news></extension>
-</addon>
