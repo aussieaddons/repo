@@ -375,46 +375,6 @@
   <news>[B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.2.3">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>Netball Live add-on</summary>
-    <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.2.3[/B]
-- Fix JSON error
-
-[B]Version v1.2.2[/B]
-- Update auth for new api location
-
-[B]Version v1.2.1[/B]
-- Fix livepass login
-
-[B]Version v1.2.0[/B]
-- Fix other videos
-- Fix live matches
-
-[B]Version v1.1.2[/B]
-- Fix automatically removing login ticket if expired
-
-[B]Version v1.1.1[/B]
-- Add travis.yml
-- update version no.
-- Minor overhaul, using aussieaddonscommon
-
-[B]Version v1.1.0[/B]
-- Initial version
-</news></extension>
 </addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -842,6 +802,50 @@
 - Fix storing ticket incorrectly...
 
 [B]Version v0.9.9[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.3.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>Netball Live add-on</summary>
+    <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.3.0[/B]
+- Update for new telstra auth
+
+[B]Version v1.2.3[/B]
+- Fix JSON error
+
+[B]Version v1.2.2[/B]
+- Update auth for new api location
+
+[B]Version v1.2.1[/B]
+- Fix livepass login
+
+[B]Version v1.2.0[/B]
+- Fix other videos
+- Fix live matches
+
+[B]Version v1.1.2[/B]
+- Fix automatically removing login ticket if expired
+
+[B]Version v1.1.1[/B]
+- Add travis.yml
+- update version no.
+- Minor overhaul, using aussieaddonscommon
+
+[B]Version v1.1.0[/B]
 - Initial version
 </news></extension>
 </addon></addons>
