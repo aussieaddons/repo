@@ -287,7 +287,7 @@ def fetch_addon_from_folder(raw_addon_location, target_folder):
             files = (n for n in files
                      if not any(fnmatch.fnmatch(n, i) for i in ignore))
             # Skip hidden dirs
-            dirs[:] = [d for d in dirs if not d[0] == '.']
+            dirs[:] = [d for d in dirs if not any([d[0] == '.', d == 'tests'])]
 
             relative_root = os.path.join(
                 addon_metadata.id, os.path.relpath(root, addon_location))
