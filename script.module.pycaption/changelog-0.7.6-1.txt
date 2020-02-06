@@ -1,0 +1,13 @@
+[B]Version v0.7.6-1[/B]
+- Refactor replace past cmp with equivalent expression
+- Refactor old_div to floor div // or div /
+
+[B]Version v0.7.6[/B]
+- Update .travis.yml
+
+[B]Version v0.5.6[/B]
+- Remove SCC and DFXP support for Python < 2.7
+- Ignore cues with missing content
+
+[B]Version v0.5.5[/B]
+- Initial version

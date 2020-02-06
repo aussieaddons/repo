@@ -918,7 +918,7 @@
 [B]Version v0.9.9[/B]
 - Initial version
 </news></extension>
-</addon><addon id="script.module.pycaption" name="pycaption" provider-name="Aussie Add-ons" version="0.7.6">
+</addon><addon id="script.module.pycaption" name="pycaption" provider-name="Aussie Add-ons" version="0.7.6-1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.beautifulsoup4" />
@@ -936,7 +936,11 @@
     <source>https://github.com/pbs/pycaption</source>
     <website>https://github.com/pbs/pycaption</website>
     <license>Apache 2.0</license>
-  <news>[B]Version v0.7.6[/B]
+  <news>[B]Version v0.7.6-1[/B]
+- Refactor replace past cmp with equivalent expression
+- Refactor old_div to floor div // or div /
+
+[B]Version v0.7.6[/B]
 - Update .travis.yml
 
 [B]Version v0.5.6[/B]
