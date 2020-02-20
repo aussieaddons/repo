@@ -1,22 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.3">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.future" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>Module to assist in aquiring components to enable DRM playback</summary>
-    <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
-    <website />
-    <source>https://github.com/aussieaddons/script.module.drmhelper</source>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.3[/B]
+[B]Version v2.0.3[/B]
 - Adjust for new modules.json
 
 [B]Version v2.0.2[/B]
@@ -100,6 +82,3 @@
 
 [B]Version v1.1.0[/B]
 - Initial version
-</news></extension>
-  <news />
-</addon>
