@@ -837,7 +837,7 @@
 - Initial version
 </news></extension>
   <news />
-</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.1">
+</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -864,7 +864,11 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.1[/B]
+  <news>[B]Version v2.0.2[/B]
+- Disable inputstream.adaptive for live streams
+- remove playback settings relating to widevine
+
+[B]Version v2.0.1[/B]
 - Re-use python interpreter
 
 [B]Version v2.0.0[/B]
@@ -950,13 +954,6 @@
 - Add travisci deploy config
 
 [B]Version v1.8.0[/B]
-- Add Auto-generated Highlights back
-- Added team video channels back
-- Move JLT Series matches to the bottom
-- Use VIC as the fallback state for live streams
-- Don't require subscription for on-demand videos
-
-[B]Version v1.7.9[/B]
 - Initial version
 </news></extension>
 </addon></addons>
