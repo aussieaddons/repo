@@ -837,7 +837,7 @@
 - Initial version
 </news></extension>
   <news />
-</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.0">
+</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -851,6 +851,7 @@
    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
@@ -863,7 +864,10 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.0[/B]
+  <news>[B]Version v2.0.1[/B]
+- Re-use python interpreter
+
+[B]Version v2.0.0[/B]
 - formatting
 - Fix art for Kodi 19
 - New live video location and move from ooyala to brightcove
