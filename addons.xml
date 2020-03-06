@@ -687,109 +687,6 @@
 [B]Version v1.2.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.3">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.future" />
-  </requires>
-  <extension library="lib" point="xbmc.python.module" />
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>Module to assist in aquiring components to enable DRM playback</summary>
-    <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
-    <website />
-    <source>https://github.com/aussieaddons/script.module.drmhelper</source>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.3[/B]
-- Adjust for new modules.json
-
-[B]Version v2.0.2[/B]
-- Update cdm modules location
-
-[B]Version v2.0.1[/B]
-- Implement proper test for _get_wvcdm_paths, fix python3 compat
-- tox fixes and flake8 pass
-- Python 3 compatibility
-- Fix Android compatibility, improve _get_platform and _is_wv_drm_supported tests
-- fix rpi properly
-- Improve is_uwp tests
-- Fix rpi support, improve is_wv_drm_supported test
-- Add missing future dependency
-- minor fixes
-- Change source of widevinecdm, implement checking of cdm version
-- Fix old entrypoints to drmhelper, add message for get_ssd_wv
-- fix syntax error from copy/paste
-- Change fakes cdm paths order
-- Search for cdms in same order as inputstream.adaptive
-
-[B]Version v2.0.0[/B]
-- Small changes to tests
-- Add tests and refactor _get_wvcdm
-- Fix flake8 errors
-- Remove unneeded addon version checks and tests
-- Fix unarchive command
-- Rework cdm path logic (#4)
-- Actually, add the new version of our travis script
-- Replace xbmc-catchuptv-au with aussieaddons and formatting for travis
-- Set py2.7 and Slack notification to travis build
-- Revert "Reduce CDM paths to just what we need"
-- Don't do the WV checking for Android
-- Fold extra function into check
-- Reduce CDM paths to just what we need
-- Clean up platform detection and add logging for CDM paths
-- Show dialog when drm platform not supported
-- Add more tests
-- Fix changes lost from helper.py in 5ab7fd0
-- add xbmcbinaddons to cdm/ssd check
-- update arm cdm urls
-- Slight improvement for dialog texts
-- Stop keyerrors from arch lookup
-- Use arch lookup
-- Fix CDM path and some lint errors
-- Use xbmc cond vis UWP for Kodi 18
-- Major update for v2
-
-[B]Version v1.2.7[/B]
-- add special://xbmcbinaddons to ssd check
-
-[B]Version v1.2.6[/B]
-- Small hack for afl-video
-
-[B]Version v1.2.5[/B]
-- Update widevinecdm links
-
-[B]Version v1.2.4[/B]
-- Update widevinecdm, fix arm command, search lib/
-
-[B]Version v1.2.3[/B]
-- Search home/addons for ssd_wv
-
-[B]Version v1.2.2[/B]
-- Don't fail after installing from repo
-
-[B]Version v1.2.1[/B]
-- Update Linux/ARM widevinecdm
-
-[B]Version v1.2.0[/B]
-- Major update
-- Hack for Xbox One detection for now
-- Fix typo
-- Xbox fixes
-- Better XboxOne handling
-- Try/except to not die with python subprocess on UWP
-- remove blurb at top
-- Limit linux updates of i.a/ssd_wv to LibreELEC
-- Update repo URL for downloading binaries
-- Update metadata
-
-[B]Version v1.1.0[/B]
-- Initial version
-</news></extension>
-  <news />
 </addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.3">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -975,4 +872,98 @@
 [B]Version v1.1.0[/B]
 - Initial version
 </news></extension>
+</addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.4">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.future" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>Module to assist in aquiring components to enable DRM playback</summary>
+    <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
+    <website />
+    <source>https://github.com/aussieaddons/script.module.drmhelper</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v2.0.4[/B]
+- Fix cdm download/move for linux x86 and macos
+
+[B]Version v2.0.3[/B]
+- Adjust for new modules.json
+
+[B]Version v2.0.2[/B]
+- Update cdm modules location
+
+[B]Version v2.0.1[/B]
+- Implement proper test for _get_wvcdm_paths, fix python3 compat
+- tox fixes and flake8 pass
+- Python 3 compatibility
+- Fix Android compatibility, improve _get_platform and _is_wv_drm_supported tests
+- fix rpi properly
+- Improve is_uwp tests
+- Fix rpi support, improve is_wv_drm_supported test
+- Add missing future dependency
+- minor fixes
+- Change source of widevinecdm, implement checking of cdm version
+- Fix old entrypoints to drmhelper, add message for get_ssd_wv
+- fix syntax error from copy/paste
+- Change fakes cdm paths order
+- Search for cdms in same order as inputstream.adaptive
+
+[B]Version v2.0.0[/B]
+- Small changes to tests
+- Add tests and refactor _get_wvcdm
+- Fix flake8 errors
+- Remove unneeded addon version checks and tests
+- Fix unarchive command
+- Rework cdm path logic (#4)
+- Actually, add the new version of our travis script
+- Replace xbmc-catchuptv-au with aussieaddons and formatting for travis
+- Set py2.7 and Slack notification to travis build
+- Revert "Reduce CDM paths to just what we need"
+- Don't do the WV checking for Android
+- Fold extra function into check
+- Reduce CDM paths to just what we need
+- Clean up platform detection and add logging for CDM paths
+- Show dialog when drm platform not supported
+- Add more tests
+- Fix changes lost from helper.py in 5ab7fd0
+- add xbmcbinaddons to cdm/ssd check
+- update arm cdm urls
+- Slight improvement for dialog texts
+- Stop keyerrors from arch lookup
+- Use arch lookup
+- Fix CDM path and some lint errors
+- Use xbmc cond vis UWP for Kodi 18
+- Major update for v2
+
+[B]Version v1.2.7[/B]
+- add special://xbmcbinaddons to ssd check
+
+[B]Version v1.2.6[/B]
+- Small hack for afl-video
+
+[B]Version v1.2.5[/B]
+- Update widevinecdm links
+
+[B]Version v1.2.4[/B]
+- Update widevinecdm, fix arm command, search lib/
+
+[B]Version v1.2.3[/B]
+- Search home/addons for ssd_wv
+
+[B]Version v1.2.2[/B]
+- Don't fail after installing from repo
+
+[B]Version v1.2.1[/B]
+- Update Linux/ARM widevinecdm
+
+[B]Version v1.2.0[/B]
+- Initial version
+</news></extension>
+  <news />
 </addon></addons>
