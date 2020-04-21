@@ -889,13 +889,11 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.5">
+</addon><addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.6">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
     <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-    <import addon="script.module.beautifulsoup4" />
   </requires>
   <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
     <provides>video</provides>
@@ -912,7 +910,11 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.1.4[/B]
+  <news>[B]Version v1.1.6[/B]
+- First run info dialog to inform of account requirements
+- Update for new API
+
+[B]Version v1.1.4[/B]
 - Addon temporarily broken
 - Fix travis config
 - travis update for notifications, py27, and github org name
