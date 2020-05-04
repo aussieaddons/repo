@@ -889,7 +889,7 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.6">
+</addon><addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.7">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -899,6 +899,7 @@
     <provides>video</provides>
   </extension>
   <extension library="default.py" point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
@@ -910,7 +911,21 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.1.6[/B]
+  <news>[B]Version v1.1.7[/B]
+- Fix small mistake in default
+- Add search capability
+- Fix next page showing when not applicable
+- All lists are now max 50 length
+- Put total items/multi-page assignment in correct area
+- Multi-page
+- Fix 10 item limit, begin work on multiple pages
+- Only show 'Football Highlights' in sports genre
+- Correctly flatten single series
+- reuselanguageinvoker
+- Add seasons plus other changes
+- Fix using old function signature in get_category
+
+[B]Version v1.1.6[/B]
 - First run info dialog to inform of account requirements
 - Update for new API
 
@@ -966,22 +981,6 @@
 - Fix strptime lock issue
 
 [B]Version v1.0.3[/B]
-- Update HTTP Basic auth password
-- Fix Github API url for issue reporting
-- Reduce debug logging
-- Only retry 3 times, not 10
-
-[B]Version v1.0.2[/B]
-- Better edge case program handling and program information
-- Fix 'Coming Soon' category (Thanks Peter Beckwith!)
-
-[B]Version v1.0.1[/B]
-- Cache all the URLs fetched
-- Sort programs alphabetically
-- Don't filter out some programs
-- Update Github issue API
-
-[B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
 </addon></addons>
