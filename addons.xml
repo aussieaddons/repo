@@ -697,139 +697,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.8">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.future" />
-    <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>AFL Video by Aussie Add-ons</summary>
-    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
-    <website>http://aussieaddons.com/addons/afl/</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
-    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.8[/B]
-- Stop error reports for intermittent 404s and token expired
-
-[B]Version v2.0.7[/B]
-- Stop error reports from trying to play dummy titles
-
-[B]Version v2.0.6[/B]
-- Fix for 'unable to locate source' in older videos
-
-[B]Version v2.0.5[/B]
-- ooyala -&gt; brightcove (again)
-
-[B]Version v2.0.4[/B]
-- Fix missing live streams
-- Use inputstream.adaptive for live streams...
-
-[B]Version v2.0.3[/B]
-- Reinstate ooyala code
-- Remove state setting
-
-[B]Version v2.0.2[/B]
-- Disable inputstream.adaptive for live streams
-- remove playback settings relating to widevine
-
-[B]Version v2.0.1[/B]
-- Re-use python interpreter
-
-[B]Version v2.0.0[/B]
-- formatting
-- Fix art for Kodi 19
-- New live video location and move from ooyala to brightcove
-- Update tests and data
-- Update tox excludes
-- ooyalahelper -&gt; stream_auth
-
-[B]Version v1.9.4[/B]
-- Remove unused variables from fakes.py
-- Add future dependency
-- Python 3 compatibility
-- New brightcove API for non-live videos
-- Fix AFLW upcoming matches
-- Add tests
-- Remove blurbs
-- Update from old strings.xml to .po
-- Remove bundled etree
-
-[B]Version v1.9.3[/B]
-- Update to 2020 auth
-- Fix travis config
-- travis-ci config update for notifications and lock in py27
-- Simplify handling of i.a and DRM failure messaging
-
-[B]Version v1.9.2[/B]
-- correct incorrect logic in play.py
-- Fix free live games not playing
-- Remove reliance on drmhelper hack
-- Fix unicode errors, incorrect settings label
-
-[B]Version v1.9.1[/B]
-- Fix live streams for beginning of 2019 season (#2613)
-
-[B]Version v1.9.0[/B]
-- Add mobile data authentication (#2609)
-- travis.yml - update old github url to new org
-
-[B]Version v1.8.9[/B]
-- fix token 403 errors (#2610)
-
-[B]Version v1.8.8[/B]
-- New auth 2019 (#2606)
-- Feedback to user for upcoming (dummy) listings when selected (#2605)
-- Add 'All' category
-
-[B]Version v1.8.7[/B]
-- Update to new auth process (#2601)
-
-[B]Version v1.8.6[/B]
-- Fix upcoming matches, Live Pass instructions (#2598)
-- Implement manual token/in-app subscription (#2597)
-
-[B]Version v1.8.5[/B]
-- Handle outdated favourites links (#2594)
-- Add AFLW content, fix UnboundLocalError issue  (#2593)
-- Improve m3u8 parsing, fixes live matches
-
-[B]Version v1.8.4[/B]
-- Remove unneeded functions and modules (#2587)
-- Update to new travis.yml
-- TypeError: object of type 'listreverseiterator' has no len()
-- Merge remote-tracking branch 'refs/remotes/xbmc-catchuptv-au/remove-old-replays'
-- Remove old replays and use API for seasons
-- Begin work on restructuring addon
-- Disable upcoming matches listings for now
-
-[B]Version v1.8.3[/B]
-- Clean up settings, method name fixes
-- Update travis CI key for repo move
-- Add higher res icons
-- Use aussie addons common module, flake8 fixes
-
-[B]Version v1.8.2[/B]
-- Small error handling improvements (#2535)
-
-[B]Version v1.8.1[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.8">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -990,6 +857,140 @@
 - Minor overhaul, using aussieaddonscommon
 
 [B]Version v1.1.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.8-2-g4af6715">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>AFL Video by Aussie Add-ons</summary>
+    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
+    <website>http://aussieaddons.com/addons/afl/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
+    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v2.0.9[/B]
+- Fix external whitelist for tox and switch to py3
+- Use HTTPS for some Telstra URLs
+
+[B]Version v2.0.8[/B]
+- Stop error reports for intermittent 404s and token expired
+
+[B]Version v2.0.7[/B]
+- Stop error reports from trying to play dummy titles
+
+[B]Version v2.0.6[/B]
+- Fix for 'unable to locate source' in older videos
+
+[B]Version v2.0.5[/B]
+- ooyala -&gt; brightcove (again)
+
+[B]Version v2.0.4[/B]
+- Fix missing live streams
+- Use inputstream.adaptive for live streams...
+
+[B]Version v2.0.3[/B]
+- Reinstate ooyala code
+- Remove state setting
+
+[B]Version v2.0.2[/B]
+- Disable inputstream.adaptive for live streams
+- remove playback settings relating to widevine
+
+[B]Version v2.0.1[/B]
+- Re-use python interpreter
+
+[B]Version v2.0.0[/B]
+- formatting
+- Fix art for Kodi 19
+- New live video location and move from ooyala to brightcove
+- Update tests and data
+- Update tox excludes
+- ooyalahelper -&gt; stream_auth
+
+[B]Version v1.9.4[/B]
+- Remove unused variables from fakes.py
+- Add future dependency
+- Python 3 compatibility
+- New brightcove API for non-live videos
+- Fix AFLW upcoming matches
+- Add tests
+- Remove blurbs
+- Update from old strings.xml to .po
+- Remove bundled etree
+
+[B]Version v1.9.3[/B]
+- Update to 2020 auth
+- Fix travis config
+- travis-ci config update for notifications and lock in py27
+- Simplify handling of i.a and DRM failure messaging
+
+[B]Version v1.9.2[/B]
+- correct incorrect logic in play.py
+- Fix free live games not playing
+- Remove reliance on drmhelper hack
+- Fix unicode errors, incorrect settings label
+
+[B]Version v1.9.1[/B]
+- Fix live streams for beginning of 2019 season (#2613)
+
+[B]Version v1.9.0[/B]
+- Add mobile data authentication (#2609)
+- travis.yml - update old github url to new org
+
+[B]Version v1.8.9[/B]
+- fix token 403 errors (#2610)
+
+[B]Version v1.8.8[/B]
+- New auth 2019 (#2606)
+- Feedback to user for upcoming (dummy) listings when selected (#2605)
+- Add 'All' category
+
+[B]Version v1.8.7[/B]
+- Update to new auth process (#2601)
+
+[B]Version v1.8.6[/B]
+- Fix upcoming matches, Live Pass instructions (#2598)
+- Implement manual token/in-app subscription (#2597)
+
+[B]Version v1.8.5[/B]
+- Handle outdated favourites links (#2594)
+- Add AFLW content, fix UnboundLocalError issue  (#2593)
+- Improve m3u8 parsing, fixes live matches
+
+[B]Version v1.8.4[/B]
+- Remove unneeded functions and modules (#2587)
+- Update to new travis.yml
+- TypeError: object of type 'listreverseiterator' has no len()
+- Merge remote-tracking branch 'refs/remotes/xbmc-catchuptv-au/remove-old-replays'
+- Remove old replays and use API for seasons
+- Begin work on restructuring addon
+- Disable upcoming matches listings for now
+
+[B]Version v1.8.3[/B]
+- Clean up settings, method name fixes
+- Update travis CI key for repo move
+- Add higher res icons
+- Use aussie addons common module, flake8 fixes
+
+[B]Version v1.8.2[/B]
 - Initial version
 </news></extension>
 </addon></addons>
