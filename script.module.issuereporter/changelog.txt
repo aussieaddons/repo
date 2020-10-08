@@ -1,8 +1,0 @@
-[B]Version v1.0.1[/B]
- - minor changes
-
-[B]Version v1.0.0-1-gc46ed8e[/B]
-- add travis.yml
-
-[B]Version v1.0.0[/B]
-- Initial version

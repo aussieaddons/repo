@@ -1,4 +1,0 @@
-[B]Version 0.1.1[/B]
-
-- Move code to GitHub
-- Update streaming URL

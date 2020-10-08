@@ -1,6 +1,0 @@
-[B]Version 0.1[/B]
-- Initial version of Addon
-
-Credits
-================
-Created by Andy Botting (andybz)
