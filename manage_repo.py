@@ -84,6 +84,14 @@ METADATA_BASENAMES = (
     'icon.png',
     'fanart.jpg',
     'LICENSE.txt')
+BUILD_VERSIONS = {
+    'nnnnnn':
+        {'python-api': '4.0.0'},
+    'matrix':
+        {'python-api': '3.0.0'},
+    'leia':
+        {'python-api': None} #  do not alter
+}
 
 
 def get_archive_basename(addon_metadata):
@@ -176,11 +184,11 @@ def update_news(metadata_path, changelog):
     root = tree.getroot()
 
     metadata = root.find('extension[@point="xbmc.addon.metadata"]')
-    
+
     news_tags = metadata.findall('news')
     for element in news_tags:
         metadata.remove(element)
-    
+
     news = xml.etree.ElementTree.SubElement(metadata, 'news')
     news.text = '\n'.join(changelog)
 
@@ -188,18 +196,28 @@ def update_news(metadata_path, changelog):
         tree.write(info_file, encoding='UTF-8', xml_declaration=True)
 
 
-def update_version(metadata_path, version):
-
-    tree = xml.etree.ElementTree.ElementTree(file=metadata_path)
+def update_version(metadata_path, version, kodi_version=None):
+    try:
+        tree = xml.etree.ElementTree.ElementTree(file=metadata_path)
+    except:
+        print(metadata_path)
+        raise
     root = tree.getroot()
-    root.set('version', version)
+    ver = version.replace('-','~').replace('~', '-', 1)
+    if kodi_version:
+        api_ver = BUILD_VERSIONS.get(kodi_version, {}).get('python-api')
+        if api_ver:
+            for el in root.find('requires'):
+                if el.get('addon') == 'xbmc.python':
+                    el.set('version', api_ver)
+        ver += '_{vers}'.format(vers=kodi_version)
+    root.set('version', ver)
 
     with io.BytesIO() as info_file:
         tree.write(info_file, encoding='UTF-8', xml_declaration=True)
         info_contents = info_file.getvalue()
 
-    info_file = open(metadata_path, 'wb')
-    with info_file:
+    with open(metadata_path, 'wb') as info_file:
         info_file.write(info_contents)
 
 
@@ -255,52 +273,62 @@ def fetch_addon_from_git(addon_location, target_folder):
         shutil.rmtree(clone_folder, ignore_errors=False)
 
 
-def fetch_addon_from_folder(raw_addon_location, target_folder):
+def fetch_addon_from_folder(raw_addon_location, target_folder, kodi_version):
     addon_location = os.path.expanduser(raw_addon_location)
     metadata_path = os.path.join(addon_location, INFO_BASENAME)
 
-    repo = git.Repo(addon_location)
-    version = get_version(repo)
+    try:
+        repo = git.Repo(addon_location)
+        version = get_version(repo)
 
-    # Update addon metadata
-    update_version(metadata_path, version)
-    changelog = generate_changelog(repo)
-    write_changelog_file(addon_location, changelog)
-    update_news(metadata_path, changelog)
+        # Update addon metadata
+        update_version(metadata_path, version, kodi_version)
+        changelog = generate_changelog(repo)
+        write_changelog_file(addon_location, changelog)
+        update_news(metadata_path, changelog)
 
-    addon_metadata = parse_metadata(metadata_path)
-    addon_target_folder = os.path.join(target_folder, addon_metadata.id)
+        addon_metadata = parse_metadata(metadata_path)
+        addon_target_folder = os.path.join(target_folder, addon_metadata.id)
 
-    ignore = ['*.pyc', '*.pyo', '*.swp', '*.zip', '.gitignore', '.travis.yml',
-              'requirements.txt', '__pycache__', 'tox.ini', '.tox']
+        ignore = ['*.pyc', '*.pyo', '*.swp', '*.zip', '.gitignore', '.travis.yml',
+                  'requirements.txt', '__pycache__', 'tox.ini', '.tox']
 
-    # Create the compressed add-on archive.
-    if not os.path.isdir(addon_target_folder):
-        os.mkdir(addon_target_folder)
-    archive_path = os.path.join(
-        addon_target_folder, get_archive_basename(addon_metadata))
+        # Create the compressed add-on archive.
+        if not os.path.isdir(addon_target_folder):
+            os.mkdir(addon_target_folder)
+        archive_path = os.path.join(
+            addon_target_folder, get_archive_basename(addon_metadata))
 
-    with zipfile.ZipFile(archive_path, 'w',
-                         compression=zipfile.ZIP_DEFLATED) as archive:
-        for (root, dirs, files) in os.walk(addon_location):
-            # Filter ignored files
-            files = (n for n in files
-                     if not any(fnmatch.fnmatch(n, i) for i in ignore))
-            # Skip hidden dirs
-            dirs[:] = [d for d in dirs if not any([d[0] == '.', d == 'tests'])]
+        with zipfile.ZipFile(archive_path, 'w',
+                             compression=zipfile.ZIP_DEFLATED) as archive:
+            for (root, dirs, files) in os.walk(addon_location):
+                # Filter ignored files
+                files = (n for n in files
+                         if not any(fnmatch.fnmatch(n, i) for i in ignore))
+                # Skip hidden dirs
+                dirs[:] = [d for d in dirs if not any([d[0] == '.', d == 'tests'])]
 
-            relative_root = os.path.join(
-                addon_metadata.id, os.path.relpath(root, addon_location))
-            for relative_path in files:
-                archive.write(
-                    os.path.join(root, relative_path),
-                    os.path.join(relative_root, relative_path))
-    generate_checksum(archive_path)
+                relative_root = os.path.join(
+                    addon_metadata.id, os.path.relpath(root, addon_location))
+                for relative_path in files:
+                    archive.write(
+                        os.path.join(root, relative_path),
+                        os.path.join(relative_root, relative_path))
+        generate_checksum(archive_path)
 
-    if not os.path.samefile(addon_location, addon_target_folder):
-        copy_metadata_files(
-            addon_location, addon_target_folder, addon_metadata)
+        if not os.stat(addon_location) == os.stat(addon_target_folder):
+            copy_metadata_files(
+                addon_location, addon_target_folder, addon_metadata)
 
+        repo.git.clear_cache()
+        repo.__del__()
+    finally:
+        import stat
+        for root, dirs, files in os.walk(addon_location):
+            for dir in dirs:
+                os.chmod(os.path.join(root, dir), stat.S_IRWXU)
+            for file in files:
+                os.chmod(os.path.join(root, file), stat.S_IRWXU)
     return addon_metadata
 
 
@@ -348,14 +376,21 @@ def fetch_addon_from_zip(raw_addon_location, target_folder):
     return addon_metadata
 
 
-def fetch_addon(addon_location, target_folder, result_slot):
+def fetch_addon(addon_location, target_folder, result_slot, kodi_version):
+    tf = False
+    temp_folder = None
     try:
         if is_url(addon_location):
             addon_metadata = fetch_addon_from_git(
                 addon_location, target_folder)
         elif os.path.isdir(addon_location):
+            #  create separate folders for each version
+            temp_folder = os.path.join(addon_location, '.{vers}'.format(vers=kodi_version))
+            tf = True
+            shutil.copytree(addon_location, temp_folder, ignore=(shutil.ignore_patterns('.*')))
+            shutil.copytree(os.path.join(addon_location, '.git'), os.path.join(temp_folder, '.git'))
             addon_metadata = fetch_addon_from_folder(
-                addon_location, target_folder)
+                temp_folder, target_folder, kodi_version)
         elif os.path.isfile(addon_location):
             addon_metadata = fetch_addon_from_zip(
                 addon_location, target_folder)
@@ -364,73 +399,87 @@ def fetch_addon(addon_location, target_folder, result_slot):
         result_slot.append(WorkerResult(addon_metadata, None))
     except Exception:
         result_slot.append(WorkerResult(None, sys.exc_info()))
+    finally:
+        if tf and temp_folder:
+            shutil.rmtree(temp_folder, ignore_errors=False)
 
 
-def get_addon_worker(addon_location, target_folder):
+def get_addon_worker(addon_location, target_folder, kodi_version):
     result_slot = []
     thread = threading.Thread(target=lambda: fetch_addon(
-        addon_location, target_folder, result_slot))
+        addon_location, target_folder, result_slot, kodi_version))
     return AddonWorker(thread, result_slot)
 
 
-def create_repository(addon_locations, target_folder, info_path,
-                      checksum_path, is_compressed):
-
-    # Create the target folder.
-    if not os.path.isdir(target_folder):
-        os.mkdir(target_folder)
-
-    # Fetch all the add-on sources in parallel.
-    workers = [get_addon_worker(addon_location, target_folder)
-               for addon_location in addon_locations]
-
-    for worker in workers:
-        worker.thread.start()
-    for worker in workers:
-        worker.thread.join()
-
-    # Collect the results from all the threads.
-    metadata = []
-    for worker in workers:
-        try:
-            result = next(iter(worker.result_slot))
-        except StopIteration:
-            raise RuntimeError('Addon worker did not report result')
-        if result.exc_info is not None:
-            raise result.exc_info[1]
-        metadata.append(result.addon_metadata)
-
-    # If addons.xml already exists, read it
-    if os.path.isfile(info_path):
-        tree = xml.etree.ElementTree.ElementTree(file=info_path)
-        root = tree.getroot()
-    else:
-        # Generate the addons.xml file.
-        root = xml.etree.ElementTree.Element('addons')
-
-    for addon_metadata in metadata:
-        # Remove existing addon from doc
-        for addon in root:
-            if addon.attrib.get('id') == addon_metadata.id:
-                root.remove(addon)
-        tree = root.append(addon_metadata.root)
-
-    tree = xml.etree.ElementTree.ElementTree(root)
-    with io.BytesIO() as info_file:
-        tree.write(info_file, encoding='UTF-8', xml_declaration=True)
-        info_contents = info_file.getvalue()
+def create_repository(addon_locations, data_path, is_compressed, buildvers):
 
     if is_compressed:
-        info_file = gzip.open(info_path, 'wb')
+        info_basename = 'addons.xml.gz'
     else:
-        info_file = open(info_path, 'wb')
-    with info_file:
-        info_file.write(info_contents)
+        info_basename = 'addons.xml'
 
-    # Calculate the signature.
-    digest = hashlib.md5(info_contents).hexdigest()
-    with open(checksum_path, 'w') as sig:
-        sig.write(digest)
+    for kodi_version in buildvers:
+        target_folder = os.path.join(data_path, kodi_version)
+        # Create the target folder.
+        if not os.path.isdir(target_folder):
+            os.mkdir(target_folder)
+
+        info_path = os.path.join(target_folder, info_basename)
+        # Fetch all the add-on sources in parallel.
+        workers = [
+            get_addon_worker(addon_location, target_folder, kodi_version)
+            for addon_location in addon_locations]
+
+        for worker in workers:
+            worker.thread.start()
+        for worker in workers:
+            worker.thread.join()
+
+        # Collect the results from all the threads.
+        metadata = []
+        for worker in workers:
+            try:
+                result = next(iter(worker.result_slot))
+            except StopIteration:
+                raise RuntimeError('Addon worker did not report result')
+            if result.exc_info is not None:
+                import traceback
+                traceback.print_tb(result.exc_info[2])
+                raise result.exc_info[1]
+            metadata.append(result.addon_metadata)
+
+        # If addons.xml already exists, read it
+        if os.path.isfile(info_path):
+            tree = xml.etree.ElementTree.ElementTree(file=info_path)
+            root = tree.getroot()
+        else:
+            # Generate the addons.xml file.
+            root = xml.etree.ElementTree.Element('addons')
+
+        for addon_metadata in metadata:
+            # Remove existing addon from doc
+            for addon in root[:]:  # use copy to avoid iteration errors
+                if addon.attrib.get('id') == addon_metadata.id:
+                    root.remove(addon)
+        for addon_metadata in metadata:
+            tree = root.append(addon_metadata.root)
+
+        tree = xml.etree.ElementTree.ElementTree(root)
+        with io.BytesIO() as info_file:
+            tree.write(info_file, encoding='UTF-8', xml_declaration=True)
+            info_contents = info_file.getvalue()
+
+        if is_compressed:
+            info_file = gzip.open(info_path, 'wb')
+        else:
+            info_file = open(info_path, 'wb')
+        with info_file:
+            info_file.write(info_contents)
+
+        # Calculate the signature.
+        digest = hashlib.md5(info_contents).hexdigest()
+        with open(os.path.join(target_folder, 'addons.xml.md5'), 'w') as sig:
+            sig.write(digest)
 
 
 def main():
@@ -438,12 +487,6 @@ def main():
         description='Create a Kodi add-on repository from add-on sources')
     parser.add_argument('--datadir', '-d', default='.',
                         help='Path to place the add-ons [current directory]')
-    parser.add_argument('--info', '-i',
-                        help='Path for the addons.xml file [DATADIR/addons.xml'
-                             'or DATADIR/addons.xml.gz if compressed]')
-    parser.add_argument('--checksum', '-c',
-                        help='Path for the addons.xml.md5 file '
-                             '[DATADIR/addons.xml.md5]')
     parser.add_argument('--compressed', '-z', action='store_true',
                         help='Compress addons.xml with gzip')
     parser.add_argument('addon', nargs='*', metavar='ADDON',
@@ -451,24 +494,15 @@ def main():
                              'local folder or to a zip archive or a URL for '
                              'a Git repository with the format '
                              'REPOSITORY_URL#BRANCH:PATH')
+    parser.add_argument('--buildvers', '-b', action='store',
+                        nargs='*', default=['leia'], type=str.lower,
+                        help='Versions of Kodi to build for e.g Leia, '
+                             'Matrix etc.')
     args = parser.parse_args()
 
     data_path = os.path.expanduser(args.datadir)
-    if args.info is None:
-        if args.compressed:
-            info_basename = 'addons.xml.gz'
-        else:
-            info_basename = 'addons.xml'
-        info_path = os.path.join(data_path, info_basename)
-    else:
-        info_path = os.path.expanduser(args.info)
 
-    checksum_path = (
-        os.path.expanduser(args.checksum) if args.checksum is not None
-        else os.path.join(data_path, 'addons.xml.md5'))
-
-    create_repository(args.addon, data_path, info_path, checksum_path,
-                      args.compressed)
+    create_repository(args.addon, data_path, args.compressed, args.buildvers)
 
 
 if __name__ == "__main__":

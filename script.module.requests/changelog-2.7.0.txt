@@ -1,2 +1,0 @@
-[B]Version 2.7.0[/B]
-- Import requests into XBMC module

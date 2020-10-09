@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<addon id="repository.googlecode.xbmc-catchuptv-au" name="Aussie Add-ons (formerly XBMC CatchupTV AU)" provider-name="Aussie Add-ons" version="1.6">
+  <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
+    <dir minversion="1.0.0" maxversion="18.9.0">
+      <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml</info>
+      <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/leia/</datadir>
+    </dir>
+    <dir minversion="18.9.701">
+      <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/matrix/addons.xml</info>
+      <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/matrix/addons.xml.md5</checksum>
+      <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/matrix/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install Aussie Add-ons (formerly XBMC CatchupTV AU)</summary>
+    <description>Download and install add-ons from the Aussie Add-ons repository. See http://aussieaddons.com for more information.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
