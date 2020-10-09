@@ -1,0 +1,934 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons>
+  <addon id="repository.aussieaddons" name="Aussie Add-ons" provider-name="Aussie Add-ons" version="1.2.0">
+    <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
+      <dir minversion="1.0.0" maxversion="18.9.0">
+        <info compressed="false">https://r.aussieaddons.com/repository/leia/addons.xml</info>
+        <checksum>https://r.aussieaddons.com/repository/leia/addons.xml.md5</checksum>
+        <datadir zip="true">https://r.aussieaddons.com/repository/leia/</datadir>
+      </dir>
+      <dir minversion="18.9.701">
+        <info compressed="false">https://r.aussieaddons.com/repository/matrix/addons.xml</info>
+        <checksum>https://r.aussieaddons.com/repository/matrix/addons.xml.md5</checksum>
+        <datadir zip="true">https://r.aussieaddons.com/repository/matrix/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary>Install Aussie Add-ons</summary>
+      <description>Download and install add-ons from the Aussie Add-ons repository. See https://aussieaddons.com for more information.</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
+  <addon id="repository.googlecode.xbmc-catchuptv-au" name="Aussie Add-ons (formerly XBMC CatchupTV AU)" provider-name="Aussie Add-ons" version="1.6">
+    <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
+      <dir minversion="1.0.0" maxversion="18.9.0">
+        <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml</info>
+        <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/leia/</datadir>
+      </dir>
+      <dir minversion="18.9.701">
+        <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/matrix/addons.xml</info>
+        <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/matrix/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/matrix/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary>Install Aussie Add-ons (formerly XBMC CatchupTV AU)</summary>
+      <description>Download and install add-ons from the Aussie Add-ons repository. See http://aussieaddons.com for more information.</description>
+      <platform>all</platform>
+    </extension>
+  </addon>
+<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="1.8.5">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.beautifulsoup" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.pycaption" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>ABC iView by Aussie Add-ons</summary>
+    <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days. You must be located in Australia to access content. NOTE: This will count towards your Internet usage quota.</description>
+    <website>http://aussieaddons.com/addons/abc_iview</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.abc_iview</source>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.8.5[/B]
+- Use title case for Settings and update Travis CI config
+
+[B]Version v1.8.4[/B]
+
+[B]Version v1.8.3[/B]
+- Make the Settings item consistent as captials
+- Fix subtitles, remove optional tag for drmhelper
+
+[B]Version v1.8.2[/B]
+- formatting pt. 2
+- fix formatting
+- Add support for inputstream.adaptive playback
+- Add setting to toggle HD streams, remove subtitle setting
+- Update categories.py
+- Update parse.py
+- Update categories.py
+- Method name updates
+- Fix method name from utils
+- Code cleanups and add user reporting to settings
+- Code clean ups
+- Use aussie add-ons common module
+- Use customsession module
+- Validate categories
+- Remove automatic time/timezone calculation, small cleanup
+- Use external issue reporter module, rework dialog function
+- Correct implementation of DST calculation, handle exceptions
+- 404 error fixes, Flake8, other small changes
+
+[B]Version v1.8.0[/B]
+- Fix for duplicate entries in news categories
+- Switch to using requests
+- Add missing requests import
+- Switch to mobile API and update metadata for Kodi v17
+- Remove cookies.dat on each playback
+- Update README.markdown
+- Add 'high quality' streams where available
+- Fix for error caused by missing playlist info
+- Fix cookie issue
+- Fix typo
+- Code style fixes and re-add season/episode parsing
+- Revert to Kodi native stream handling
+- Add feature to choose stream quality
+- small fix for error in episode number counting
+- Switch to mobile API
+
+[B]Version v1.7.6[/B]
+- rename HTMLParser class
+- Fix for subtitles
+
+[B]Version v1.7.3[/B]
+- Update README
+- Attempt to ignore SSL errors on Python 2.7.9+
+
+[B]Version v1.7.2[/B]
+- Remove unset variable
+
+[B]Version v1.7.1[/B]
+- Roll back SSL fix due to breakage
+
+[B]Version v1.7.0[/B]
+- Disable the 'All' category due to API returning empty responses
+- Issue reporter fixes
+- Disable SSL verification to work around Apple issues
+- Add pre-Kodi v14 support for subtitles
+- Enable subtitles in settings
+- Add support for subtitles
+- Change method of playing videos
+- Fix incorrect variable name
+- Use minutes for older XBMC/Kodi versions
+
+[B]Version v1.6.8[/B]
+- Initial version
+</news></extension>
+</addon>
+<addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="Aussie Add-ons" version="1.0.4">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.pycaption" />
+    <import addon="script.module.aussieaddonscommon" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>9now add-on</summary>
+    <description>Watch live TV and catch up on all videos offered by the 9now service</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.0.4[/B]
+- Fix News and Documentary genres not populating
+- Show all episodes instead of just 'latest'
+- fix error message for geoblocking
+- fix handling of geoblocking errors
+
+[B]Version v1.0.3[/B]
+- Catch brightcove geoblocking errors (untested)
+- Update logo, catch and log JSON errors
+
+[B]Version v1.0.2[/B]
+- Fix some nonetype errors
+
+[B]Version v1.0.1[/B]
+- Fix for unicode errors
+- Fix wrong addon being called in settings
+- Fix live channel playlist parsing
+- Rework m3u8 parsing, missing airdate
+
+[B]Version v1.0.0[/B]
+- Update travisci token
+- Fix live streams
+- Add subtitles support
+- Various fixes, add live video quality setting
+- Rewrite add-on
+
+[B]Version v0.1.0[/B]
+- Bypass SSL Verification on platforms which lack SNI support
+- Complete rewrite to work with 9Now
+- Update README.md
+
+[B]Version v0.0.3[/B]
+- Move repo url from googlecode to github
+- Fix failure to show all available shows
+- Update README.md
+
+[B]Version v0.0.2[/B]
+- Initial version
+</news></extension>
+</addon><addon id="script.module.warrant" name="Warrant" provider-name="Aussie Add-ons" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.dateutil" version="2.4.2" />
+    <import addon="script.module.six" version="1.9.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <language />
+    <summary lang="en">Warrant for Python</summary>
+    <description lang="en">Packed for Kodi from https://github.com/capless/warrant</description>
+    <platform>all</platform>
+  <news>[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.cricketaustralia" name="Cricket Live" provider-name="Aussie Add-ons" version="0.0.3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.drmhelper" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="addon.py" point="xbmc.addon.metadata">
+    <summary>Cricket Live by Aussie Add-ons</summary>
+    <description>Watch live Cricket matches and other videos</description>
+    <website>http://aussieaddons.com/addons/cricket/</website>
+    <source>https://github.com/aussieaddons/plugin.video.cricketaustralia</source>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v0.0.3[/B]
+- update travis token
+
+[B]Version v0.0.2[/B]
+- update addon.xml and travis.yml
+- Fix for API change
+- Improved live video listing/refreshing (#3)
+- Update README.md
+- Fix to restore news video stream support
+- Website updates for 2018/19 season
+- Include on-demand clips and DRM helper magic
+
+[B]Version v0.0.1[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.4.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.warrant" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>Soccer Live add-on</summary>
+    <description>Soccer Live is an unofficial add-on for Australian soccer content</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.4.0[/B]
+- Style fixes, python3 for default.py
+- Ignore venv and tox folders for flake8
+- Python 3 compatibility and some refactor fixes
+- Add tests
+- ooyalahelper -&gt; stream_auth pt.2
+- ooyalahelper -&gt; stream_auth
+- Tidy up paid token
+
+[B]Version v1.3.2[/B]
+- Get live videos working again (broken due to API change)
+
+[B]Version v1.3.1[/B]
+- match replays using new key for replay ids
+
+[B]Version v1.3.0[/B]
+- Fix live matches
+- Update for changes in API
+
+[B]Version v1.2.1[/B]
+- Workaround for errors in metadata
+
+[B]Version v1.2.0[/B]
+- New 2020 auth, major improvements
+- Handle secure token error/unbound local
+- Add match replays
+
+[B]Version v1.1.1[/B]
+- Update auth for new api location
+
+[B]Version v1.1.0[/B]
+- Fix syntax mistake for showing prematch games
+- Finish mobile activation
+- Show live matches 10 minutes before scheduled start
+- Grey settings for mobile auth, reorder settings
+- Add support for paid subscriptions, prepare mobile authorisation
+
+[B]Version v1.0.1[/B]
+- Fix storing ticket incorrectly...
+
+[B]Version v0.9.9[/B]
+- Initial version
+</news></extension>
+</addon><addon id="script.module.pycaption" name="pycaption" provider-name="Aussie Add-ons" version="0.7.6-1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.future" />
+    <import addon="script.module.six" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>Python caption reading/writing module</summary>
+    <description>pycaption is a caption reading/writing module. Use one of the given Readers to read content into a CaptionSet object, and then use one of the Writers to output the CaptionSet into captions of your desired format.</description>
+    <platform>all</platform>
+    <source>https://github.com/pbs/pycaption</source>
+    <website>https://github.com/pbs/pycaption</website>
+    <license>Apache 2.0</license>
+  <news>[B]Version v0.7.6-1[/B]
+- Refactor replace past cmp with equivalent expression
+- Refactor old_div to floor div // or div /
+
+[B]Version v0.7.6[/B]
+- Update .travis.yml
+
+[B]Version v0.5.6[/B]
+- Remove SCC and DFXP support for Python &lt; 2.7
+- Ignore cues with missing content
+
+[B]Version v0.5.5[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.6">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>NRL Live add-on</summary>
+    <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.5.6[/B]
+- Oauth PKCE for paid/linked authorisation
+
+[B]Version v1.5.5[/B]
+- cleanup
+- Only get media auth token for live
+- Kodi 19 vod fixed
+
+[B]Version v1.5.4[/B]
+- Live videos for 2020
+- ooyalahelper -&gt; stream_auth
+
+[B]Version v1.5.3[/B]
+- Fix shortlist url
+- New streaming API
+
+[B]Version v1.5.2[/B]
+- Update to 2020 auth, add tests
+- Fix travis config
+- travis update for notifications and py27
+
+[B]Version v1.4.5[/B]
+- Fix url for upcoming matches
+
+[B]Version v1.4.4[/B]
+- additional change to revert
+
+[B]Version v1.4.3[/B]
+- Revert changes made in 9744f08 for preseason games
+
+[B]Version v1.4.2[/B]
+- Remove live streaming quality settings
+- Fix live matches for preseason trials
+
+[B]Version v1.4.1[/B]
+- Remove bom on all xml requests
+
+[B]Version v1.4.0[/B]
+- Fix xml errors for live match menu
+- update to new travis.yml
+- Better icon
+- New generic uncopyrighted icon
+- Add mobile authentication
+
+[B]Version v1.3.6[/B]
+- Fix JSON errors for paid token
+
+[B]Version v1.3.5[/B]
+- Fix No JSON object could be decoded errors in auth
+
+[B]Version v1.3.4[/B]
+- Update for new auth api location
+- Update README.md
+
+[B]Version v1.3.3[/B]
+- Disallow error reporting if ooyala detects overseas IP
+- Remove replay quality settings
+
+[B]Version v1.3.2[/B]
+- Fix live matches following replay quality setting instead of live
+- Raise exceptions for ooyala auth messages other than 'unauthorized location'
+
+[B]Version v1.3.1[/B]
+- Improve feedback for errors in login process
+- Fix match highlights and add match replays category
+
+[B]Version v1.3.0[/B]
+- Finishing updating 2018 Free Live Pass auth, cleanup.
+
+[B]Version v1.2.7[/B]
+- add auth process for videos, start work on new sign in for telstra
+
+[B]Version v1.2.6[/B]
+- More live listing updates
+
+[B]Version v1.2.5[/B]
+- Rudimentary implementation of live matches
+- Fix greyed out settings in Krypton, revert removing first run setting
+- Remove firstrun setting
+- fix greyed out settings issue
+
+[B]Version v1.2.4[/B]
+- Update README.md
+- Improve error messages for nrl.com login
+- Fix thumbnails, improve login settings, flake8 formatting
+- Finish implementing videos from Match Highlights category
+- Fix live video menu
+- Implement in-app subscription option
+- correct handling 404 for auth process
+
+[B]Version v1.2.3[/B]
+- Prepare for 2018 season
+
+[B]Version v1.2.2[/B]
+- Handle current year round number after season end
+
+[B]Version v1.2.1[/B]
+- quick fix for mktime overflow error
+- Update provider name in addon.xml
+
+[B]Version v1.2.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.4">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.future" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>Module to assist in aquiring components to enable DRM playback</summary>
+    <description>This module is required for add-ons which can play back Widevine DRM protected videos. It will fetch and install the required content decrypter module and single sample decrypter module from our repo, and attempt to install the required inputstream.adaptive add-on.</description>
+    <website />
+    <source>https://github.com/aussieaddons/script.module.drmhelper</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v2.0.4[/B]
+- Fix cdm download/move for linux x86 and macos
+
+[B]Version v2.0.3[/B]
+- Adjust for new modules.json
+
+[B]Version v2.0.2[/B]
+- Update cdm modules location
+
+[B]Version v2.0.1[/B]
+- Implement proper test for _get_wvcdm_paths, fix python3 compat
+- tox fixes and flake8 pass
+- Python 3 compatibility
+- Fix Android compatibility, improve _get_platform and _is_wv_drm_supported tests
+- fix rpi properly
+- Improve is_uwp tests
+- Fix rpi support, improve is_wv_drm_supported test
+- Add missing future dependency
+- minor fixes
+- Change source of widevinecdm, implement checking of cdm version
+- Fix old entrypoints to drmhelper, add message for get_ssd_wv
+- fix syntax error from copy/paste
+- Change fakes cdm paths order
+- Search for cdms in same order as inputstream.adaptive
+
+[B]Version v2.0.0[/B]
+- Small changes to tests
+- Add tests and refactor _get_wvcdm
+- Fix flake8 errors
+- Remove unneeded addon version checks and tests
+- Fix unarchive command
+- Rework cdm path logic (#4)
+- Actually, add the new version of our travis script
+- Replace xbmc-catchuptv-au with aussieaddons and formatting for travis
+- Set py2.7 and Slack notification to travis build
+- Revert "Reduce CDM paths to just what we need"
+- Don't do the WV checking for Android
+- Fold extra function into check
+- Reduce CDM paths to just what we need
+- Clean up platform detection and add logging for CDM paths
+- Show dialog when drm platform not supported
+- Add more tests
+- Fix changes lost from helper.py in 5ab7fd0
+- add xbmcbinaddons to cdm/ssd check
+- update arm cdm urls
+- Slight improvement for dialog texts
+- Stop keyerrors from arch lookup
+- Use arch lookup
+- Fix CDM path and some lint errors
+- Use xbmc cond vis UWP for Kodi 18
+- Major update for v2
+
+[B]Version v1.2.7[/B]
+- add special://xbmcbinaddons to ssd check
+
+[B]Version v1.2.6[/B]
+- Small hack for afl-video
+
+[B]Version v1.2.5[/B]
+- Update widevinecdm links
+
+[B]Version v1.2.4[/B]
+- Update widevinecdm, fix arm command, search lib/
+
+[B]Version v1.2.3[/B]
+- Search home/addons for ssd_wv
+
+[B]Version v1.2.2[/B]
+- Don't fail after installing from repo
+
+[B]Version v1.2.1[/B]
+- Update Linux/ARM widevinecdm
+
+[B]Version v1.2.0[/B]
+- Initial version
+</news></extension>
+  <news />
+</addon><addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.3.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>Common functions for Aussie Add-ons</summary>
+    <description>Common functions for Aussie Add-ons</description>
+    <source>https://github.com/aussieaddons/script.module.aussieaddonscommon</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.3.1[/B]
+- Prevent issue reports from 'Kodi boxes' that have modified addon versions
+
+[B]Version v1.3.0[/B]
+- set version to 0.0.1
+- fix style
+- repatch addon in test_utils
+- Don't set ADDON until called
+- Complete python 2/3 compatibility
+- add session test, begin changes for py2/3 compatibility
+- add future package to addon.xml, remove dependency on six in test_issue_reporter
+- Python 2/3 compatibility for issue_reporter and test_issue_reporter
+- Add issue_reporter unit tests, remove separate test requirements
+- Add unit tests for utils.py
+- move user_initiated logic into send_report
+
+[B]Version v1.2.0[/B]
+- Add platform as detected by Kodi to report summary
+- Fix travis config
+- travis-ci config update for notifications
+- Add to org blacklist
+- Create progress dialog for issue report immediately
+- Busy dialog box fix
+- Only allow reports for addons currently in repo
+- Limit issue report titles to 256 chars
+- Ensure debug mode is enabled for user reports. (#8)
+
+[B]Version v1.1.5[/B]
+- Add additional orgs to blacklist
+
+[B]Version v1.1.4[/B]
+- Update token
+
+[B]Version v1.1.3[/B]
+- Update GitHub references from xbmc-catchuptv-au to aussieaddons
+- Add blacklisting for org (#6)
+- Small tidy up
+- Allow if hostname is blank when checking agains blacklist
+- flake8
+- Disallow reporting from known VPN/proxy addresses.
+
+[B]Version v1.1.2[/B]
+- Fix TypeError: can only concatenate list (not "unicode") to list
+
+[B]Version v1.1.1[/B]
+- Don't fail build on tag release
+
+[B]Version v1.0.2[/B]
+- Rework .travis.yml
+
+[B]Version v1.0.1[/B]
+- Deal with import _strptime python bug, update travis.yml
+- Show detected country to user on error
+- Use ipinfo for connection details and only allow AU reports
+- Fix for showing error dialog for non-reportable errors
+- Fix traceback handling in error reports
+- Fix error message handling
+- Fix token handling
+- Another attempt at token
+- Hopefully last time
+- .. and again
+- Update reporting token again after it went missing
+- Filter out any non-str values in exc value args
+- Update github token again
+- Rework version number handling and other fixes
+- Refactoring
+- Update exception handling
+- Include issue reporter and utils enhancements
+- Fix requirements and flake8 updates
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.8">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>SBS On Demand by Aussie Add-ons</summary>
+    <description>SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.</description>
+    <website>http://aussieaddons.com/addons/sbs/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.sbs</source>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.1.8[/B]
+- Allow for 'bad' metadata
+- Fix IndexError when accessing 'empty' programs
+
+[B]Version v1.1.7[/B]
+- Fix small mistake in default
+- Add search capability
+- Fix next page showing when not applicable
+- All lists are now max 50 length
+- Put total items/multi-page assignment in correct area
+- Multi-page
+- Fix 10 item limit, begin work on multiple pages
+- Only show 'Football Highlights' in sports genre
+- Correctly flatten single series
+- reuselanguageinvoker
+- Add seasons plus other changes
+- Fix using old function signature in get_category
+
+[B]Version v1.1.6[/B]
+- First run info dialog to inform of account requirements
+- Update for new API
+
+[B]Version v1.1.4[/B]
+- Addon temporarily broken
+- Fix travis config
+- travis update for notifications, py27, and github org name
+- Widen bandwidth windows for stream selection
+- Add stream quality selection (#1280)
+
+[B]Version v1.1.3[/B]
+- Fix missing quote in travis yaml (#1267)
+- Adapt error handling to new utils module (#1263)
+
+[B]Version v1.1.2[/B]
+- Fixes unbound local errors
+- Revise subtitle metadata logic
+- Handle no subtitles available, remove subtitle setting
+- Fix subtitles
+- Add user reporting, code updates
+- Metadata and common module update fixes
+- Fix missing requirement
+- Code cleanups, use common modules and update metadata
+- Update README.markdown
+
+[B]Version v1.1.0[/B]
+- Properly fix SSL issues with Python 2.7.9+
+
+[B]Version v1.0.9[/B]
+- Ignore SSL errors on Python 2.7.9+
+- Add handling for absence of subtitle metadata
+- Added files via upload
+- Update comm.py
+- Enable subtitles in settings
+- Add support for subtitles
+- Change method of playing videos 
+
+[B]Version v1.0.8[/B]
+- Fix XBMC v12 thumbnail handling error
+
+[B]Version v1.0.7[/B]
+- Fix for handling duration with decimal point
+
+[B]Version v1.0.6[/B]
+- Support fetching new streaming tokens
+
+[B]Version v1.0.5[/B]
+- Update basic auth string
+
+[B]Version v1.0.4[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.4.3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>Netball Live add-on</summary>
+    <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.4.3[/B]
+- Implement new stream auth and fix live playback
+
+[B]Version v1.4.2[/B]
+- Fix replays and other videos
+- Fix live matches
+
+[B]Version v1.4.1[/B]
+- Update broken CI token
+
+[B]Version v1.4.0[/B]
+- Update .travis.yml
+- New strings.po for Kodi 19, overhaul settings.
+- use inputstream.adaptive
+- Use setArt instead of deprecated ListItem constructor
+- Style and formatting fixes
+- add tests
+- add test resources
+- Using brightcove now - no more ooyala
+- ooyalahelper -&gt; stream_auth
+
+[B]Version v1.3.1[/B]
+- Fix upcoming matches, don't filter to only super netball comp
+
+[B]Version v1.3.0[/B]
+- Update for new telstra auth
+
+[B]Version v1.2.3[/B]
+- Fix JSON error
+
+[B]Version v1.2.2[/B]
+- Update auth for new api location
+
+[B]Version v1.2.1[/B]
+- Fix livepass login
+
+[B]Version v1.2.0[/B]
+- Fix other videos
+- Fix live matches
+
+[B]Version v1.1.2[/B]
+- Fix automatically removing login ticket if expired
+
+[B]Version v1.1.1[/B]
+- Add travis.yml
+- update version no.
+- Minor overhaul, using aussieaddonscommon
+
+[B]Version v1.1.0[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.9">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>AFL Video by Aussie Add-ons</summary>
+    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
+    <website>http://aussieaddons.com/addons/afl/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
+    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v2.0.9[/B]
+- Fix external whitelist for tox and switch to py3
+- Use HTTPS for some Telstra URLs
+
+[B]Version v2.0.8[/B]
+- Stop error reports for intermittent 404s and token expired
+
+[B]Version v2.0.7[/B]
+- Stop error reports from trying to play dummy titles
+
+[B]Version v2.0.6[/B]
+- Fix for 'unable to locate source' in older videos
+
+[B]Version v2.0.5[/B]
+- ooyala -&gt; brightcove (again)
+
+[B]Version v2.0.4[/B]
+- Fix missing live streams
+- Use inputstream.adaptive for live streams...
+
+[B]Version v2.0.3[/B]
+- Reinstate ooyala code
+- Remove state setting
+
+[B]Version v2.0.2[/B]
+- Disable inputstream.adaptive for live streams
+- remove playback settings relating to widevine
+
+[B]Version v2.0.1[/B]
+- Re-use python interpreter
+
+[B]Version v2.0.0[/B]
+- formatting
+- Fix art for Kodi 19
+- New live video location and move from ooyala to brightcove
+- Update tests and data
+- Update tox excludes
+- ooyalahelper -&gt; stream_auth
+
+[B]Version v1.9.4[/B]
+- Remove unused variables from fakes.py
+- Add future dependency
+- Python 3 compatibility
+- New brightcove API for non-live videos
+- Fix AFLW upcoming matches
+- Add tests
+- Remove blurbs
+- Update from old strings.xml to .po
+- Remove bundled etree
+
+[B]Version v1.9.3[/B]
+- Update to 2020 auth
+- Fix travis config
+- travis-ci config update for notifications and lock in py27
+- Simplify handling of i.a and DRM failure messaging
+
+[B]Version v1.9.2[/B]
+- correct incorrect logic in play.py
+- Fix free live games not playing
+- Remove reliance on drmhelper hack
+- Fix unicode errors, incorrect settings label
+
+[B]Version v1.9.1[/B]
+- Fix live streams for beginning of 2019 season (#2613)
+
+[B]Version v1.9.0[/B]
+- Add mobile data authentication (#2609)
+- travis.yml - update old github url to new org
+
+[B]Version v1.8.9[/B]
+- fix token 403 errors (#2610)
+
+[B]Version v1.8.8[/B]
+- New auth 2019 (#2606)
+- Feedback to user for upcoming (dummy) listings when selected (#2605)
+- Add 'All' category
+
+[B]Version v1.8.7[/B]
+- Update to new auth process (#2601)
+
+[B]Version v1.8.6[/B]
+- Fix upcoming matches, Live Pass instructions (#2598)
+- Implement manual token/in-app subscription (#2597)
+
+[B]Version v1.8.5[/B]
+- Handle outdated favourites links (#2594)
+- Add AFLW content, fix UnboundLocalError issue  (#2593)
+- Improve m3u8 parsing, fixes live matches
+
+[B]Version v1.8.4[/B]
+- Remove unneeded functions and modules (#2587)
+- Update to new travis.yml
+- TypeError: object of type 'listreverseiterator' has no len()
+- Merge remote-tracking branch 'refs/remotes/xbmc-catchuptv-au/remove-old-replays'
+- Remove old replays and use API for seasons
+- Begin work on restructuring addon
+- Disable upcoming matches listings for now
+
+[B]Version v1.8.3[/B]
+- Clean up settings, method name fixes
+- Update travis CI key for repo move
+- Add higher res icons
+- Use aussie addons common module, flake8 fixes
+
+[B]Version v1.8.2[/B]
+- Initial version
+</news></extension>
+</addon></addons>
