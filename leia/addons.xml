@@ -2,7 +2,7 @@
 <addons>
   <addon id="repository.aussieaddons" name="Aussie Add-ons" provider-name="Aussie Add-ons" version="1.2.0">
     <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
-      <dir minversion="1.0.0" maxversion="18.9.0">
+      <dir maxversion="18.9.0" minversion="1.0.0">
         <info compressed="false">https://r.aussieaddons.com/repository/leia/addons.xml</info>
         <checksum>https://r.aussieaddons.com/repository/leia/addons.xml.md5</checksum>
         <datadir zip="true">https://r.aussieaddons.com/repository/leia/</datadir>
@@ -21,7 +21,7 @@
   </addon>
   <addon id="repository.googlecode.xbmc-catchuptv-au" name="Aussie Add-ons (formerly XBMC CatchupTV AU)" provider-name="Aussie Add-ons" version="1.6">
     <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
-      <dir minversion="1.0.0" maxversion="18.9.0">
+      <dir maxversion="18.9.0" minversion="1.0.0">
         <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml</info>
         <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml.md5</checksum>
         <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/leia/</datadir>
@@ -206,37 +206,6 @@
     <description lang="en">Packed for Kodi from https://github.com/capless/warrant</description>
     <platform>all</platform>
   <news>[B]Version v1.0.0[/B]
-- Initial version
-</news></extension>
-</addon><addon id="plugin.video.cricketaustralia" name="Cricket Live" provider-name="Aussie Add-ons" version="0.0.3">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.drmhelper" />
-  </requires>
-  <extension library="addon.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="addon.py" point="xbmc.addon.metadata">
-    <summary>Cricket Live by Aussie Add-ons</summary>
-    <description>Watch live Cricket matches and other videos</description>
-    <website>http://aussieaddons.com/addons/cricket/</website>
-    <source>https://github.com/aussieaddons/plugin.video.cricketaustralia</source>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v0.0.3[/B]
-- update travis token
-
-[B]Version v0.0.2[/B]
-- update addon.xml and travis.yml
-- Fix for API change
-- Improved live video listing/refreshing (#3)
-- Update README.md
-- Fix to restore news video stream support
-- Website updates for 2018/19 season
-- Include on-demand clips and DRM helper magic
-
-[B]Version v0.0.1[/B]
 - Initial version
 </news></extension>
 </addon><addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.4.0">
@@ -929,6 +898,40 @@
 - Use aussie addons common module, flake8 fixes
 
 [B]Version v1.8.2[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.cricketaustralia" name="Cricket Live" provider-name="Aussie Add-ons" version="0.0.4_leia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.drmhelper" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="addon.py" point="xbmc.addon.metadata">
+    <summary>Cricket Live by Aussie Add-ons</summary>
+    <description>Watch live Cricket matches and other videos</description>
+    <website>http://aussieaddons.com/addons/cricket/</website>
+    <source>https://github.com/aussieaddons/plugin.video.cricketaustralia</source>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v0.0.4[/B]
+- update for new API
+
+[B]Version v0.0.3[/B]
+- update travis token
+
+[B]Version v0.0.2[/B]
+- update addon.xml and travis.yml
+- Fix for API change
+- Improved live video listing/refreshing (#3)
+- Update README.md
+- Fix to restore news video stream support
+- Website updates for 2018/19 season
+- Include on-demand clips and DRM helper magic
+
+[B]Version v0.0.1[/B]
 - Initial version
 </news></extension>
 </addon></addons>
