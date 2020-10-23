@@ -1,27 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.9_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>SBS On Demand by Aussie Add-ons</summary>
-    <description>SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.</description>
-    <website>http://aussieaddons.com/addons/sbs/</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.sbs</source>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.1.9[/B]
+[B]Version v1.1.9[/B]
 - Update mobile app version to a supported value
 - Further fixes for Matrix
 - Fix problem with incorrectly parsed date
@@ -32,7 +9,7 @@
 - Complete tests
 - Fix ValueError on occasional float duration
 - stop error on viewing 'continue watching' when not logged in
-- Fix playback on Kodi &lt; 18
+- Fix playback on Kodi < 18
 - Add UpNext support and add more details to program listings (#1290)
 - Add integrated SBS 'Favourites'
 
@@ -85,5 +62,3 @@
 
 [B]Version v1.0.9[/B]
 - Initial version
-</news></extension>
-</addon>

@@ -2,7 +2,7 @@
 <addons>
   <addon id="repository.aussieaddons" name="Aussie Add-ons" provider-name="Aussie Add-ons" version="1.2.0">
     <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
-      <dir minversion="1.0.0" maxversion="18.9.0">
+      <dir maxversion="18.9.0" minversion="1.0.0">
         <info compressed="false">https://r.aussieaddons.com/repository/leia/addons.xml</info>
         <checksum>https://r.aussieaddons.com/repository/leia/addons.xml.md5</checksum>
         <datadir zip="true">https://r.aussieaddons.com/repository/leia/</datadir>
@@ -21,7 +21,7 @@
   </addon>
   <addon id="repository.googlecode.xbmc-catchuptv-au" name="Aussie Add-ons (formerly XBMC CatchupTV AU)" provider-name="Aussie Add-ons" version="1.6">
     <extension name="Aussie Add-ons Repository" point="xbmc.addon.repository">
-      <dir minversion="1.0.0" maxversion="18.9.0">
+      <dir maxversion="18.9.0" minversion="1.0.0">
         <info compressed="false">https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml</info>
         <checksum>https://raw.github.com/xbmc-catchuptv-au/repo/master/leia/addons.xml.md5</checksum>
         <datadir zip="true">https://github.com/xbmc-catchuptv-au/repo/raw/master/leia/</datadir>
@@ -38,4 +38,91 @@
       <platform>all</platform>
     </extension>
   </addon>
-</addons>
+<addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.9_matrix">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>SBS On Demand by Aussie Add-ons</summary>
+    <description>SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.</description>
+    <website>http://aussieaddons.com/addons/sbs/</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.sbs</source>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v1.1.9[/B]
+- Update mobile app version to a supported value
+- Further fixes for Matrix
+- Fix problem with incorrectly parsed date
+- don't keep addon object in module scope
+- Build for Leia and Matrix
+- python 3.8 compatibility
+- Style fixes, fix some tests
+- Complete tests
+- Fix ValueError on occasional float duration
+- stop error on viewing 'continue watching' when not logged in
+- Fix playback on Kodi &lt; 18
+- Add UpNext support and add more details to program listings (#1290)
+- Add integrated SBS 'Favourites'
+
+[B]Version v1.1.8[/B]
+- Allow for 'bad' metadata
+- Fix IndexError when accessing 'empty' programs
+
+[B]Version v1.1.7[/B]
+- Fix small mistake in default
+- Add search capability
+- Fix next page showing when not applicable
+- All lists are now max 50 length
+- Put total items/multi-page assignment in correct area
+- Multi-page
+- Fix 10 item limit, begin work on multiple pages
+- Only show 'Football Highlights' in sports genre
+- Correctly flatten single series
+- reuselanguageinvoker
+- Add seasons plus other changes
+- Fix using old function signature in get_category
+
+[B]Version v1.1.6[/B]
+- First run info dialog to inform of account requirements
+- Update for new API
+
+[B]Version v1.1.4[/B]
+- Addon temporarily broken
+- Fix travis config
+- travis update for notifications, py27, and github org name
+- Widen bandwidth windows for stream selection
+- Add stream quality selection (#1280)
+
+[B]Version v1.1.3[/B]
+- Fix missing quote in travis yaml (#1267)
+- Adapt error handling to new utils module (#1263)
+
+[B]Version v1.1.2[/B]
+- Fixes unbound local errors
+- Revise subtitle metadata logic
+- Handle no subtitles available, remove subtitle setting
+- Fix subtitles
+- Add user reporting, code updates
+- Metadata and common module update fixes
+- Fix missing requirement
+- Code cleanups, use common modules and update metadata
+- Update README.markdown
+
+[B]Version v1.1.0[/B]
+- Properly fix SSL issues with Python 2.7.9+
+
+[B]Version v1.0.9[/B]
+- Initial version
+</news></extension>
+</addon></addons>
