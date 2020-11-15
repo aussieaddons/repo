@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.warrant" name="Warrant" version="1.0.0-11~g3c45f38_leia" provider-name="Aussie Add-ons">
+<addon id="script.module.warrant" name="Warrant" version="1.0.0-11~g3c45f38_matrix" provider-name="Aussie Add-ons">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.dateutil" version="2.4.2" />
     <import addon="script.module.six" version="1.9.0" />
   </requires>
