@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.4.3-4~g13e11d4_leia">
+<addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.4.3-4~g13e11d4_matrix">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.aussieaddonscommon" />
     <import addon="script.module.beautifulsoup4" />
     <import addon="script.module.drmhelper" />
