@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.6-1~gd1e4ded_leia">
+<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.6-1~gd1e4ded_matrix">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.common.plugin.cache" />
     <import addon="script.module.aussieaddonscommon" />
     <import addon="script.module.beautifulsoup4" />
