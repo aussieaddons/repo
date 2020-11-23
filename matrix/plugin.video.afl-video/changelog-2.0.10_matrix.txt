@@ -1,32 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.10_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.future" />
-    <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>AFL Video by Aussie Add-ons</summary>
-    <description>Watch the latest AFL replays, news and match reports. Live streaming available with a valid AFL Live Pass</description>
-    <website>http://aussieaddons.com/addons/afl/</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.afl-video</source>
-    <disclaimer>This plugin is not affiliated with the AFL in any way.</disclaimer>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.10[/B]
+[B]Version v2.0.10[/B]
 - GitHub Actions config
 - Fix playback for older mp4 videos
 
@@ -44,7 +16,7 @@
 - Fix for 'unable to locate source' in older videos
 
 [B]Version v2.0.5[/B]
-- ooyala -&gt; brightcove (again)
+- ooyala -> brightcove (again)
 
 [B]Version v2.0.4[/B]
 - Fix missing live streams
@@ -62,7 +34,7 @@
 - Stop error reports for intermittent 404s and token expired
 - Stop error reports from trying to play dummy titles
 - Fix for 'unable to locate source' in older videos
-- ooyala -&gt; brightcove (again)
+- ooyala -> brightcove (again)
 - Fix missing live streams
 - Use inputstream.adaptive for live streams...
 - Reinstate ooyala code
@@ -76,7 +48,7 @@
 - Stop error reports for intermittent 404s and token expired
 - Stop error reports from trying to play dummy titles
 - Fix for 'unable to locate source' in older videos
-- ooyala -&gt; brightcove (again)
+- ooyala -> brightcove (again)
 - Fix missing live streams
 - Use inputstream.adaptive for live streams...
 - Reinstate ooyala code
@@ -93,7 +65,7 @@
 - New live video location and move from ooyala to brightcove
 - Update tests and data
 - Update tox excludes
-- ooyalahelper -&gt; stream_auth
+- ooyalahelper -> stream_auth
 
 [B]Version v1.9.4[/B]
 - Remove unused variables from fakes.py
@@ -189,7 +161,7 @@
 - Update README.md
 
 [B]Version v1.7.6[/B]
-- Code cleanups and error if trying live streaming on Python &lt; 2.7
+- Code cleanups and error if trying live streaming on Python < 2.7
 - update comm.py
 - Fix broken paid subscriptions
 
@@ -209,7 +181,7 @@
 [B]Version v1.7.1[/B]
 - Remove current round from 2016
 - NAB Challenge now JLT. Renamed and added new rounds
-- Fix for 'zero length field name in format' on Python &lt; 2.7
+- Fix for 'zero length field name in format' on Python < 2.7
 - Update README.md
 
 [B]Version v1.7.0[/B]
@@ -276,5 +248,3 @@
 
 [B]Version v1.1[/B]
 - Initial version
-</news></extension>
-</addon>
