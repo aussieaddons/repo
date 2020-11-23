@@ -372,85 +372,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.4.3-4~g13e11d4_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.future" />
-    <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>Netball Live add-on</summary>
-    <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.4.4[/B]
-- GitHub Actions config
-- Update icon.png
-- build leia and matrix
-- Test new dev repo
-
-[B]Version v1.4.3[/B]
-- Implement new stream auth and fix live playback
-
-[B]Version v1.4.2[/B]
-- Fix replays and other videos
-- Fix live matches
-
-[B]Version v1.4.1[/B]
-- Update broken CI token
-
-[B]Version v1.4.0[/B]
-- Update .travis.yml
-- New strings.po for Kodi 19, overhaul settings.
-- use inputstream.adaptive
-- Use setArt instead of deprecated ListItem constructor
-- Style and formatting fixes
-- add tests
-- add test resources
-- Using brightcove now - no more ooyala
-- ooyalahelper -&gt; stream_auth
-
-[B]Version v1.3.1[/B]
-- Fix upcoming matches, don't filter to only super netball comp
-
-[B]Version v1.3.0[/B]
-- Update for new telstra auth
-
-[B]Version v1.2.3[/B]
-- Fix JSON error
-
-[B]Version v1.2.2[/B]
-- Update auth for new api location
-
-[B]Version v1.2.1[/B]
-- Fix livepass login
-
-[B]Version v1.2.0[/B]
-- Fix other videos
-- Fix live matches
-
-[B]Version v1.1.2[/B]
-- Fix automatically removing login ticket if expired
-
-[B]Version v1.1.1[/B]
-- Add travis.yml
-- update version no.
-- Minor overhaul, using aussieaddonscommon
-
-[B]Version v1.1.0[/B]
-- List all replays, small fixes, flake8
-- Update README.md
-
-[B]Version v1.0.0[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.0_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -1373,4 +1294,83 @@
 - Initial version
 </news></extension>
   <news />
+</addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.4.4_leia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+    <import addon="script.common.plugin.cache" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <summary>Netball Live add-on</summary>
+    <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.4.4[/B]
+- GitHub Actions config
+- Update icon.png
+- build leia and matrix
+- Test new dev repo
+
+[B]Version v1.4.3[/B]
+- Implement new stream auth and fix live playback
+
+[B]Version v1.4.2[/B]
+- Fix replays and other videos
+- Fix live matches
+
+[B]Version v1.4.1[/B]
+- Update broken CI token
+
+[B]Version v1.4.0[/B]
+- Update .travis.yml
+- New strings.po for Kodi 19, overhaul settings.
+- use inputstream.adaptive
+- Use setArt instead of deprecated ListItem constructor
+- Style and formatting fixes
+- add tests
+- add test resources
+- Using brightcove now - no more ooyala
+- ooyalahelper -&gt; stream_auth
+
+[B]Version v1.3.1[/B]
+- Fix upcoming matches, don't filter to only super netball comp
+
+[B]Version v1.3.0[/B]
+- Update for new telstra auth
+
+[B]Version v1.2.3[/B]
+- Fix JSON error
+
+[B]Version v1.2.2[/B]
+- Update auth for new api location
+
+[B]Version v1.2.1[/B]
+- Fix livepass login
+
+[B]Version v1.2.0[/B]
+- Fix other videos
+- Fix live matches
+
+[B]Version v1.1.2[/B]
+- Fix automatically removing login ticket if expired
+
+[B]Version v1.1.1[/B]
+- Add travis.yml
+- update version no.
+- Minor overhaul, using aussieaddonscommon
+
+[B]Version v1.1.0[/B]
+- List all replays, small fixes, flake8
+- Update README.md
+
+[B]Version v1.0.0[/B]
+- Initial version
+</news></extension>
 </addon></addons>
