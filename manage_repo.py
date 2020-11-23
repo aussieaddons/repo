@@ -176,7 +176,7 @@ def write_changelog_file(addon_location, changelog):
 
 
 def get_version(repo):
-    return repo.git.describe().lstrip('v')
+    return repo.git.describe(tags=True).lstrip('v')
 
 
 def update_news(metadata_path, changelog):
