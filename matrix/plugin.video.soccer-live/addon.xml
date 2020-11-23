@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.4.0-3~g74db7e3_matrix">
+<addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.4.1_matrix">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.aussieaddonscommon" />

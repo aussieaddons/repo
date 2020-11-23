@@ -1,23 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.4.1_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.future" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.warrant" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>Soccer Live add-on</summary>
-    <description>Soccer Live is an unofficial add-on for Australian soccer content</description>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.4.1[/B]
+[B]Version v1.4.1[/B]
 - GitHub Actions config
 - missing test assertion
 - remove references to nrl in test data
@@ -27,8 +8,8 @@
 - Ignore venv and tox folders for flake8
 - Python 3 compatibility and some refactor fixes
 - Add tests
-- ooyalahelper -&gt; stream_auth pt.2
-- ooyalahelper -&gt; stream_auth
+- ooyalahelper -> stream_auth pt.2
+- ooyalahelper -> stream_auth
 - Tidy up paid token
 
 [B]Version v1.3.2[/B]
@@ -64,5 +45,3 @@
 
 [B]Version v0.9.9[/B]
 - Initial version
-</news></extension>
-</addon>
