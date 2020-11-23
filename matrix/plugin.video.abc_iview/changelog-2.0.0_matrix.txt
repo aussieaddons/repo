@@ -1,29 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.0_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.pycaption" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>ABC iView by Aussie Add-ons</summary>
-    <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days. You must be located in Australia to access content. NOTE: This will count towards your Internet usage quota.</description>
-    <website>http://aussieaddons.com/addons/abc_iview</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.abc_iview</source>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.0[/B]
+[B]Version v2.0.0[/B]
 - Reinstate xbmc.python requirement
 - GitHub Actions config
 - Shorten urls for series/collection listitems
@@ -161,8 +136,8 @@
 - Improve error handling and reporting
 
 [B]Version v1.6.4[/B]
-- Catchup repo &amp; zip links on github not google code
-- Restore description &amp; thumbnail to series list
+- Catchup repo & zip links on github not google code
+- Restore description & thumbnail to series list
 
 [B]Version v1.6.3[/B]
 - Parse episode title and add aired date
@@ -213,7 +188,7 @@
 - Add git-hook and update ZIP building scripts to more automatic
 - Updated README
 - Move plugin directory so we can pull a ZIP file directly from github
-- Rework addStreamInfo to be compatible with XBMC &lt;12
+- Rework addStreamInfo to be compatible with XBMC <12
 - Added new iView icon thanks to @ltmon
 
 [B]Version v1.3.1[/B]
@@ -239,7 +214,7 @@
 - Fix path for building zip file
 
 [B]Version v1.2.0[/B]
-- Add thumbnail &amp; description to series info
+- Add thumbnail & description to series info
 - Use api?keyword=XXX rather than api?seriesIndex
 - Better sorting for series lists
 - Remove unused get_meta from parse_series_items
@@ -250,5 +225,3 @@
 
 [B]Version v1.1.0[/B]
 - Initial version
-</news></extension>
-</addon>
