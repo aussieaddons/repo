@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.5-1~gff40c19_matrix">
+<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.6_matrix">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.future" />
