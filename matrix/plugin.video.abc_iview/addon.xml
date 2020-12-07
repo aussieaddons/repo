@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.0_matrix">
+<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.1_matrix">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.requests" />
     <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
     <import addon="script.module.pycaption" />
+    <import addon="script.module.requests" />
   </requires>
   <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
     <provides>video</provides>
@@ -23,7 +24,12 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.0[/B]
+  <news>[B]Version v2.0.1[/B]
+- Kodi 19 inputstream.adaptive
+- Add future dependency
+- include from_serieslist param in url
+
+[B]Version v2.0.0[/B]
 - Reinstate xbmc.python requirement
 - GitHub Actions config
 - Shorten urls for series/collection listitems
