@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.cricketaustralia" name="Cricket Live" provider-name="Aussie Add-ons" version="0.1.0_leia">
+<addon id="plugin.video.cricketaustralia" name="Cricket Live" provider-name="Aussie Add-ons" version="0.1.0_matrix">
   <requires>
-    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.aussieaddonscommon" />
     <import addon="script.module.drmhelper" />
   </requires>
