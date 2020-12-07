@@ -1343,4 +1343,98 @@
 [B]Version v0.0.1[/B]
 - Initial version
 </news></extension>
+</addon><addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="Aussie Add-ons" version="1.1.0_matrix">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
+    <import addon="script.module.pycaption" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary>9now add-on</summary>
+    <description>Watch live TV and catch up on all videos offered by the 9now service</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.1.0[/B]
+- add github actions config
+- remove deprectated drmhelper settings
+- Use inputstream.adaptive for HLS
+- Fix python 3 tests
+- Fix cache
+- Style fixes
+- Add future dependency
+- Basic test coverage
+- force_tlsv1=False
+- quick fix for KeyError on playback
+- Add plot info to series listings
+- Offscreen listItem creation to speed up list generation in Kodi 18+
+- Fix for setIsFolder Kodi 17 compatibility
+- Formatting, change variable name
+- Fix to make forward compatible with future Up Next versions
+- Temporary fix to prevent video seek thumbs from being used as subtitles
+- Update API urls (v2, web device) and spoof UA to fix intermittent service outages and missing entries
+- Enable reuselanguageinvoker
+- Fix for 404 response on non-existent next episode
+- Update live TV URL to get 9Rush channel and fix errors caused by adding non-existent video info for live streams
+- Add background fetch of API data
+- Add UpNext integration and preliminary video info details
+- Fix making list of shows by genre
+- Split up list_series into separate list_series_by_genre function
+- Change TVSERIESQUERY_URL to target device=web as device=android did not return all results
+- Adjust cache to record when data was stored rather than when it is stale
+- Add API request to get shows by genre rather than filtering from request for all shows
+- Update classes.py
+- POC caching mechanism to speed up list generation
+- Add missing properties
+- Add missing inputstream.adaptive.manifest_type property and add sort methods to episode list
+- Speed up menu creation by creating ListItem offscreen
+- Update comm.py
+- Fix travis config
+- travis update for notifications, py27, and github org name
+
+[B]Version v1.0.4[/B]
+- Fix News and Documentary genres not populating
+- Show all episodes instead of just 'latest'
+- fix error message for geoblocking
+- fix handling of geoblocking errors
+
+[B]Version v1.0.3[/B]
+- Catch brightcove geoblocking errors (untested)
+- Update logo, catch and log JSON errors
+
+[B]Version v1.0.2[/B]
+- Fix some nonetype errors
+
+[B]Version v1.0.1[/B]
+- Fix for unicode errors
+- Fix wrong addon being called in settings
+- Fix live channel playlist parsing
+- Rework m3u8 parsing, missing airdate
+
+[B]Version v1.0.0[/B]
+- Update travisci token
+- Fix live streams
+- Add subtitles support
+- Various fixes, add live video quality setting
+- Rewrite add-on
+
+[B]Version v0.1.0[/B]
+- Bypass SSL Verification on platforms which lack SNI support
+- Complete rewrite to work with 9Now
+- Update README.md
+
+[B]Version v0.0.3[/B]
+- Move repo url from googlecode to github
+- Fix failure to show all available shows
+- Update README.md
+
+[B]Version v0.0.2[/B]
+- Initial version
+</news></extension>
 </addon></addons>
