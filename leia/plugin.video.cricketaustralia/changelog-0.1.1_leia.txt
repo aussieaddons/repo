@@ -1,0 +1,33 @@
+[B]Version v0.1.1[/B]
+- Fix for error on no live matches for Matrix
+
+[B]Version v0.1.0[/B]
+- Fix thumbnails
+- Kodi 19 inputstream.adaptive
+- add github actions config
+- reuselanguageinvoker
+- Style fixes, remove unused imports
+- fix test for python 3
+- tox
+- Get videos from new API, remove deprecated ListItem contructor calls
+- update settings
+- Basic test coverage
+- strings.po
+
+[B]Version v0.0.4[/B]
+- update for new API
+
+[B]Version v0.0.3[/B]
+- update travis token
+
+[B]Version v0.0.2[/B]
+- update addon.xml and travis.yml
+- Fix for API change
+- Improved live video listing/refreshing (#3)
+- Update README.md
+- Fix to restore news video stream support
+- Website updates for 2018/19 season
+- Include on-demand clips and DRM helper magic
+
+[B]Version v0.0.1[/B]
+- Initial version
