@@ -859,264 +859,6 @@
 [B]Version v0.0.2[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.1_matrix">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.future" />
-    <import addon="script.module.pycaption" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>ABC iView by Aussie Add-ons</summary>
-    <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days. You must be located in Australia to access content. NOTE: This will count towards your Internet usage quota.</description>
-    <website>http://aussieaddons.com/addons/abc_iview</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.abc_iview</source>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.1[/B]
-- Kodi 19 inputstream.adaptive
-- Add future dependency
-- include from_serieslist param in url
-
-[B]Version v2.0.0[/B]
-- Reinstate xbmc.python requirement
-- GitHub Actions config
-- Shorten urls for series/collection listitems
-- Several changes
-- Refactor title parsing
-- Only remove 'cookies.dat' on old versions
-- Update fanart
-- Catch http errors other than 404 on auth
-- Fix error on selecting 'empty' series
-- Allow for Kodi 19 compatibility
-- Remove function caching
-- Don't raise error if subtitles fail to download/parse
-- Look for 'extras' if there aren't any regular videos for a series
-- Remove unused variables
-- Correct fanart for live streams
-- Consistent art and compatibility with Kodi 19
-- Tidy up
-- Add tests for season folders
-- Force responses to 0.10.7
-- Make folders for additional seasons when available
-- Parse subtitle for shows in collections
-- Handle searches with zero results
-- Remove past dependency (fixes error on libreelec)
-- Add collections to channels/categories
-- add excludes to tox
-- default to i.a for playback, show collections by default
-- Get 720p streams where available
-- Re-use python interpreter
-- New icon
-- Update settings and strings
-- Change setContent for categories to videos
-- Handle cancelling search query
-- Fix category logos, add fanart for categories with logos.
-- Python 3 compatibility
-- flake8 passing
-- Add tox config, fix format error
-- Add testing
-- Use mobile API v2
-- Fix travis-ci config
-- travis-ci config update for notifications and github org name
-- Correct link to repo zip file
-
-[B]Version v1.8.5[/B]
-- Use title case for Settings and update Travis CI config
-
-[B]Version v1.8.4[/B]
-
-[B]Version v1.8.3[/B]
-- Make the Settings item consistent as captials
-- Fix subtitles, remove optional tag for drmhelper
-
-[B]Version v1.8.2[/B]
-- formatting pt. 2
-- fix formatting
-- Add support for inputstream.adaptive playback
-- Add setting to toggle HD streams, remove subtitle setting
-- Update categories.py
-- Update parse.py
-- Update categories.py
-- Method name updates
-- Fix method name from utils
-- Code cleanups and add user reporting to settings
-- Code clean ups
-- Use aussie add-ons common module
-- Use customsession module
-- Validate categories
-- Remove automatic time/timezone calculation, small cleanup
-- Use external issue reporter module, rework dialog function
-- Correct implementation of DST calculation, handle exceptions
-- 404 error fixes, Flake8, other small changes
-
-[B]Version v1.8.0[/B]
-- Fix for duplicate entries in news categories
-- Switch to using requests
-- Add missing requests import
-- Switch to mobile API and update metadata for Kodi v17
-- Remove cookies.dat on each playback
-- Update README.markdown
-- Add 'high quality' streams where available
-- Fix for error caused by missing playlist info
-- Fix cookie issue
-- Fix typo
-- Code style fixes and re-add season/episode parsing
-- Revert to Kodi native stream handling
-- Add feature to choose stream quality
-- small fix for error in episode number counting
-- Switch to mobile API
-
-[B]Version v1.7.6[/B]
-- rename HTMLParser class
-- Fix for subtitles
-
-[B]Version v1.7.3[/B]
-- Update README
-- Attempt to ignore SSL errors on Python 2.7.9+
-
-[B]Version v1.7.2[/B]
-- Remove unset variable
-
-[B]Version v1.7.1[/B]
-- Roll back SSL fix due to breakage
-
-[B]Version v1.7.0[/B]
-- Disable the 'All' category due to API returning empty responses
-- Issue reporter fixes
-- Disable SSL verification to work around Apple issues
-- Add pre-Kodi v14 support for subtitles
-- Enable subtitles in settings
-- Add support for subtitles
-- Change method of playing videos
-- Fix incorrect variable name
-- Use minutes for older XBMC/Kodi versions
-
-[B]Version v1.6.8[/B]
-- Remove expire date from lastplayed field
-- Fix incorrect date variable
-- Add expiry date to end of description and fix duration
-- Fix datetime parsing
-- Parse episode correctly for title containing either Ep or Episode
-- Correct series  parsing. Get expire date and send to kodi in lastplayed.
-- Don't allow bug report for IncompleteRead errors from API
-
-[B]Version v1.6.7[/B]
-- Improve log and error handling
-
-[B]Version v1.6.6[/B]
-- Enable 1-hour caching of iView feed
-- Remove bundled Beautiful Soup
-
-[B]Version v1.6.5[/B]
-- Add basic URL fetch retry mechanism
-- Fix indentation error
-- Replace XBMC with XBMC/Kodi in logging and error reports
-- Fix error reporting for Windows
-- Improve error handling and reporting
-
-[B]Version v1.6.4[/B]
-- Catchup repo &amp; zip links on github not google code
-- Restore description &amp; thumbnail to series list
-
-[B]Version v1.6.3[/B]
-- Parse episode title and add aired date
-
-[B]Version v1.6.2[/B]
-- Only allow issue reporting on latest version
-- Fix ElementTree issue with Python 2.6
-
-[B]Version v1.6.1[/B]
-- Make feed parsing faster and fix series thumbnail issue
-
-[B]Version v1.6.0[/B]
-- Fix program feed after ABC broke it
-- Add ISP lookup to error reports
-- Don't allow the same error report twice
-- Fix strptime fix
-- Better fix for strptime import threading python issue
-- Work around Python strptime threading issue
-- Add automatic issue reporting
-- Update license headers
-- Update README
-
-[B]Version v1.5.0[/B]
-- Add XBMC version/platform debugging information
-- Update README and addon description
-- Comment out some noisy debugging
-- Fix label used to hide the News 24 live stream
-- Remove gzip request for URLs, because it fails sometimes
-- Remove simplejson as XBMC now supports real json
-- Add optional progressive HTTP(S) transport
-- Refactor rtmp url parsing into separate method
-- Improve error when service unavailable
-- Switch from tabs to spaces for Python code
-- We need version="2.1.0" for python API
-- Don't ask for xbmc.python v1.0
-
-[B]Version v1.4.1[/B]
-- Fixed so that it works with news24
-- More robust method of checking for error
-- Work around News24 addition to all arrays
-
-[B]Version v1.4.0[/B]
-- Don't die if duration is missing from metadata
-- Add ABC1-4 categories back to index
-- Move pre-commit and build-zip to seperate project
-- Update pre-commit script for better automation
-- Fix handling of some programs with missing metadata
-- Add git-hook and update ZIP building scripts to more automatic
-- Updated README
-- Move plugin directory so we can pull a ZIP file directly from github
-- Rework addStreamInfo to be compatible with XBMC &lt;12
-- Added new iView icon thanks to @ltmon
-
-[B]Version v1.3.1[/B]
-- Nice dialog message text wrapping
-- Better handshake error handling
-- Better fix for streaming server issue
-
-[B]Version v1.3[/B]
-- Add thanks to AdamMW
-- Print filename when building zip
-- Use PS3 auth to avoid AkamaiHD
-- Clean up dir lists and pass exceptions to the user better
-- Add streamInfo output and fix duration for new XBMC
-- Remove try/except here to pass error to the UI
-- Add more proxy services to README
-- Fix readme
-- Oops, switch comment spaces to tabs to match rest of routine
-- Fix url encoding if components are unicode without ascii-representable characters
-- Support for building XBMC Eden plugin, mainly for xbmc4xbox
-- Update README
-- Accidently mixed - and _ in dir name. Hack build script
-- Update README for librtmp fix on ATV
-- Fix path for building zip file
-
-[B]Version v1.2.0[/B]
-- Add thumbnail &amp; description to series info
-- Use api?keyword=XXX rather than api?seriesIndex
-- Better sorting for series lists
-- Remove unused get_meta from parse_series_items
-- Remove unused code path
-- Extend categories list
-- Split single series menu into category submenus
-- Add GPLv3 license file and headers
-
-[B]Version v1.1.0[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.11_matrix">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -1449,6 +1191,270 @@
 - Include on-demand clips and DRM helper magic
 
 [B]Version v0.0.1[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.2_matrix">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
+    <import addon="script.module.pycaption" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>ABC iView by Aussie Add-ons</summary>
+    <description>iView offers full-length programs as seen on ABC TV, and iView originals ranging from arts to anime. Programs are added every day; most programs are available for 14 days. You must be located in Australia to access content. NOTE: This will count towards your Internet usage quota.</description>
+    <website>http://aussieaddons.com/addons/abc_iview</website>
+    <source>https://github.com/xbmc-catchuptv-au/plugin.video.abc_iview</source>
+    <provides>video</provides>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  <news>[B]Version v2.0.2[/B]
+- Include add-on version in kodi urls
+- Allow for missing title metadata
+- incorrectly formatted url for program listings
+- Handle 404 of programs
+
+[B]Version v2.0.1[/B]
+- Kodi 19 inputstream.adaptive
+- Add future dependency
+- include from_serieslist param in url
+
+[B]Version v2.0.0[/B]
+- Reinstate xbmc.python requirement
+- GitHub Actions config
+- Shorten urls for series/collection listitems
+- Several changes
+- Refactor title parsing
+- Only remove 'cookies.dat' on old versions
+- Update fanart
+- Catch http errors other than 404 on auth
+- Fix error on selecting 'empty' series
+- Allow for Kodi 19 compatibility
+- Remove function caching
+- Don't raise error if subtitles fail to download/parse
+- Look for 'extras' if there aren't any regular videos for a series
+- Remove unused variables
+- Correct fanart for live streams
+- Consistent art and compatibility with Kodi 19
+- Tidy up
+- Add tests for season folders
+- Force responses to 0.10.7
+- Make folders for additional seasons when available
+- Parse subtitle for shows in collections
+- Handle searches with zero results
+- Remove past dependency (fixes error on libreelec)
+- Add collections to channels/categories
+- add excludes to tox
+- default to i.a for playback, show collections by default
+- Get 720p streams where available
+- Re-use python interpreter
+- New icon
+- Update settings and strings
+- Change setContent for categories to videos
+- Handle cancelling search query
+- Fix category logos, add fanart for categories with logos.
+- Python 3 compatibility
+- flake8 passing
+- Add tox config, fix format error
+- Add testing
+- Use mobile API v2
+- Fix travis-ci config
+- travis-ci config update for notifications and github org name
+- Correct link to repo zip file
+
+[B]Version v1.8.5[/B]
+- Use title case for Settings and update Travis CI config
+
+[B]Version v1.8.4[/B]
+
+[B]Version v1.8.3[/B]
+- Make the Settings item consistent as captials
+- Fix subtitles, remove optional tag for drmhelper
+
+[B]Version v1.8.2[/B]
+- formatting pt. 2
+- fix formatting
+- Add support for inputstream.adaptive playback
+- Add setting to toggle HD streams, remove subtitle setting
+- Update categories.py
+- Update parse.py
+- Update categories.py
+- Method name updates
+- Fix method name from utils
+- Code cleanups and add user reporting to settings
+- Code clean ups
+- Use aussie add-ons common module
+- Use customsession module
+- Validate categories
+- Remove automatic time/timezone calculation, small cleanup
+- Use external issue reporter module, rework dialog function
+- Correct implementation of DST calculation, handle exceptions
+- 404 error fixes, Flake8, other small changes
+
+[B]Version v1.8.0[/B]
+- Fix for duplicate entries in news categories
+- Switch to using requests
+- Add missing requests import
+- Switch to mobile API and update metadata for Kodi v17
+- Remove cookies.dat on each playback
+- Update README.markdown
+- Add 'high quality' streams where available
+- Fix for error caused by missing playlist info
+- Fix cookie issue
+- Fix typo
+- Code style fixes and re-add season/episode parsing
+- Revert to Kodi native stream handling
+- Add feature to choose stream quality
+- small fix for error in episode number counting
+- Switch to mobile API
+
+[B]Version v1.7.6[/B]
+- rename HTMLParser class
+- Fix for subtitles
+
+[B]Version v1.7.3[/B]
+- Update README
+- Attempt to ignore SSL errors on Python 2.7.9+
+
+[B]Version v1.7.2[/B]
+- Remove unset variable
+
+[B]Version v1.7.1[/B]
+- Roll back SSL fix due to breakage
+
+[B]Version v1.7.0[/B]
+- Disable the 'All' category due to API returning empty responses
+- Issue reporter fixes
+- Disable SSL verification to work around Apple issues
+- Add pre-Kodi v14 support for subtitles
+- Enable subtitles in settings
+- Add support for subtitles
+- Change method of playing videos
+- Fix incorrect variable name
+- Use minutes for older XBMC/Kodi versions
+
+[B]Version v1.6.8[/B]
+- Remove expire date from lastplayed field
+- Fix incorrect date variable
+- Add expiry date to end of description and fix duration
+- Fix datetime parsing
+- Parse episode correctly for title containing either Ep or Episode
+- Correct series  parsing. Get expire date and send to kodi in lastplayed.
+- Don't allow bug report for IncompleteRead errors from API
+
+[B]Version v1.6.7[/B]
+- Improve log and error handling
+
+[B]Version v1.6.6[/B]
+- Enable 1-hour caching of iView feed
+- Remove bundled Beautiful Soup
+
+[B]Version v1.6.5[/B]
+- Add basic URL fetch retry mechanism
+- Fix indentation error
+- Replace XBMC with XBMC/Kodi in logging and error reports
+- Fix error reporting for Windows
+- Improve error handling and reporting
+
+[B]Version v1.6.4[/B]
+- Catchup repo &amp; zip links on github not google code
+- Restore description &amp; thumbnail to series list
+
+[B]Version v1.6.3[/B]
+- Parse episode title and add aired date
+
+[B]Version v1.6.2[/B]
+- Only allow issue reporting on latest version
+- Fix ElementTree issue with Python 2.6
+
+[B]Version v1.6.1[/B]
+- Make feed parsing faster and fix series thumbnail issue
+
+[B]Version v1.6.0[/B]
+- Fix program feed after ABC broke it
+- Add ISP lookup to error reports
+- Don't allow the same error report twice
+- Fix strptime fix
+- Better fix for strptime import threading python issue
+- Work around Python strptime threading issue
+- Add automatic issue reporting
+- Update license headers
+- Update README
+
+[B]Version v1.5.0[/B]
+- Add XBMC version/platform debugging information
+- Update README and addon description
+- Comment out some noisy debugging
+- Fix label used to hide the News 24 live stream
+- Remove gzip request for URLs, because it fails sometimes
+- Remove simplejson as XBMC now supports real json
+- Add optional progressive HTTP(S) transport
+- Refactor rtmp url parsing into separate method
+- Improve error when service unavailable
+- Switch from tabs to spaces for Python code
+- We need version="2.1.0" for python API
+- Don't ask for xbmc.python v1.0
+
+[B]Version v1.4.1[/B]
+- Fixed so that it works with news24
+- More robust method of checking for error
+- Work around News24 addition to all arrays
+
+[B]Version v1.4.0[/B]
+- Don't die if duration is missing from metadata
+- Add ABC1-4 categories back to index
+- Move pre-commit and build-zip to seperate project
+- Update pre-commit script for better automation
+- Fix handling of some programs with missing metadata
+- Add git-hook and update ZIP building scripts to more automatic
+- Updated README
+- Move plugin directory so we can pull a ZIP file directly from github
+- Rework addStreamInfo to be compatible with XBMC &lt;12
+- Added new iView icon thanks to @ltmon
+
+[B]Version v1.3.1[/B]
+- Nice dialog message text wrapping
+- Better handshake error handling
+- Better fix for streaming server issue
+
+[B]Version v1.3[/B]
+- Add thanks to AdamMW
+- Print filename when building zip
+- Use PS3 auth to avoid AkamaiHD
+- Clean up dir lists and pass exceptions to the user better
+- Add streamInfo output and fix duration for new XBMC
+- Remove try/except here to pass error to the UI
+- Add more proxy services to README
+- Fix readme
+- Oops, switch comment spaces to tabs to match rest of routine
+- Fix url encoding if components are unicode without ascii-representable characters
+- Support for building XBMC Eden plugin, mainly for xbmc4xbox
+- Update README
+- Accidently mixed - and _ in dir name. Hack build script
+- Update README for librtmp fix on ATV
+- Fix path for building zip file
+
+[B]Version v1.2.0[/B]
+- Add thumbnail &amp; description to series info
+- Use api?keyword=XXX rather than api?seriesIndex
+- Better sorting for series lists
+- Remove unused get_meta from parse_series_items
+- Remove unused code path
+- Extend categories list
+- Split single series menu into category submenus
+- Add GPLv3 license file and headers
+
+[B]Version v1.1.0[/B]
 - Initial version
 </news></extension>
 </addon></addons>
