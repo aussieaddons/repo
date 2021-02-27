@@ -438,182 +438,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.8_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.common.plugin.cache" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.future" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <summary>NRL Live add-on</summary>
-    <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.5.8[/B]
-- New settings format, fix 19 compat issues
-
-[B]Version v1.5.7[/B]
-- GitHub Actions config
-
-[B]Version v1.5.6[/B]
-- Oauth PKCE for paid/linked authorisation
-
-[B]Version v1.5.5[/B]
-- cleanup
-- Only get media auth token for live
-- Kodi 19 vod fixed
-
-[B]Version v1.5.4[/B]
-- Live videos for 2020
-- ooyalahelper -&gt; stream_auth
-
-[B]Version v1.5.3[/B]
-- Fix shortlist url
-- New streaming API
-
-[B]Version v1.5.2[/B]
-- Update to 2020 auth, add tests
-- Fix travis config
-- travis update for notifications and py27
-
-[B]Version v1.4.5[/B]
-- Fix url for upcoming matches
-
-[B]Version v1.4.4[/B]
-- additional change to revert
-
-[B]Version v1.4.3[/B]
-- Revert changes made in 9744f08 for preseason games
-
-[B]Version v1.4.2[/B]
-- Remove live streaming quality settings
-- Fix live matches for preseason trials
-
-[B]Version v1.4.1[/B]
-- Remove bom on all xml requests
-
-[B]Version v1.4.0[/B]
-- Fix xml errors for live match menu
-- update to new travis.yml
-- Better icon
-- New generic uncopyrighted icon
-- Add mobile authentication
-
-[B]Version v1.3.6[/B]
-- Fix JSON errors for paid token
-
-[B]Version v1.3.5[/B]
-- Fix No JSON object could be decoded errors in auth
-
-[B]Version v1.3.4[/B]
-- Update for new auth api location
-- Update README.md
-
-[B]Version v1.3.3[/B]
-- Disallow error reporting if ooyala detects overseas IP
-- Remove replay quality settings
-
-[B]Version v1.3.2[/B]
-- Fix live matches following replay quality setting instead of live
-- Raise exceptions for ooyala auth messages other than 'unauthorized location'
-
-[B]Version v1.3.1[/B]
-- Improve feedback for errors in login process
-- Fix match highlights and add match replays category
-
-[B]Version v1.3.0[/B]
-- Finishing updating 2018 Free Live Pass auth, cleanup.
-
-[B]Version v1.2.7[/B]
-- add auth process for videos, start work on new sign in for telstra
-
-[B]Version v1.2.6[/B]
-- More live listing updates
-
-[B]Version v1.2.5[/B]
-- Rudimentary implementation of live matches
-- Fix greyed out settings in Krypton, revert removing first run setting
-- Remove firstrun setting
-- fix greyed out settings issue
-
-[B]Version v1.2.4[/B]
-- Update README.md
-- Improve error messages for nrl.com login
-- Fix thumbnails, improve login settings, flake8 formatting
-- Finish implementing videos from Match Highlights category
-- Fix live video menu
-- Implement in-app subscription option
-- correct handling 404 for auth process
-
-[B]Version v1.2.3[/B]
-- Prepare for 2018 season
-
-[B]Version v1.2.2[/B]
-- Handle current year round number after season end
-
-[B]Version v1.2.1[/B]
-- quick fix for mktime overflow error
-- Update provider name in addon.xml
-
-[B]Version v1.2.0[/B]
-- update travis token
-- Major overhaul
-- Small fix
-- Better handling for no eligible services
-
-[B]Version v1.1.8[/B]
-- Fix several errors
-
-[B]Version v1.1.7[/B]
-- Use new requests functions/cleanup/fix DST error
-- additional exception handling and logging
-- flake8 compliance
-
-[B]Version v1.1.6[/B]
-- Fix incorrectly named variable
-- Update README.md
-
-[B]Version v1.1.5[/B]
-- Replace HDS with HLS streams, use cache add-on
-- Enhanced exception handling and logging
-
-[B]Version v1.1.4[/B]
-- Ooyala cleanup, cache user token
-- Reinstate forced TLSv1
-- Properly handle dummy list items
-- Correct times for DST, fix for old quality settings
-
-[B]Version v1.1.3[/B]
-- Disable ordered headers
-
-[B]Version v1.1.2[/B]
-- Set default streaming method
-- Small tidy-up, better formatting of live matches
-- Fix parsing of live matches
-
-[B]Version v1.1.1[/B]
-- Fix error in utils, ascii encode game time
-- Update README.md
-
-[B]Version v1.1.0[/B]
-- update addon.xml
-- Overhaul of code
-- Use bs4 for html parsing
-- Update for 2017
-- Fix 2016 season
-- Update README.md
-- update ooyalahelper
-
-[B]Version v1.0.0[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.4.5_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -1463,6 +1287,189 @@
 - Fix Round IDs for finals
 
 [B]Version v1.1[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.9_leia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.common.plugin.cache" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.drmhelper" />
+    <import addon="script.module.future" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>NRL Live add-on</summary>
+    <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v1.5.9[/B]
+- fix live match listing for matrix
+
+[B]Version v1.5.8[/B]
+- New settings format, fix 19 compat issues
+
+[B]Version v1.5.7[/B]
+- GitHub Actions config
+
+[B]Version v1.5.6[/B]
+- Oauth PKCE for paid/linked authorisation
+
+[B]Version v1.5.5[/B]
+- cleanup
+- Only get media auth token for live
+- Kodi 19 vod fixed
+
+[B]Version v1.5.4[/B]
+- Live videos for 2020
+- ooyalahelper -&gt; stream_auth
+
+[B]Version v1.5.3[/B]
+- Fix shortlist url
+- New streaming API
+
+[B]Version v1.5.2[/B]
+- Update to 2020 auth, add tests
+- Fix travis config
+- travis update for notifications and py27
+
+[B]Version v1.4.5[/B]
+- Fix url for upcoming matches
+
+[B]Version v1.4.4[/B]
+- additional change to revert
+
+[B]Version v1.4.3[/B]
+- Revert changes made in 9744f08 for preseason games
+
+[B]Version v1.4.2[/B]
+- Remove live streaming quality settings
+- Fix live matches for preseason trials
+
+[B]Version v1.4.1[/B]
+- Remove bom on all xml requests
+
+[B]Version v1.4.0[/B]
+- Fix xml errors for live match menu
+- update to new travis.yml
+- Better icon
+- New generic uncopyrighted icon
+- Add mobile authentication
+
+[B]Version v1.3.6[/B]
+- Fix JSON errors for paid token
+
+[B]Version v1.3.5[/B]
+- Fix No JSON object could be decoded errors in auth
+
+[B]Version v1.3.4[/B]
+- Update for new auth api location
+- Update README.md
+
+[B]Version v1.3.3[/B]
+- Disallow error reporting if ooyala detects overseas IP
+- Remove replay quality settings
+
+[B]Version v1.3.2[/B]
+- Fix live matches following replay quality setting instead of live
+- Raise exceptions for ooyala auth messages other than 'unauthorized location'
+
+[B]Version v1.3.1[/B]
+- Improve feedback for errors in login process
+- Fix match highlights and add match replays category
+
+[B]Version v1.3.0[/B]
+- Finishing updating 2018 Free Live Pass auth, cleanup.
+
+[B]Version v1.2.7[/B]
+- add auth process for videos, start work on new sign in for telstra
+
+[B]Version v1.2.6[/B]
+- More live listing updates
+
+[B]Version v1.2.5[/B]
+- Rudimentary implementation of live matches
+- Fix greyed out settings in Krypton, revert removing first run setting
+- Remove firstrun setting
+- fix greyed out settings issue
+
+[B]Version v1.2.4[/B]
+- Update README.md
+- Improve error messages for nrl.com login
+- Fix thumbnails, improve login settings, flake8 formatting
+- Finish implementing videos from Match Highlights category
+- Fix live video menu
+- Implement in-app subscription option
+- correct handling 404 for auth process
+
+[B]Version v1.2.3[/B]
+- Prepare for 2018 season
+
+[B]Version v1.2.2[/B]
+- Handle current year round number after season end
+
+[B]Version v1.2.1[/B]
+- quick fix for mktime overflow error
+- Update provider name in addon.xml
+
+[B]Version v1.2.0[/B]
+- update travis token
+- Major overhaul
+- Small fix
+- Better handling for no eligible services
+
+[B]Version v1.1.8[/B]
+- Fix several errors
+
+[B]Version v1.1.7[/B]
+- Use new requests functions/cleanup/fix DST error
+- additional exception handling and logging
+- flake8 compliance
+
+[B]Version v1.1.6[/B]
+- Fix incorrectly named variable
+- Update README.md
+
+[B]Version v1.1.5[/B]
+- Replace HDS with HLS streams, use cache add-on
+- Enhanced exception handling and logging
+
+[B]Version v1.1.4[/B]
+- Ooyala cleanup, cache user token
+- Reinstate forced TLSv1
+- Properly handle dummy list items
+- Correct times for DST, fix for old quality settings
+
+[B]Version v1.1.3[/B]
+- Disable ordered headers
+
+[B]Version v1.1.2[/B]
+- Set default streaming method
+- Small tidy-up, better formatting of live matches
+- Fix parsing of live matches
+
+[B]Version v1.1.1[/B]
+- Fix error in utils, ascii encode game time
+- Update README.md
+
+[B]Version v1.1.0[/B]
+- update addon.xml
+- Overhaul of code
+- Use bs4 for html parsing
+- Update for 2017
+- Fix 2016 season
+- Update README.md
+- update ooyalahelper
+
+[B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
 </addon></addons>

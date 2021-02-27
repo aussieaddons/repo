@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.8_matrix">
+<addon id="plugin.video.nrl-live" name="NRL Live" provider-name="Aussie Add-ons" version="1.5.9_matrix">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.common.plugin.cache" />
@@ -13,11 +13,18 @@
     <provides>video</provides>
   </extension>
   <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
     <summary>NRL Live add-on</summary>
     <description>NRL Live allows subscribers of Telstra's NRL Digital Pass to stream live matches, match replays, and many other videos offered by this service.</description>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.5.8[/B]
+  <news>[B]Version v1.5.9[/B]
+- fix live match listing for matrix
+
+[B]Version v1.5.8[/B]
 - New settings format, fix 19 compat issues
 
 [B]Version v1.5.7[/B]
