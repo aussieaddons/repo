@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.3.2_leia">
+<addon id="script.module.aussieaddonscommon" name="Aussie Add-ons Common" provider-name="Aussie Add-ons" version="1.3.3_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.future" />
@@ -15,7 +15,16 @@
     <source>https://github.com/aussieaddons/script.module.aussieaddonscommon</source>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.3.2[/B]
+  <news>[B]Version v1.3.3[/B]
+- Issues not allowed to be submitted unless url is from current version
+- Prevent tests from submitting an actual error report
+- GitHub Actions config
+- Fix not_already_reported for Kodi 19
+- Fix multi-line message formatting in Kodi 19
+- Fix issue reporting
+- Ensure all repos are listed for being reportable
+
+[B]Version v1.3.2[/B]
 - Leia and Matrix in prod repo
 - correct manage_repo arguments
 - travis.yml - build liea and matrix
