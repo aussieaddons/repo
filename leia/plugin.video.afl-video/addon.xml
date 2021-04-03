@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.12_leia">
+<addon id="plugin.video.afl-video" name="AFL Video" provider-name="Aussie Add-ons" version="2.0.13_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -26,7 +26,8 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.12[/B]
+  <news>[B]Version v2.0.13[/B]
+- Addon version in Kodi url
 - Handle postponed game scores
 - Correct dummy setting for AFLW upcoming
 - Kodi 19 inputstream.adaptive
@@ -58,6 +59,7 @@
 - Remove state setting
 
 [B]Version v2.0.2[/B]
+- Addon version in Kodi url
 - Handle postponed game scores
 - Correct dummy setting for AFLW upcoming
 - Kodi 19 inputstream.adaptive
@@ -73,6 +75,9 @@
 - Use inputstream.adaptive for live streams...
 - Reinstate ooyala code
 - Remove state setting
+
+[B]Version v2.0.13[/B]
+- Addon version in Kodi url
 
 [B]Version v2.0.12[/B]
 - Handle postponed game scores
