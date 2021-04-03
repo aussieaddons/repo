@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="Aussie Add-ons" version="1.1.1_leia">
+<addon id="plugin.video.catchuptv.au.nine" name="9Now" provider-name="Aussie Add-ons" version="1.1.2_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -15,9 +15,18 @@
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <summary>9now add-on</summary>
     <description>Watch live TV and catch up on all videos offered by the 9now service</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.1.1[/B]
+  <news>[B]Version v1.1.2[/B]
+- Fix for missing show description
+- make parse_kodi_url safe
+- Update addon.xml
+
+[B]Version v1.1.1[/B]
 - remove reassignment of play_item in play.py
 - safer handling of getting upnext info
 
