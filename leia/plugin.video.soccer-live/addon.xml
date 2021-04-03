@@ -1,9 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.4.2_leia">
+<addon id="plugin.video.soccer-live" name="Soccer Live" provider-name="Aussie Add-ons" version="1.4.3_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
     <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.drmhelper" />
     <import addon="script.module.future" />
     <import addon="script.module.requests" />
     <import addon="script.module.warrant" />
@@ -17,7 +18,12 @@
     <description>Soccer Live is an unofficial add-on for Australian soccer content</description>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.4.2[/B]
+  <news>[B]Version v1.4.3[/B]
+- Addon version in Kodi url
+- New strings file, update settings, use IA for all videos
+- Kodi 19 inputstream.adaptive
+
+[B]Version v1.4.2[/B]
 - fix 19 compat issues
 
 [B]Version v1.4.1[/B]
