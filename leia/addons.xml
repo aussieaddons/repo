@@ -351,57 +351,6 @@
 [B]Version v1.0.0[/B]
 - Initial version
 </news></extension>
-</addon><addon id="plugin.video.cricketaustralia" name="Cricket Live" provider-name="Aussie Add-ons" version="0.1.1_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.drmhelper" />
-  </requires>
-  <extension library="addon.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="addon.py" point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary>Cricket Live by Aussie Add-ons</summary>
-    <description>Watch live Cricket matches and other videos</description>
-    <website>http://aussieaddons.com/addons/cricket/</website>
-    <source>https://github.com/aussieaddons/plugin.video.cricketaustralia</source>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v0.1.1[/B]
-- Fix for error on no live matches for Matrix
-
-[B]Version v0.1.0[/B]
-- Fix thumbnails
-- Kodi 19 inputstream.adaptive
-- add github actions config
-- reuselanguageinvoker
-- Style fixes, remove unused imports
-- fix test for python 3
-- tox
-- Get videos from new API, remove deprecated ListItem contructor calls
-- update settings
-- Basic test coverage
-- strings.po
-
-[B]Version v0.0.4[/B]
-- update for new API
-
-[B]Version v0.0.3[/B]
-- update travis token
-
-[B]Version v0.0.2[/B]
-- update addon.xml and travis.yml
-- Fix for API change
-- Improved live video listing/refreshing (#3)
-- Update README.md
-- Fix to restore news video stream support
-- Website updates for 2018/19 season
-- Include on-demand clips and DRM helper magic
-
-[B]Version v0.0.1[/B]
-- Initial version
-</news></extension>
 </addon><addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.2_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
@@ -1649,6 +1598,60 @@
 - Fix storing ticket incorrectly...
 
 [B]Version v0.9.9[/B]
+- Initial version
+</news></extension>
+</addon><addon id="plugin.video.cricketaustralia" name="Cricket Live" provider-name="Aussie Add-ons" version="0.1.2_leia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.aussieaddonscommon" />
+    <import addon="script.module.drmhelper" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="addon.py" point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary>Cricket Live by Aussie Add-ons</summary>
+    <description>Watch live Cricket matches and other videos</description>
+    <website>http://aussieaddons.com/addons/cricket/</website>
+    <source>https://github.com/aussieaddons/plugin.video.cricketaustralia</source>
+    <provides>video</provides>
+    <platform>all</platform>
+  <news>[B]Version v0.1.2[/B]
+- Addon version in Kodi url
+
+[B]Version v0.1.1[/B]
+- Fix for error on no live matches for Matrix
+
+[B]Version v0.1.0[/B]
+- Fix thumbnails
+- Kodi 19 inputstream.adaptive
+- add github actions config
+- reuselanguageinvoker
+- Style fixes, remove unused imports
+- fix test for python 3
+- tox
+- Get videos from new API, remove deprecated ListItem contructor calls
+- update settings
+- Basic test coverage
+- strings.po
+
+[B]Version v0.0.4[/B]
+- update for new API
+
+[B]Version v0.0.3[/B]
+- update travis token
+
+[B]Version v0.0.2[/B]
+- update addon.xml and travis.yml
+- Fix for API change
+- Improved live video listing/refreshing (#3)
+- Update README.md
+- Fix to restore news video stream support
+- Website updates for 2018/19 season
+- Include on-demand clips and DRM helper magic
+
+[B]Version v0.0.1[/B]
 - Initial version
 </news></extension>
 </addon></addons>
