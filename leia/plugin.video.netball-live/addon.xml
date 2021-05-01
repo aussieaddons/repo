@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.4.6_leia">
+<addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.5.0_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -13,11 +13,18 @@
     <provides>video</provides>
   </extension>
   <extension library="default.py" point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
     <summary>Netball Live add-on</summary>
     <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
     <provides>video</provides>
     <platform>all</platform>
-  <news>[B]Version v1.4.6[/B]
+  <news>[B]Version v1.5.0[/B]
+- Fix auth for 2021
+
+[B]Version v1.4.6[/B]
 - Sort listings by date properly
 - Kodi 19 inputstream.adaptive
 

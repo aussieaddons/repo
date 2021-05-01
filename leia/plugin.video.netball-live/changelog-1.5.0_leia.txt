@@ -1,27 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.netball-live" name="Netball Live" provider-name="Aussie Add-ons" version="1.5.0_matrix">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.future" />
-    <import addon="script.module.requests" />
-    <import addon="script.common.plugin.cache" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>Netball Live add-on</summary>
-    <description>Netball Live allows you to use you Free Telstra Live Pass to stream live matches, match replays, and other videos offered by this service. Note: this add-on is not compatible with passes obtained via in-app purchase.</description>
-    <provides>video</provides>
-    <platform>all</platform>
-  <news>[B]Version v1.5.0[/B]
+[B]Version v1.5.0[/B]
 - Fix auth for 2021
 
 [B]Version v1.4.6[/B]
@@ -56,7 +33,7 @@
 - add tests
 - add test resources
 - Using brightcove now - no more ooyala
-- ooyalahelper -&gt; stream_auth
+- ooyalahelper -> stream_auth
 
 [B]Version v1.3.1[/B]
 - Fix upcoming matches, don't filter to only super netball comp
@@ -91,5 +68,3 @@
 
 [B]Version v1.0.0[/B]
 - Initial version
-</news></extension>
-</addon>
