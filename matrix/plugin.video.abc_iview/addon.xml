@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.3_matrix">
+<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.4_matrix">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -24,7 +24,10 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.3[/B]
+  <news>[B]Version v2.0.4[/B]
+- Allow playback on Xbox with subtitle file error
+
+[B]Version v2.0.3[/B]
 - Alter timestamp parsing
 - Empty dates
 - small fix
