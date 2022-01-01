@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.7_leia">
+<addon id="script.module.drmhelper" name="DRM Helper" provider-name="Aussie Add-ons" version="2.0.8_leia">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="script.module.future" />
@@ -16,7 +16,10 @@
     <source>https://github.com/aussieaddons/script.module.drmhelper</source>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.7[/B]
+  <news>[B]Version v2.0.8[/B]
+- Fix for Kodi 20
+
+[B]Version v2.0.7[/B]
 - Don't force most recent version if an acceptable is installed
 - Fix downloading wvcdm in kodi 19
 
