@@ -1,31 +1,7 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.sbs" name="SBS On Demand" provider-name="Aussie Add-ons" version="1.1.12_leia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.aussieaddonscommon" />
-    <import addon="script.module.drmhelper" />
-    <import addon="script.module.requests" />
-  </requires>
-  <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
-    <provides>video</provides>
-  </extension>
-  <extension library="default.py" point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary>SBS On Demand by Aussie Add-ons</summary>
-    <description>SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.</description>
-    <website>http://aussieaddons.com/addons/sbs/</website>
-    <source>https://github.com/xbmc-catchuptv-au/plugin.video.sbs</source>
-    <provides>video</provides>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v1.1.12[/B]
+[B]Version v1.1.12[/B]
 - Update github actions
 - Temp fix for error getting next episode
-- Fix TypeError: '&lt;' not supported... error
+- Fix TypeError: '<' not supported... error
 - Fix for missing subtitles...
 - Kodi 19 inputstream.adaptive
 - GitHub Actions config
@@ -41,7 +17,7 @@
 - Complete tests
 - Fix ValueError on occasional float duration
 - stop error on viewing 'continue watching' when not logged in
-- Fix playback on Kodi &lt; 18
+- Fix playback on Kodi < 18
 - Add UpNext support and add more details to program listings (#1290)
 - Add integrated SBS 'Favourites'
 
@@ -81,7 +57,7 @@
 [B]Version v1.1.2[/B]
 - Update github actions
 - Temp fix for error getting next episode
-- Fix TypeError: '&lt;' not supported... error
+- Fix TypeError: '<' not supported... error
 - Fix for missing subtitles...
 - Kodi 19 inputstream.adaptive
 - GitHub Actions config
@@ -95,7 +71,7 @@
 - Complete tests
 - Fix ValueError on occasional float duration
 - stop error on viewing 'continue watching' when not logged in
-- Fix playback on Kodi &lt; 18
+- Fix playback on Kodi < 18
 - Add UpNext support and add more details to program listings (#1290)
 - Add integrated SBS 'Favourites'
 - Allow for 'bad' metadata
@@ -127,7 +103,7 @@
 - Temp fix for error getting next episode
 
 [B]Version v1.1.11[/B]
-- Fix TypeError: '&lt;' not supported... error
+- Fix TypeError: '<' not supported... error
 
 [B]Version v1.1.10[/B]
 - Fix for missing subtitles...
@@ -143,7 +119,7 @@
 - Complete tests
 - Fix ValueError on occasional float duration
 - stop error on viewing 'continue watching' when not logged in
-- Fix playback on Kodi &lt; 18
+- Fix playback on Kodi < 18
 - Add UpNext support and add more details to program listings (#1290)
 - Add integrated SBS 'Favourites'
 - Allow for 'bad' metadata
@@ -226,5 +202,3 @@
 
 [B]Version v1.0.0[/B]
 - Initial version
-</news></extension>
-</addon>
