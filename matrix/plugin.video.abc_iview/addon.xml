@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.6_matrix">
+<addon id="plugin.video.abc_iview" name="ABC iView" provider-name="Aussie Add-ons" version="2.0.7_matrix">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.aussieaddonscommon" />
@@ -11,6 +11,7 @@
   <extension library="default.py" point="xbmc.python.pluginsource" provides="video">
     <provides>video</provides>
   </extension>
+  <extension library="service.py" point="xbmc.service" start="login" />
   <extension library="default.py" point="xbmc.addon.metadata">
     <reuselanguageinvoker>true</reuselanguageinvoker>
     <assets>
@@ -24,7 +25,14 @@
     <provides>video</provides>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-  <news>[B]Version v2.0.6[/B]
+  <news>[B]Version v2.0.7[/B]
+- explain commented lines for DASH
+- Add proxy for malformed playlists
+- Fix for Kodi 21
+- remove duplicate call
+- add compatibility fix for kodi v19
+
+[B]Version v2.0.6[/B]
 - Fix error on empty show list
 
 [B]Version v2.0.5[/B]
